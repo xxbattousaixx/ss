@@ -210,14 +210,14 @@ function FooterBlackSocial() {
               href="https://www.invisionapp.com?ref=creativetim"
               target="_blank"
             >
-              Invision
+              DC7
             </a>
             . Coded by{" "}
             <a
               href="https://www.creative-tim.com?ref=nuk-pro-react-footer-black-social"
               target="_blank"
             >
-              Creative Tim
+              DC7
             </a>
             .
           </div>

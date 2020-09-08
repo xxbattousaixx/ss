@@ -1,7 +1,7 @@
 /*!
 
 =========================================================
-* Now UI Kit PRO React - v1.4.0
+* REACT PRO - v1.4.0
 =========================================================
 
 * Product Page: https://www.creative-tim.com/product/now-ui-kit-pro-react

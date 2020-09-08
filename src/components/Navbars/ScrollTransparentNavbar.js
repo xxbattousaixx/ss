@@ -64,10 +64,10 @@ function ScrollTransparentNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand to="/" tag={Link} id="navbar-brand">
-              Now Ui Kit PRO React
+              REACT PRO
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              Designed by DC7. Coded by DC7
             </UncontrolledTooltip>
             <button
               onClick={() => {
@@ -236,7 +236,7 @@ function ScrollTransparentNavbar() {
                   href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-scroll-transparent-navbar"
                   target="_blank"
                 >
-                  <p>Buy Now</p>
+                  <p>Get A Quote Now</p>
                 </Button>
               </NavItem>
             </Nav>

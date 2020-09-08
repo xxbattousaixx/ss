@@ -65,7 +65,6 @@ function Presentation() {
         <Content />
         <Sections />
         <Examples />
-        <FreeDemo />
         <Icons />
         <Image />
         <Testimonials />

@@ -1,6 +1,6 @@
 {
-  "name": "now-ui-kit-pro-react",
-  "version": "0.1.0",
+  "name": "solafide",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "moment": "2.26.0",

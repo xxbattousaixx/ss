@@ -36,11 +36,11 @@ function IndexHeader() {
         </div>
         <div className="rellax-text-container">
           <h1 className="h1-seo rellax-text" data-rellax-speed="-1">
-            Components
+            Solafide
           </h1>
         </div>
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-          A beautiful premium Bootstrap 4 UI Kit.
+          Reiable quality at your door.
         </h3>
         <h6
           className="category category-absolute rellax-text"
