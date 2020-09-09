@@ -61,7 +61,6 @@ function Presentation() {
         <PresentationHeader />
         <Components />
         <BasicComponents />
-  
         <FooterBlack />
       </div>
     </>
