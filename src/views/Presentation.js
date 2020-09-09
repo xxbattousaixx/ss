@@ -61,14 +61,7 @@ function Presentation() {
         <PresentationHeader />
         <Components />
         <BasicComponents />
-        <Cards />
-        <Content />
-        <Sections />
-        <Examples />
-        <Icons />
-        <Image />
-        <Testimonials />
-        <Pricing />
+  
         <FooterBlack />
       </div>
     </>
