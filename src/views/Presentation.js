@@ -59,8 +59,7 @@ function Presentation() {
       <ScrollTransparentNavbar />
       <div className="wrapper">
         <PresentationHeader />
-        <Components />
-        <BasicComponents />
+        
         <FooterBlack />
       </div>
     </>

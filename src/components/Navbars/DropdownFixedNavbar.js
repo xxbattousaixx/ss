@@ -67,7 +67,7 @@ function DropdownFixedNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand to="/" tag={Link} id="navbar-brand">
-              REACT PRO
+              SOLAFIDE
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
               Designed by DC7. Coded by DC7
