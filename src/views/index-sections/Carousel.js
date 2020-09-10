@@ -16,17 +16,17 @@ const items = [
   {
     src: require("assets/img/bg1.jpg"),
     altText: "",
-    caption: "Nature, United States",
+    caption: "Bradenton, Florida, United States",
   },
   {
     src: require("assets/img/bg3.jpg"),
     altText: "",
-    caption: "Somewhere Beyond, United States",
+    caption: "Sarasota, Florida, United States",
   },
   {
     src: require("assets/img/bg4.jpg"),
     altText: "",
-    caption: "Yellowstone National Park, United States",
+    caption: "Tampa, Florida, United States",
   },
 ];
 
@@ -58,7 +58,8 @@ function CarouselSection() {
       <div className="section" id="carousel">
         <Container>
           <div className="title">
-            <h4>Carousel</h4>
+        
+
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">

@@ -33,7 +33,7 @@ function FixedTransparentNavbar() {
       <Navbar className="navbar-absolute navbar-transparent" expand="lg">
         <Container>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                       
+<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
 <img
   alt="..."
   src={require("assets/img/logo1.png")}
@@ -71,53 +71,11 @@ function FixedTransparentNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/" tag={Link}>
+                  <DropdownItem to="/presentation2" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
-                    Presentation
+                    Solafide Services
                   </DropdownItem>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-pro-react/#/documentation/introduction?ref=nuk-pro-react-fixed-transparent-navbar"
-                    target="_blank"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i
-                    aria-hidden={true}
-                    className="now-ui-icons files_paper"
-                  ></i>
-                  <p>Contact</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem to="/sections#projects" tag={Link}>
-                    <i className="now-ui-icons education_paper"></i>
-                    Projects
-                  </DropdownItem>
-                  <DropdownItem to="/sections#pricing" tag={Link}>
-                    <i className="now-ui-icons business_money-coins"></i>
-                    Pricing
-                  </DropdownItem>
-                  <DropdownItem to="/sections#contact-us" tag={Link}>
-                    <i className="now-ui-icons tech_mobile"></i>
-                    Contact Us
-                  </DropdownItem>
+          
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>

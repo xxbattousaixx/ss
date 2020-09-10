@@ -46,12 +46,7 @@ function PresentationHeader() {
         <h6
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
-        >We offer residential and commercial services alike -- we are driven to please and look forward to adding value to your project.
-        <br/>
-        We are trusted to work with the highest quality materials and bring you an exceptional experience.
-        <br/>
-        <br/>
-        We specialize in pavement, painting, and pressure washing.
+        >Value. Professionalism. Flexibility. Reliability. Efficiency.
         </h6>
 
       </div>

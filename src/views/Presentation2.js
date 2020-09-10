@@ -4,8 +4,8 @@ import Rellax from "rellax";
 // reactstrap components
 
 // core components
-import DropdownFixedNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import PresentationHeader from "components/Headers/PresentationHeader.js";
+import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
+import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
@@ -24,7 +24,7 @@ import Testimonials from "./presentation-sections/Testimonials.js";
 import Pricing from "./presentation-sections/Pricing.js";
 import PlainCards from "./index-sections/PlainCards.js";
 
-function Presentation() {
+function Presentation2() {
   React.useEffect(() => {
     document.body.classList.add("presentation-page");
     document.body.classList.add("sidebar-collapse");
@@ -59,11 +59,13 @@ function Presentation() {
   });
   return (
     <>
-      <DropdownFixedNavbar />
+      <ScrollTransparentNavbar />
       <div className="wrapper">
-        <PlainCards/>
-        <Cards/>
+<BlogPostsHeader/>
         <Carousel/>
+        <div className="services">
+        <PlainCards/>
+</div>
         <Testimonials/>
         <NucleoIcons />
 
@@ -72,4 +74,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default Presentation2;

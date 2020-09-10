@@ -66,7 +66,7 @@ function DropdownWhiteNavbar() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                  
+<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
 <img
   alt="..."
   src={require("assets/img/logo1.png")}
@@ -104,15 +104,11 @@ function DropdownWhiteNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/presentation" tag={Link}>
+                  <DropdownItem to="/presentation2" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
                     Solafide Services
                   </DropdownItem>
-                  <DropdownItem to="/examples#PlainCards" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    Our Services
-                  </DropdownItem>
-
+            
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>

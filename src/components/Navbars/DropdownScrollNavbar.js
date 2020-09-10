@@ -89,7 +89,7 @@ function DropdownScrollNavbar() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                
+<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
 <img
   alt="..."
   src={require("assets/img/logo1.png")}
@@ -131,10 +131,7 @@ function DropdownScrollNavbar() {
                     <i className="now-ui-icons design_image"></i>
                     Solafide Services
                   </DropdownItem>
-                  <DropdownItem to="/examples#PlainCards" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    Our Services
-                  </DropdownItem>
+        
 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>

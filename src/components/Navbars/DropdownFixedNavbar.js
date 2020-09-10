@@ -66,7 +66,7 @@ function DropdownFixedNavbar() {
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                  
+<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
 <img
   alt="..."
   src={require("assets/img/logo1.png")}
@@ -108,10 +108,7 @@ function DropdownFixedNavbar() {
                     <i className="now-ui-icons design_image"></i>
                     Solafide Services
                   </DropdownItem>
-                  <DropdownItem to="/examples#PlainCards" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36"></i>
-                    Our Services
-                  </DropdownItem>
+          
 
                 </DropdownMenu>
               </UncontrolledDropdown>
@@ -163,7 +160,7 @@ function DropdownFixedNavbar() {
                   <p>Testimonials</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem tag={Link} to="/presentation2">
+                  <DropdownItem tag={Link} to="/about">
                     <i className="now-ui-icons business_bulb-63"></i>
                     About-us
                   </DropdownItem>
