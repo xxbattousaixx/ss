@@ -43,6 +43,22 @@ function PresentationHeader() {
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
           At your service.
         </h3>
+
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">The table header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The table body</td>
+                    <td>with two columns</td>
+                </tr>
+            </tbody>
+        </table>
+
         <h6
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"

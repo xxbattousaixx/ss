@@ -15,15 +15,15 @@ function FooterDefault() {
             <ul>
               <li>
                 <a
-                  href="https://www.creative-tim.com?ref=nuk-pro-react-footer-default"
+                  href="www.google.com"
                   target="_blank"
                 >
-                  Creative Tim
+                  SOLAFIDE
                 </a>
               </li>
               <li>
                 <a
-                  href="http://presentation.creative-tim.com?ref=nuk-pro-react-footer-default"
+                  href="www.google.com"
                   target="_blank"
                 >
                   About Us
@@ -31,7 +31,7 @@ function FooterDefault() {
               </li>
               <li>
                 <a
-                  href="http://blog.creative-tim.com?ref=nuk-pro-react-footer-default"
+                  href="www.solafide-service.com"
                   target="_blank"
                 >
                   Blog
@@ -42,14 +42,14 @@ function FooterDefault() {
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="https://www.invisionapp.com?ref=creativetim"
+              href="www.google.com"
               target="_blank"
             >
               DC7
             </a>
             . Coded by{" "}
             <a
-              href="https://www.creative-tim.com?ref=nuk-pro-react-footer-default"
+              href="www.google.com"
               target="_blank"
             >
               DC7
