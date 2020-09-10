@@ -36,39 +36,26 @@ function IndexHeader() {
         </div>
         <div className="rellax-text-container">
           <h1 className="h1-seo rellax-text" data-rellax-speed="-1">
-            Solafide
-          </h1>
-        </div>
-        <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-          Reiable quality at your door.
-        </h3>
-        <h6
-          className="category category-absolute rellax-text"
-          data-rellax-speed="-1"
-        >
-          Designed by{" "}
-          <a href="http://invisionapp.com/?ref=creativetim" target="_blank">
-            <img
-              alt="..."
-              className="invision-logo"
-              src={require("assets/img/invision-white-slim.png")}
-            ></img>
-          </a>
-          . Coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=nuk-pro-react-index-header"
-            target="_blank"
-          >
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            ></img>
-          </a>
-          .
-        </h6>
+          SOLAFIDE
+        </h1>
+        <div className="pro">SS</div>
       </div>
-    </>
+      <h3 className="h3-description rellax-text" data-rellax-speed="-1">
+        At your service.
+      </h3>
+      <h6
+        className="category category-absolute rellax-text"
+        data-rellax-speed="-1"
+      >We offer residential and commercial services alike -- we are driven to please and look forward to adding value to your project.
+      <br/>
+      We are trusted to work with the highest quality materials and bring you an exceptional experience.
+      <br/>
+      <br/>
+      We specialize in pavement, painting, and pressure washing.
+      </h6>
+
+    </div>
+  </>
   );
 }
 

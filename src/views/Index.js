@@ -44,23 +44,11 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
-          <Basic />
-          <Navbars />
-          <Tabs />
-          <Pills />
-          <Pagination />
-          <Notifications />
-          <PreFooter />
-          <Footers />
-          <Typography />
-          <ContentAreas />
-          <Cards />
-          <PlainCards />
+
+    
           <Javascript />
-          <FileUploader />
+
           <Carousel />
-          <NucleoIcons />
           <FooterBlack />
         </div>
       </div>

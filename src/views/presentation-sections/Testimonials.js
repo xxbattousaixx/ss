@@ -152,11 +152,10 @@ function Testimonials() {
       >
         <Row>
           <Col className="ml-auto mr-auto text-center" md="8">
-            <h2 className="title">Trusted by 818,000+ People</h2>
+            <h2 className="title">Trusted by 800+ People</h2>
             <h5 className="description">
-              The UI Kits, Templates and Dashboards that we've created are used
-              by <b>818,000+ web developers</b> in over{" "}
-              <b>1,476,616 Web Projects</b>. This is what some of them think:
+              Our work is confirmed to be of the highest quality by <b>800+ people</b> in over{" "}
+              <b>5 cities</b>. This is what some of them think:
             </h5>
           </Col>
         </Row>

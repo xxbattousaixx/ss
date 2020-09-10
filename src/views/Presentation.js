@@ -61,8 +61,7 @@ function Presentation() {
       <div className="wrapper">
         <PresentationHeader />
         <PlainCards/>
-
-
+        <Testimonials/>
         <FooterBlack />
       </div>
     </>
