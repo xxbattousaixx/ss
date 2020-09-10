@@ -20,6 +20,7 @@ import Icons from "./presentation-sections/Icons.js";
 import Image from "./presentation-sections/Image.js";
 import Testimonials from "./presentation-sections/Testimonials.js";
 import Pricing from "./presentation-sections/Pricing.js";
+import PlainCards from "./index-sections/PlainCards.js";
 
 function Presentation() {
   React.useEffect(() => {
@@ -59,7 +60,9 @@ function Presentation() {
       <ScrollTransparentNavbar />
       <div className="wrapper">
         <PresentationHeader />
-        
+        <PlainCards/>
+
+
         <FooterBlack />
       </div>
     </>

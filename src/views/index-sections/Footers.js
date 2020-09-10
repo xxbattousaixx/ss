@@ -29,15 +29,15 @@ function Footers() {
             <Container>
               <a
                 className="footer-brand"
-                href="http://www.creative-tim.com?ref=nuk-pro-react-index"
+                href="www.google.com"
                 target="_blank"
               >
-                Now Ui Kit PRO
+                SOLAFIDE
               </a>
               <ul className="pull-center">
                 <li>
                   <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Creative Tim
+                    DC7
                   </NavLink>
                 </li>
                 <li>
@@ -61,7 +61,7 @@ function Footers() {
                   <Button
                     className="btn-icon btn-neutral"
                     color="twitter"
-                    href="https://twitter.com/CreativeTim?ref=creativetim"
+                    href="www.google.com"
                     target="_blank"
                   >
                     <i className="fab fa-twitter"></i>
@@ -71,7 +71,7 @@ function Footers() {
                   <Button
                     className="btn-icon btn-neutral"
                     color="dribbble"
-                    href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                    href="https://www.facebook.com/donato.a.carrassi"
                     target="_blank"
                   >
                     <i className="fab fa-dribbble"></i>
