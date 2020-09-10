@@ -98,7 +98,7 @@ function DropdownFixedNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app"></i>
-                  <p>Components</p>
+                  <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/" tag={Link}>
@@ -132,25 +132,9 @@ function DropdownFixedNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
                   ></i>
-                  <p>Sections</p>
+                  <p>Contact</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem to="/sections#headers" tag={Link}>
-                    <i className="now-ui-icons shopping_box"></i>
-                    Headers
-                  </DropdownItem>
-                  <DropdownItem to="/sections#features" tag={Link}>
-                    <i className="now-ui-icons ui-2_settings-90"></i>
-                    Features
-                  </DropdownItem>
-                  <DropdownItem to="/sections#blogs" tag={Link}>
-                    <i className="now-ui-icons text_align-left"></i>
-                    Blogs
-                  </DropdownItem>
-                  <DropdownItem to="/sections#teams" tag={Link}>
-                    <i className="now-ui-icons sport_user-run"></i>
-                    Teams
-                  </DropdownItem>
                   <DropdownItem to="/sections#projects" tag={Link}>
                     <i className="now-ui-icons education_paper"></i>
                     Projects
@@ -158,10 +142,6 @@ function DropdownFixedNavbar() {
                   <DropdownItem to="/sections#pricing" tag={Link}>
                     <i className="now-ui-icons business_money-coins"></i>
                     Pricing
-                  </DropdownItem>
-                  <DropdownItem to="/sections#testimonials" tag={Link}>
-                    <i className="now-ui-icons ui-2_chat-round"></i>
-                    Testimonials
                   </DropdownItem>
                   <DropdownItem to="/sections#contact-us" tag={Link}>
                     <i className="now-ui-icons tech_mobile"></i>
@@ -183,7 +163,7 @@ function DropdownFixedNavbar() {
                     aria-hidden={true}
                     className="now-ui-icons design_image"
                   ></i>
-                  <p>Examples</p>
+                  <p>Testimonials</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/about-us">
@@ -232,16 +212,7 @@ function DropdownFixedNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-default"
-                  color="neutral"
-                  href="https://www.creative-tim.com/product/now-ui-kit-pro-react?ref=nuk-pro-react-dropdown-fixed-navbar"
-                  target="_blank"
-                >
-                  <p>Get A Quote Now</p>
-                </Button>
-              </NavItem>
+
             </Nav>
           </Collapse>
         </Container>
