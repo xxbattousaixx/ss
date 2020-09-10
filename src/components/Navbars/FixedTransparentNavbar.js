@@ -33,7 +33,11 @@ function FixedTransparentNavbar() {
       <Navbar className="navbar-absolute navbar-transparent" expand="lg">
         <Container>
           <div className="navbar-translate">
-<NavbarBrand to="/about-us" tag={Link} id="navbar-brand">                  SOLAFIDE
+<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                       
+<img
+  alt="..."
+  src={require("assets/img/logo1.png")}
+></img>
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
               Designed by DC7. Coded by DC7.

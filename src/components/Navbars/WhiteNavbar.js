@@ -33,8 +33,11 @@ function WhiteNavbar() {
       <Navbar className="bg-white fixed-top" expand="lg">
         <Container>
         <div className="navbar-translate">
-<NavbarBrand to="/about-us" tag={Link} id="navbar-brand">
-   SOLAFIDE
+<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">
+<img
+alt="..."
+src={require("assets/img/logo1.png")}
+></img>
           </NavbarBrand>
           <UncontrolledTooltip target="navbar-brand">
             Designed by DC7. Coded by DC7
@@ -68,7 +71,7 @@ function WhiteNavbar() {
                 <p>About Us</p>
               </DropdownToggle>
               <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                <DropdownItem to="/about-us" tag={Link}>
+                <DropdownItem to="/presentation2" tag={Link}>
                   <i className="now-ui-icons design_image"></i>
                   Solafide Services
                 </DropdownItem>
@@ -76,15 +79,74 @@ function WhiteNavbar() {
                   <i className="now-ui-icons business_chart-pie-36"></i>
                   Our Services
                 </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#pablo"
+                id="navbarDropdownMenuLink"
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+                <i
+                  aria-hidden={true}
+                  className="now-ui-icons files_paper"
+                ></i>
+                <p>Contact</p>
+              </DropdownToggle>
+              <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+                <DropdownItem to="/sections#projects" tag={Link}>
+                  <i className="now-ui-icons education_paper"></i>
+                  Projects
+                </DropdownItem>
+                <DropdownItem to="/sections#pricing" tag={Link}>
+                  <i className="now-ui-icons business_money-coins"></i>
+                  Pricing
+                </DropdownItem>
+                <DropdownItem to="/sections#contact-us" tag={Link}>
+                  <i className="now-ui-icons tech_mobile"></i>
+                  Contact Us
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#pablo"
+                id="navbarDropdownMenuLink"
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+                <i
+                  aria-hidden={true}
+                  className="now-ui-icons design_image"
+                ></i>
+                <p>Testimonials</p>
+              </DropdownToggle>
+              <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+                <DropdownItem tag={Link} to="/about-us">
+                  <i className="now-ui-icons business_bulb-63"></i>
+                  About-us
+                </DropdownItem>
 
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
-        </Container>
-      </Navbar>
-    </>
+                <DropdownItem tag={Link} to="/product-page">
+                  <i className="now-ui-icons business_chart-bar-32"></i>
+                  Product Page
+                </DropdownItem>
+
+              </DropdownMenu>
+            </UncontrolledDropdown>
+
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
+  </>
   );
-}
-
+  }
 export default WhiteNavbar;

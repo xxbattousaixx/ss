@@ -35,6 +35,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import Presentation from "views/Presentation.js";
+import Presentation2 from "views/Presentation2.js";
 import Pricing from "views/examples/Pricing.js";
 import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
@@ -63,6 +64,10 @@ ReactDOM.render(
       <Route
         path="/presentation"
         render={(props) => <Presentation {...props} />}
+      />
+      <Route
+        path="/presentation2"
+        render={(props) => <Presentation2 {...props} />}
       />
       <Route path="/pricing" render={(props) => <Pricing {...props} />} />
       <Route

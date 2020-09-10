@@ -63,7 +63,11 @@ function ScrollTransparentNavbar() {
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
         <Container>
           <div className="navbar-translate">
-<NavbarBrand to="/about-us" tag={Link} id="navbar-brand">                  SOLAFIDE
+<NavbarBrand to="/presentation2" tag={Link} id="navbar-brand">                      
+<img
+  alt="..."
+  src={require("assets/img/logo1.png")}
+></img>
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
               Designed by DC7. Coded by DC7
@@ -97,7 +101,7 @@ function ScrollTransparentNavbar() {
                   <p>About Us</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/about-us" tag={Link}>
+                  <DropdownItem to="/presentation2" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
                     Solafide Services
                   </DropdownItem>
