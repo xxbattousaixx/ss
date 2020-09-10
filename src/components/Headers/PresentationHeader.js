@@ -46,22 +46,7 @@ function PresentationHeader() {
         <h6
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
-        >
-          Designed by{" "}
-            <img
-              alt="..."
-              className="invision-logo"
-              src={require("assets/img/invision-white-slim.png")}
-            ></img>
-
-          . Coded by{" "}
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            ></img>
-      
-          .
+        >We offer residential and commercial services alike -- we are driven to please and look forward to adding value to your project.
         </h6>
       </div>
     </>
