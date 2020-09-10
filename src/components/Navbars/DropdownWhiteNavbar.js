@@ -98,9 +98,9 @@ function DropdownWhiteNavbar() {
                   onClick={(e) => e.preventDefault()}
                 >
                   <i className="now-ui-icons design_app"></i>
-                  <p>About Us</p>
+                  <p>Components</p>
                 </DropdownToggle>
-                <DropContact aria-labelledby="navbarDropdownMenuLink1" right>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
                   <DropdownItem to="/" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
                     Presentation
