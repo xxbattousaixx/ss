@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.15954019.chunk.css",
-    "main.js": "/static/js/main.118eaf25.chunk.js",
-    "main.js.map": "/static/js/main.118eaf25.chunk.js.map",
+    "main.js": "/static/js/main.4ca5074c.chunk.js",
+    "main.js.map": "/static/js/main.4ca5074c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.083e3432.js",
     "runtime-main.js.map": "/static/js/runtime-main.083e3432.js.map",
-    "static/js/2.1a3674b6.chunk.js": "/static/js/2.1a3674b6.chunk.js",
-    "static/js/2.1a3674b6.chunk.js.map": "/static/js/2.1a3674b6.chunk.js.map",
+    "static/js/2.b89ec002.chunk.js": "/static/js/2.b89ec002.chunk.js",
+    "static/js/2.b89ec002.chunk.js.map": "/static/js/2.b89ec002.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.6a091db35f34169d8b9489e93974c76d.js": "/precache-manifest.6a091db35f34169d8b9489e93974c76d.js",
+    "precache-manifest.fec310f71b4940538d1313c3fe29bcc4.js": "/precache-manifest.fec310f71b4940538d1313c3fe29bcc4.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.15954019.chunk.css.map": "/static/css/main.15954019.chunk.css.map",
-    "static/js/2.1a3674b6.chunk.js.LICENSE.txt": "/static/js/2.1a3674b6.chunk.js.LICENSE.txt",
-    "static/js/main.118eaf25.chunk.js.LICENSE.txt": "/static/js/main.118eaf25.chunk.js.LICENSE.txt",
+    "static/js/2.b89ec002.chunk.js.LICENSE.txt": "/static/js/2.b89ec002.chunk.js.LICENSE.txt",
+    "static/js/main.4ca5074c.chunk.js.LICENSE.txt": "/static/js/main.4ca5074c.chunk.js.LICENSE.txt",
     "static/media/about-us.jpg": "/static/media/about-us.be2748f1.jpg",
     "static/media/balmain.jpg": "/static/media/balmain.cb76e72b.jpg",
     "static/media/basic_thumb.jpg": "/static/media/basic_thumb.4e2f95c3.jpg",
@@ -69,10 +69,10 @@
     "static/media/card-blog16.jpg": "/static/media/card-blog16.23d6a0a2.jpg",
     "static/media/card-blog17.jpg": "/static/media/card-blog17.dd6f858a.jpg",
     "static/media/card-blog18.jpg": "/static/media/card-blog18.ab04bb89.jpg",
-    "static/media/card-blog2.jpg": "/static/media/card-blog2.15d3b957.jpg",
+    "static/media/card-blog2.jpg": "/static/media/card-blog2.a2a9308c.jpg",
     "static/media/card-blog3.jpg": "/static/media/card-blog3.40c2561b.jpg",
     "static/media/card-blog4.jpg": "/static/media/card-blog4.2f0b75db.jpg",
-    "static/media/card-blog6.jpg": "/static/media/card-blog6.1fd32420.jpg",
+    "static/media/card-blog6.jpg": "/static/media/card-blog6.fcfb97a1.jpg",
     "static/media/card-blog7.jpg": "/static/media/card-blog7.83608b93.jpg",
     "static/media/card-blog9.jpg": "/static/media/card-blog9.fa476a38.jpg",
     "static/media/card-profile1.jpg": "/static/media/card-profile1.d00bddf3.jpg",
@@ -148,7 +148,6 @@
     "static/media/project10.jpg": "/static/media/project10.ce784a12.jpg",
     "static/media/project11.jpg": "/static/media/project11.98032fc1.jpg",
     "static/media/project12.jpg": "/static/media/project12.820eca53.jpg",
-    "static/media/project13.jpg": "/static/media/project13.40fff785.jpg",
     "static/media/project14.jpg": "/static/media/project14.9f134b05.jpg",
     "static/media/project15.jpg": "/static/media/project15.e77e5196.jpg",
     "static/media/project16.jpg": "/static/media/project16.b09768cd.jpg",
@@ -191,8 +190,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.083e3432.js",
-    "static/js/2.1a3674b6.chunk.js",
+    "static/js/2.b89ec002.chunk.js",
     "static/css/main.15954019.chunk.css",
-    "static/js/main.118eaf25.chunk.js"
+    "static/js/main.4ca5074c.chunk.js"
   ]
 }
