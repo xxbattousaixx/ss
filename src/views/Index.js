@@ -45,9 +45,6 @@ function Index() {
         <IndexHeader />
         <div className="main">
 
-    
-          <Javascript />
-
           <Carousel />
           <FooterBlack />
         </div>

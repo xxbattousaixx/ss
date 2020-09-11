@@ -103,12 +103,12 @@ function DropdownFixedNavbar() {
                   <i className="now-ui-icons design_app"></i>
                   <p>About Us</p>
                 </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
+                <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem to="/presentation2" tag={Link}>
                     <i className="now-ui-icons design_image"></i>
                     Solafide Services
                   </DropdownItem>
-          
+
 
                 </DropdownMenu>
               </UncontrolledDropdown>
