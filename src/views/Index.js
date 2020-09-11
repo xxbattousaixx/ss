@@ -1,6 +1,7 @@
 import React from "react";
 
 // reactstrap components
+import { Container, Button, Link } from 'react-floating-action-button'
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
@@ -41,11 +42,26 @@ function Index() {
   return (
     <>
       <ScrollTransparentNavbar />
+
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
 
           <Carousel />
+          <NucleoIcons />
+          <Container>
+                      <Link href="Presentation"
+                          tooltip="Get a quote"
+                          icon="far fa-sticky-note" />
+                      <Link href="#"
+                          tooltip="Call us"
+                          icon="fas fa-user-plus" />
+                      <Button
+                          tooltip="Get a quote!"
+                          icon="fas fa-plus"
+                          rotate={true}
+                          onClick={() => alert('FAB Rocks!')} />
+                  </Container>
           <FooterBlack />
         </div>
       </div>

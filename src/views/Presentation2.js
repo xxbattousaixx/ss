@@ -2,7 +2,7 @@ import React from "react";
 // javascript library that creates a parrallax effect
 import Rellax from "rellax";
 // reactstrap components
-
+import { Container, Button, Link } from 'react-floating-action-button'
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
@@ -43,6 +43,7 @@ function Presentation2() {
       new Rellax(".rellax-text");
     }
 
+
     // we need to add a script for the github buttons
     let script = document.createElement("script");
     script.src = "https://buttons.github.io/buttons.js";
@@ -59,7 +60,10 @@ function Presentation2() {
   });
   return (
     <>
+
       <ScrollTransparentNavbar />
+
+
       <div className="wrapper">
 <BlogPostsHeader/>
         <Carousel/>
@@ -67,6 +71,19 @@ function Presentation2() {
         <PlainCards/>
 </div>
         <Testimonials/>
+        <Container>
+                    <Link href="Index"
+                        tooltip="Get a quote"
+                        icon="far fa-sticky-note" />
+                    <Link href="#"
+                        tooltip="Call us"
+                        icon="fas fa-user-plus" />
+                    <Button
+                        tooltip="Get a quote!"
+                        icon="fas fa-plus"
+                        rotate={true}
+                        onClick={() => alert('FAB Rocks!')} />
+                </Container>
         <NucleoIcons />
 
       </div>
