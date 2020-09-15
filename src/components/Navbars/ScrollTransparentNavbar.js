@@ -100,7 +100,7 @@ edmena23@gmail.com
 
             <Nav className="ml-auto" id="ceva" navbar>
               <UncontrolledDropdown nav>
-              <a href="/about-us">
+              <a href="/AboutUs">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
