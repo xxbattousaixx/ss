@@ -40,7 +40,7 @@ function PlainCards() {
                     <i className="now-ui-icons business_bulb-63"></i> Painting
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="/sections#contact-us" onClick={(e) => e.preventDefault()}>
                       Premium products and premium painters.
                     </a>
                   </CardTitle>
@@ -50,7 +50,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                       color="info"
-                      href="#pablo"
+                      href="/sections#contact-us"
                       onClick={(e) => e.preventDefault()}
                     >
                       Request a quote
@@ -62,7 +62,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a href="/sections#contact-us" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
                       className="img rounded img-raised"
@@ -73,7 +73,7 @@ function PlainCards() {
                 <CardBody>
                   <h6 className="category text-info">Pavement</h6>
                   <CardTitle tag="h5">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="/sections#contact-us" onClick={(e) => e.preventDefault()}>
                       Only the highest quality work.
                     </a>
                   </CardTitle>
@@ -83,7 +83,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                       color="info"
-                      href="#pablo"
+                      href="/sections#contact-us"
                       onClick={(e) => e.preventDefault()}
                     >
                       Request a quote
@@ -95,7 +95,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                  <a href="/sections#contact-us" onClick={(e) => e.preventDefault()}>
                     <img
                       alt="..."
                       className="img img-raised rounded"
@@ -108,7 +108,7 @@ function PlainCards() {
                     <i className="now-ui-icons media-2_sound-wave"></i> Pressure Washing
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                    <a href="/sections#contact-us" onClick={(e) => e.preventDefault()}>
                       Perfection is our only standard.
                     </a>
                   </CardTitle>
@@ -118,7 +118,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                       color="info"
-                      href="#pablo"
+                      href="/sections#contact-us"
                       onClick={(e) => e.preventDefault()}
                     >
                       Request a quote.

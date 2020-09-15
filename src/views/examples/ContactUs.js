@@ -200,7 +200,7 @@ function ContactUs() {
                       ></Input>
                     </InputGroup>
                     <FormGroup>
-                      <label>Your message</label>
+                      <label>SOLAFIDE</label>
                       <Input
                         id="message"
                         name="message"
@@ -254,10 +254,10 @@ function ContactUs() {
                     <div className="description">
                       <h4 className="info-title">Legal Information</h4>
                       <p>
-                        Creative Tim Ltd. <br></br>
-                        VAT · EN2341241 <br></br>
-                        IBAN · EN8732ENGB2300099123 <br></br>
-                        Bank · Great Britain Bank
+                        DC7. <br></br>
+                        VAT · XXX <br></br>
+                        IBAN · XXX <br></br>
+                        Bank · XXX
                       </p>
                     </div>
                   </div>
@@ -266,14 +266,7 @@ function ContactUs() {
             </Container>
           </div>
         </div>
-        <div className="big-map" id="contactUs2Map">
-          <MapWrapper
-            googleMapURL="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `100%` }} />}
-            mapElement={<div style={{ height: `100%` }} />}
-          />
-        </div>
+
         <Footer />
       </div>
     </>

@@ -64,12 +64,11 @@ function Presentation() {
       <div className="wrapper">
         <PresentationHeader />
         <PlainCards/>
-        <Testimonials/>
         <Container>
-                    <Link href="Index"
+                    <Link href="presentation#PlainCards"
                         tooltip="Get a quote"
                         icon="far fa-sticky-note" />
-                    <Link href="#"
+                    <Link href="presentation2#PlainCards"
                         tooltip="Call us"
                         icon="fas fa-user-plus" />
                     <Button

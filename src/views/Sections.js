@@ -50,6 +50,7 @@ function Sections() {
         <Pricing />
         <Testimonials />
         <ContactUs />
+        
         <Footer />
       </div>
     </>

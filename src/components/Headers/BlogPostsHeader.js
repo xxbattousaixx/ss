@@ -33,6 +33,8 @@ function BlogPostsHeader() {
         <div className="content-center">
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
+            _________________________________________________________________________________
+
               <h6 className="title">
               We offer residential and commercial services alike -- we are driven to please and look forward to adding value to your project.
               <br/>
@@ -42,12 +44,7 @@ function BlogPostsHeader() {
               We specialize in pavement, painting, and pressure washing.
 
               </h6>
-              <Button className="btn-round btn-icon mr-1" color="info">
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <Button className="btn-round btn-icon" color="info">
-                <i className="fab fa-instagram"></i>
-              </Button>
+            _________________________________________________________________________________
             </Col>
           </Row>
         </div>

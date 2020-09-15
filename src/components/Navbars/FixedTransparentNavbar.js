@@ -55,65 +55,80 @@ function FixedTransparentNavbar() {
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-          <Collapse isOpen={collapseOpen} navbar>
-            <Nav className="ml-auto" id="ceva" navbar>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink1"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app"></i>
-                  <p>About Us</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink1" right>
-                  <DropdownItem to="/presentation2" tag={Link}>
-                    <i className="now-ui-icons design_image"></i>
-                    Solafide Services
-                  </DropdownItem>
-          
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  data-toggle="dropdown"
-                  href="#pablo"
-                  id="navbarDropdownMenuLink"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i
-                    aria-hidden={true}
-                    className="now-ui-icons design_image"
-                  ></i>
-                  <p>Testimonials</p>
-                </DropdownToggle>
-                <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem tag={Link} to="/about-us">
-                    <i className="now-ui-icons business_bulb-63"></i>
-                    About-us
-                  </DropdownItem>
+          <a href="/presentation">HOME</a>
+        <Collapse isOpen={collapseOpen} navbar>
 
-                  <DropdownItem tag={Link} to="/product-page">
-                    <i className="now-ui-icons shopping_bag-16"></i>
-                    Product Page
-                  </DropdownItem>
 
-                </DropdownMenu>
-              </UncontrolledDropdown>
+          <Nav className="ml-auto" id="ceva" navbar>
+            <UncontrolledDropdown nav>
+            <a href="/about-us">
+                |<i
+                  aria-hidden={true}
+                  className="now-ui-icons business_globe"
+                ></i>
+                <span></span>
+                <p>About Us|</p>
+            </a>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#pablo"
+                id="navbarDropdownMenuLink"
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+              |  <i
+                  aria-hidden={true}
+                  className="now-ui-icons loader_gear"
+                ></i>
+                <p>Services</p>
+              </DropdownToggle>
+              <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+                <DropdownItem tag={Link} to="/product-page">
+                  <i className="now-ui-icons ui-2_settings-90"></i>
+                  Paving
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/product-page">
+                  <i className="now-ui-icons design-2_ruler-pencil"></i>
+  Painting
+                </DropdownItem>
 
-            </Nav>
-          </Collapse>
-        </Container>
-      </Navbar>
-    </>
-  );
+                <DropdownItem tag={Link} to="/product-page">
+                  <i className="now-ui-icons education_atom"></i>
+                  Pressure Washing
+                </DropdownItem>
+
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+            <a href="/sections#testimonials">
+            |    <i
+                  aria-hidden={true}
+                  className="now-ui-icons design_image"
+                ></i>
+                <span></span>
+                <p>Reviews|</p>
+            </a>
+            </UncontrolledDropdown>
+            <UncontrolledDropdown nav>
+            <a href="/contact-us">
+              |  <i
+                  aria-hidden={true}
+                  className="now-ui-icons files_paper"
+                ></i>
+                <span></span>
+                <p>Contact Us|</p>
+            </a>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
+  </>
+);
 }
 
 export default FixedTransparentNavbar;
