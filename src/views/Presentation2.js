@@ -83,7 +83,7 @@ function Presentation2() {
                         rotate={true}
                         onClick={() => alert('FAB Rocks!')} />
                 </Container>
-        <NucleoIcons />
+            <FooterBlack />
 
       </div>
     </>
