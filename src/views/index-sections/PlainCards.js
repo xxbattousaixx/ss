@@ -40,7 +40,7 @@ function PlainCards() {
                     <i className="now-ui-icons business_bulb-63"></i> Painting
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="/index">
+                    <a href="/contact-us">
                       Premium products and premium painters.
                     </a>
                   </CardTitle>
@@ -50,7 +50,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="/index"
+                      href="/contact-us"
                     >
                       Request a quote
                     </Button>
@@ -61,7 +61,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="/index">
+                  <a href="/contact-us">
                     <img
                       alt="..."
                       className="img rounded img-raised"
@@ -72,7 +72,7 @@ function PlainCards() {
                 <CardBody>
                   <h6 className="category text-info">Pavement</h6>
                   <CardTitle tag="h5">
-                    <a href="/index">
+                    <a href="/contact-us">
                       Only the highest quality work.
                     </a>
                   </CardTitle>
@@ -82,7 +82,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="/index"
+                      href="/contact-us"
                     >
                       Request a quote
                     </Button>
@@ -93,7 +93,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="/index">
+                  <a href="/contact-us">
                     <img
                       alt="..."
                       className="img img-raised rounded"
@@ -106,7 +106,7 @@ function PlainCards() {
                     <i className="now-ui-icons media-2_sound-wave"></i> Pressure Washing
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="/index">
+                    <a href="/contact-us">
                       Perfection is our only standard.
                     </a>
                   </CardTitle>
@@ -116,7 +116,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="/index"
+                      href="/contact-us"
                     >
                       Request a quote.
                     </Button>

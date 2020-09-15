@@ -5,7 +5,7 @@ import { Container, Button, Link } from 'react-floating-action-button'
 
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
+import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
@@ -44,7 +44,7 @@ function Index() {
       <ScrollTransparentNavbar />
 
       <div className="wrapper">
-        <IndexHeader />
+        <BlogPostsHeader />
         <div className="main">
 
           <Carousel />

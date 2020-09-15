@@ -25,10 +25,10 @@ import "assets/demo/demo.css?v=1.4.0";
 import "assets/demo/react-demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages
-import AboutUs from "views/AboutUs.js";
+import AboutUs from "views/examples/AboutUs.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
-import ContactUs from "views/ContactUs.js";
+import ContactUs from "views/examples/ContactUs.js";
 import Ecommerce from "views/examples/Ecommerce.js";
 import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
@@ -45,8 +45,12 @@ import SignupPage from "views/examples/SignupPage.js";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-
+  <Switch>
+      <Route path="/about-us" render={(props) => <AboutUs {...props} />} />
+      <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
+      <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
+      <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
+      <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"
