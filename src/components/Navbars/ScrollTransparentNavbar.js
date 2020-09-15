@@ -63,7 +63,7 @@ function ScrollTransparentNavbar() {
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
         <Container>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
+<NavbarBrand to="/index" tag={Link} id="navbar-brand">
 
 <img
   alt="..."
@@ -72,7 +72,9 @@ function ScrollTransparentNavbar() {
 
 &nbsp;&nbsp; 941-518-1657<br/>
 edmena23@gmail.com
-
+<br/>
+<Button>
+  View all of our services</Button>
 
 <br/>
             </NavbarBrand>

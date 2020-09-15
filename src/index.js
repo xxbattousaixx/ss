@@ -46,11 +46,7 @@ import SignupPage from "views/examples/SignupPage.js";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/about-us" render={(props) => <AboutUs {...props} />} />
-      <Route path="/blog-post" render={(props) => <BlogPost {...props} />} />
-      <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
-      <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
-      <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
+
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"

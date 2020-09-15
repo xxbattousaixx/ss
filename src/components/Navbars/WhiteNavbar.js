@@ -33,17 +33,20 @@ function WhiteNavbar() {
       <Navbar className="bg-white fixed-top" expand="lg">
         <Container>
         <div className="navbar-translate">
-<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
+        <NavbarBrand to="/index" tag={Link} id="navbar-brand">
 
-<img
-alt="..."
-src={require("assets/img/logo1.png")}
-></img>
-&nbsp;&nbsp; 941-518-1657<br/>
-edmena23@gmail.com
+        <img
+          alt="..."
+          src={require("assets/img/logo1.png")}
+        ></img>
 
+        &nbsp;&nbsp; 941-518-1657<br/>
+        edmena23@gmail.com
+        <br/>
+        <Button>
+          View all of our services</Button>
 
-<br/>
+        <br/>
 </NavbarBrand>
 <UncontrolledTooltip target="navbar-brand">
   Contact us today!

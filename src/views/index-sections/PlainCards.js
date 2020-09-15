@@ -40,7 +40,7 @@ function PlainCards() {
                     <i className="now-ui-icons business_bulb-63"></i> Painting
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="https://www.solafide-services.com/contact-us">
+                    <a href="/index">
                       Premium products and premium painters.
                     </a>
                   </CardTitle>
@@ -50,7 +50,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="./views/sections-sections/ContactUs"
+                      href="/index"
                     >
                       Request a quote
                     </Button>
@@ -61,7 +61,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="https://www.solafide-services.com/contact-us">
+                  <a href="/index">
                     <img
                       alt="..."
                       className="img rounded img-raised"
@@ -72,7 +72,7 @@ function PlainCards() {
                 <CardBody>
                   <h6 className="category text-info">Pavement</h6>
                   <CardTitle tag="h5">
-                    <a href="https://www.solafide-services.com/contact-us">
+                    <a href="/index">
                       Only the highest quality work.
                     </a>
                   </CardTitle>
@@ -82,7 +82,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="https://www.solafide-services.com/contact-us"
+                      href="/index"
                     >
                       Request a quote
                     </Button>
@@ -93,7 +93,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="https://www.solafide-services.com/contact-us">
+                  <a href="/index">
                     <img
                       alt="..."
                       className="img img-raised rounded"
@@ -106,7 +106,7 @@ function PlainCards() {
                     <i className="now-ui-icons media-2_sound-wave"></i> Pressure Washing
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="https://www.solafide-services.com/contact-us">
+                    <a href="/index">
                       Perfection is our only standard.
                     </a>
                   </CardTitle>
@@ -116,7 +116,7 @@ function PlainCards() {
                   <CardFooter>
                     <Button
                     color="info"
-                      href="https://www.solafide-services.com/contact-us"
+                      href="/index"
                     >
                       Request a quote.
                     </Button>

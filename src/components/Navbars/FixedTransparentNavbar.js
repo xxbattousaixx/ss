@@ -33,16 +33,20 @@ function FixedTransparentNavbar() {
       <Navbar className="navbar-absolute navbar-transparent" expand="lg">
         <Container>
           <div className="navbar-translate">
-<NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
-<img
-  alt="..."
-  src={require("assets/img/logo1.png")}
-></img>
-&nbsp;&nbsp; 941-518-1657<br/>
-edmena23@gmail.com
+          <NavbarBrand to="/index" tag={Link} id="navbar-brand">
 
+          <img
+            alt="..."
+            src={require("assets/img/logo1.png")}
+          ></img>
 
-<br/>
+          &nbsp;&nbsp; 941-518-1657<br/>
+          edmena23@gmail.com
+          <br/>
+          <Button>
+            View all of our services</Button>
+
+          <br/>
 </NavbarBrand>
 <UncontrolledTooltip target="navbar-brand">
   Contact us today!
