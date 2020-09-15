@@ -64,13 +64,20 @@ function ScrollTransparentNavbar() {
         <Container>
           <div className="navbar-translate">
 <NavbarBrand to="/presentation" tag={Link} id="navbar-brand">
+
 <img
   alt="..."
   src={require("assets/img/logo1.png")}
 ></img>
+
+&nbsp;&nbsp; 941-518-1657<br/>
+edmena23@gmail.com
+
+
+<br/>
             </NavbarBrand>
             <UncontrolledTooltip target="navbar-brand">
-              Designed by DC7. Coded by DC7
+              Contact us today!
             </UncontrolledTooltip>
             <button
               onClick={() => {
@@ -92,12 +99,12 @@ function ScrollTransparentNavbar() {
             <Nav className="ml-auto" id="ceva" navbar>
               <UncontrolledDropdown nav>
               <a href="/about-us">
-                  |<i
+                  <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
-                  ></i>
+                  ></i>&nbsp;
                   <span></span>
-                  <p>About Us|</p>
+                  <p>About Us&nbsp;</p>
               </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
@@ -110,11 +117,11 @@ function ScrollTransparentNavbar() {
                   nav
                   onClick={(e) => e.preventDefault()}
                 >
-                |  <i
+                  <i
                     aria-hidden={true}
                     className="now-ui-icons loader_gear"
-                  ></i>
-                  <p>Services</p>
+                  ></i>&nbsp;
+                  <p>Services&nbsp;</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/product-page">
@@ -135,22 +142,22 @@ function ScrollTransparentNavbar() {
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
               <a href="/sections#testimonials">
-              |    <i
+                  <i
                     aria-hidden={true}
                     className="now-ui-icons design_image"
-                  ></i>
+                  ></i>&nbsp;
                   <span></span>
-                  <p>Reviews|</p>
+                  <p>Reviews&nbsp;</p>
               </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
               <a href="/contact-us">
-                |  <i
+                  <i
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
-                  ></i>
+                  ></i>&nbsp;
                   <span></span>
-                  <p>Contact Us|</p>
+                  <p>Contact Us&nbsp;</p>
               </a>
               </UncontrolledDropdown>
             </Nav>
