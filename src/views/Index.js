@@ -4,7 +4,7 @@ import React from "react";
 import { Container, Button, Link } from 'react-floating-action-button'
 
 // core components
-import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
+import WhiteNavbar from "components/Navbars/WhiteNavbar.js";
 import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
@@ -20,10 +20,6 @@ import PreFooter from "./index-sections/PreFooter.js";
 import Footers from "./index-sections/Footers.js";
 import Typography from "./index-sections/Typography.js";
 import ContentAreas from "./index-sections/ContentAreas.js";
-import Cards from "./index-sections/Cards.js";
-import PlainCards from "./index-sections/PlainCards.js";
-import Javascript from "./index-sections/Javascript.js";
-import FileUploader from "./index-sections/FileUploader.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 
@@ -32,8 +28,17 @@ function Index() {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
+    var href = window.location.href.substring(
+      window.location.href.lastIndexOf("#/") + 2
+    );
+    var hrefId = href.substring(href.lastIndexOf("#") + 1);
+    if (href.lastIndexOf("#") > 0) {
+      document.getElementById(hrefId).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
+    }
     return function cleanup() {
       document.body.classList.remove("index-page");
       document.body.classList.remove("sidebar-collapse");
@@ -41,26 +46,25 @@ function Index() {
   });
   return (
     <>
-      <ScrollTransparentNavbar />
+      <WhiteNavbar />
 
       <div className="wrapper">
         <BlogPostsHeader />
         <div className="main">
 
           <Carousel />
-          <NucleoIcons />
           <Container>
-                      <Link href="presentation#PlainCards"
-                          tooltip="Get a quote"
+                      <Link href="/contact-us"
+                          tooltip="E-Mail"
                           icon="far fa-sticky-note" />
-                      <Link href="presentation2#PlainCards"
-                          tooltip="Call us"
+                      <Link href="/contact-us"
+                          tooltip="Call Us"
                           icon="fas fa-user-plus" />
                       <Button
                           tooltip="Get a quote!"
                           icon="fas fa-plus"
                           rotate={true}
-                          onClick={() => alert('FAB Rocks!')} />
+                          onClick={() => alert('Contact us here!')} />
                   </Container>
           <FooterBlack />
         </div>

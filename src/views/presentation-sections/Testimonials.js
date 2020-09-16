@@ -30,12 +30,10 @@ const items = [
         </div>
         <CardBody>
           <h5 className="card-description">
-            "Awesome Design and very well organized code structure! Also, it
-            contains numerous elements using which achieving the perfect or
-            required template can be done with ease. Great job!"
+            "These guys are true experts in their work -- everything went over perfectly."
           </h5>
           <CardTitle tag="h4">Stefan</CardTitle>
-          <h6 className="category text-muted">Web Designer</h6>
+          <h6 className="category text-muted">Hotel Manager</h6>
           <CardFooter>
             <i className="fa fa-star text-warning mr-1"></i>
             <i className="fa fa-star text-warning mr-1"></i>
@@ -64,12 +62,10 @@ const items = [
         </div>
         <CardBody>
           <h5 className="card-description">
-            "It looks great and its somewhat futuristics cant wait to use it on
-            a project here in nigeria i'm sure it would put me ahead.. I cant
-            wait to hv enough money to buy ur product."
+            "Our painting needs were met and exceeded. We will be looking forward to working with Solafide again."
           </h5>
           <CardTitle tag="h4">Mr. Bones</CardTitle>
-          <h6 className="category text-muted">Web Designer</h6>
+          <h6 className="category text-muted">Homeowner</h6>
           <CardFooter>
             <i className="fa fa-star text-warning mr-1"></i>
             <i className="fa fa-star text-warning mr-1"></i>
@@ -98,13 +94,11 @@ const items = [
         </div>
         <CardBody>
           <h5 className="card-description">
-            "Everything is perfect. Codes are really organized. It's easy to
-            edit for my own purposes. It's great that it is built on top of
-            Bootstrap 4." <br></br>
+            "This team was able to clean my driveway without problems. My recommended pressure washers from now on." <br></br>
             <br></br>
           </h5>
           <CardTitle tag="h4">DOĞA</CardTitle>
-          <h6 className="category text-muted">Web Developer</h6>
+          <h6 className="category text-muted">Entrepreneur/son</h6>
           <CardFooter>
             <i className="fa fa-star text-warning mr-1"></i>
             <i className="fa fa-star text-warning mr-1"></i>

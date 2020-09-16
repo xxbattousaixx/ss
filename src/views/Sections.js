@@ -42,15 +42,10 @@ function Sections() {
       <WhiteNavbar />
       <div className="wrapper">
         <div className="section-space"></div>
-        <Headers />
-        <Features />
-        <Blogs />
-        <Teams />
+
         <Projects />
-        <Pricing />
-        <Testimonials />
-        <ContactUs />
-        
+      
+
         <Footer />
       </div>
     </>

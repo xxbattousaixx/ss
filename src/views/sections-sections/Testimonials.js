@@ -6,20 +6,51 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
-  Container,
   Row,
   Col,
   Carousel,
   CarouselItem,
+  CarouselIndicators,
 } from "reactstrap";
 
 // core components
 
 const items = [
   {
+    content: (
+      <Card className="card-testimonial card-plain">
+        <div className="card-avatar">
+          <a href="#pablo" onClick={(e) => e.preventDefault()}>
+            <img
+              alt="..."
+              className="img img-raised rounded"
+              src="https://s3.amazonaws.com/creativetim_bucket/photos/154001/thumb.JPG?1501184024"
+            ></img>
+          </a>
+        </div>
+        <CardBody>
+          <h5 className="card-description">
+            "Awesome Design and very well organized code structure! Also, it
+            contains numerous elements using which achieving the perfect or
+            required template can be done with ease. Great job!"
+          </h5>
+          <CardTitle tag="h4">Stefan</CardTitle>
+          <h6 className="category text-muted">Web Designer</h6>
+          <CardFooter>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning"></i>
+          </CardFooter>
+        </CardBody>
+      </Card>
+    ),
     src: "0",
     altText: "",
     caption: "",
+  },
+  {
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
@@ -27,30 +58,33 @@ const items = [
             <img
               alt="..."
               className="img img-raised rounded"
-              src={require("assets/img/james.jpg")}
+              src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg"
             ></img>
           </a>
         </div>
         <CardBody>
           <h5 className="card-description">
-            "Take up one idea. Make that one idea your life - think of it, dream
-            of it, live on that idea. Let the brain, muscles, nerves, every part
-            of your body, be full of that idea, and just leave every other idea
-            alone. This is the way to success. A single rose can be my garden...
-            a single friend, my world."
+            "It looks great and its somewhat futuristics cant wait to use it on
+            a project here in nigeria i'm sure it would put me ahead.. I cant
+            wait to hv enough money to buy ur product."
           </h5>
-          <CardTitle tag="h3">Isaac Hunter</CardTitle>
+          <CardTitle tag="h4">Mr. Bones</CardTitle>
+          <h6 className="category text-muted">Web Designer</h6>
           <CardFooter>
-            <h6 className="category text-info">Human Resource Director</h6>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning"></i>
           </CardFooter>
         </CardBody>
       </Card>
     ),
-  },
-  {
     src: "1",
     altText: "",
     caption: "",
+  },
+  {
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
@@ -58,24 +92,32 @@ const items = [
             <img
               alt="..."
               className="img img-raised rounded"
-              src={require("assets/img/olivia.jpg")}
+              src="https://s3.amazonaws.com/creativetim_bucket/photos/123124/thumb.?1480480048"
             ></img>
           </a>
         </div>
         <CardBody>
           <h5 className="card-description">
-            "When we are no longer able to change a situation - we are
-            challenged to change ourselves. Spread love everywhere you go. Let
-            no one ever come to you without leaving happier. Problems are not
-            stop signs, they are guidelines."
+            "Everything is perfect. Codes are really organized. It's easy to
+            edit for my own purposes. It's great that it is built on top of
+            Bootstrap 4." <br></br>
+            <br></br>
           </h5>
-          <CardTitle tag="h3">Alexa Hailey</CardTitle>
+          <CardTitle tag="h4">DOĞA</CardTitle>
+          <h6 className="category text-muted">Web Developer</h6>
           <CardFooter>
-            <h6 className="category text-info">Human Resource Director</h6>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning mr-1"></i>
+            <i className="fa fa-star text-warning"></i>
           </CardFooter>
         </CardBody>
       </Card>
     ),
+    src: "2",
+    altText: "",
+    caption: "",
   },
 ];
 
@@ -98,234 +140,141 @@ function Testimonials() {
     const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
+  const goToIndex = (newIndex) => {
+    if (animating) return;
+    setActiveIndex(newIndex);
+  };
   return (
     <>
-      <div className="cd-section" id="testimonials">
-        <div
-          className="testimonials-1 section-image"
-          style={{
-            backgroundImage: "url(" + require("assets/img/bg19.jpg") + ")",
-          }}
-        >
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <h2 className="title">What is ALPHA?</h2>
-                <h4 className="description">
-                  If you’re selected for ALPHA you’ll also get 3 tickets,
-                  opportunity to access Investor Office Hours and Mentor Hours
-                  and much more all for €850.
-                </h4>
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised"
-                        src={require("assets/img/michael.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <p className="card-description">
-                      The networking at Web Summit is like no other European
-                      tech conference.
-                    </p>
-                  </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
-                  </div>
-                  <CardFooter>
-                    <CardTitle tag="h4">Michael Elijah</CardTitle>
-                    <p className="category">@michaelelijah</p>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised"
-                        src={require("assets/img/olivia.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <p className="card-description">
-                      The connections you make at Web Summit are unparalleled,
-                      we met users all over the world.
-                    </p>
-                  </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
-                  </div>
-                  <CardFooter>
-                    <CardTitle tag="h4">Olivia Harper</CardTitle>
-                    <p className="category">@oliviaharper</p>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-testimonial">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised"
-                        src={require("assets/img/james.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <p className="card-description">
-                      Web Summit will increase your appetite, your inspiration,
-                      and your network.
-                    </p>
-                  </CardBody>
-                  <div className="icon icon-info">
-                    <i className="fa fa-quote-right"></i>
-                  </div>
-                  <CardFooter>
-                    <CardTitle tag="h4">James Logan</CardTitle>
-                    <p className="category">@jameslogan</p>
-                  </CardFooter>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="testimonials-2">
-          <Container>
-            <Row>
-              <Col md="12">
-                <Carousel
-                  activeIndex={activeIndex}
-                  next={next}
-                  previous={previous}
-                >
-                  {items.map((item) => {
-                    return (
-                      <CarouselItem
-                        onExiting={onExiting}
-                        onExited={onExited}
-                        key={item.src}
-                      >
-                        {item.content}
-                      </CarouselItem>
-                    );
-                  })}
-                  <a
-                    className="carousel-control-prev"
-                    data-slide="prev"
-                    href="#pablo"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      previous();
-                    }}
-                    role="button"
+      <div
+        className="section section-testimonials"
+        data-background-color="black"
+      >
+        <Row>
+          <Col className="ml-auto mr-auto text-center" md="8">
+            <h2 className="title">Trusted by 800+ People</h2>
+            <h5 className="description">
+              Our work is confirmed to be of the highest quality by <b>800+ people</b> in over{" "}
+              <b>5 cities</b>. This is what some of them think:
+            </h5>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="2">
+            <div className="testimonials-people">
+              <img
+                alt="..."
+                className="left-first-person img-raised rellax"
+                data-rellax-speed="1"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="left-second-person img-raised rellax"
+                data-rellax-speed="3"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/mlane/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="left-third-person img-raised rellax"
+                data-rellax-speed="2"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="left-fourth-person img-raised rellax"
+                data-rellax-speed="5"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/kerem/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="left-fifth-person img-raised rellax"
+                data-rellax-speed="7"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg"
+              ></img>
+            </div>
+          </Col>
+          <Col md="8">
+            <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+              <CarouselIndicators
+                items={items}
+                activeIndex={activeIndex}
+                onClickHandler={goToIndex}
+              />
+              {items.map((item, key) => {
+                return (
+                  <CarouselItem
+                    onExiting={onExiting}
+                    onExited={onExited}
+                    key={key}
                   >
-                    <i className="now-ui-icons arrows-1_minimal-left"></i>
-                  </a>
-                  <a
-                    className="carousel-control-next"
-                    data-slide="next"
-                    href="#pablo"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      next();
-                    }}
-                    role="button"
-                  >
-                    <i className="now-ui-icons arrows-1_minimal-right"></i>
-                  </a>
-                </Carousel>
-              </Col>
-            </Row>
-          </Container>
-        </div>
-        <div className="testimonials-3">
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="6">
-                <h2 className="title">What Clients Say</h2>
-              </Col>
-            </Row>
-            <Row>
-              <Col md="4">
-                <Card className="card-testimonial card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/michael.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h3">Andrew John</CardTitle>
-                    <h6 className="category text-info">Loan Counselor</h6>
-                    <p className="card-description">
-                      "Do not go where the path may lead, go instead where there
-                      is no path and leave a trail."
-                    </p>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-testimonial card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/olivia.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Zoe Gabriella</CardTitle>
-                    <h6 className="category text-info">
-                      Interpreter OR Translator
-                    </h6>
-                    <p className="card-description">
-                      "Don't walk behind me; I may not lead. Don't walk in front
-                      of me; I may not follow. Just walk beside me and be my
-                      friend."
-                    </p>
-                  </CardBody>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-testimonial card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        className="img img-raised rounded"
-                        src={require("assets/img/james.jpg")}
-                      ></img>
-                    </a>
-                  </div>
-                  <CardBody>
-                    <CardTitle tag="h4">Joshiah Luke</CardTitle>
-                    <h6 className="category text-info">HR Specialist</h6>
-                    <p className="card-description">
-                      "The pessimist complains about the wind; the optimist
-                      expects it to change; the realist adjusts the sails."
-                    </p>
-                  </CardBody>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </div>
+                    {item.content}
+                  </CarouselItem>
+                );
+              })}
+              <a
+                className="left carousel-control carousel-control-prev"
+                data-slide="prev"
+                href="#pablo"
+                onClick={(e) => {
+                  e.preventDefault();
+                  previous();
+                }}
+                role="button"
+              >
+                <span className="now-ui-icons arrows-1_minimal-left" />
+                <span className="sr-only">Previous</span>
+              </a>
+              <a
+                className="right carousel-control carousel-control-next"
+                data-slide="next"
+                href="#pablo"
+                onClick={(e) => {
+                  e.preventDefault();
+                  next();
+                }}
+                role="button"
+              >
+                <span className="now-ui-icons arrows-1_minimal-right" />
+                <span className="sr-only">Next</span>
+              </a>
+            </Carousel>
+          </Col>
+          <Col md="2">
+            <div className="testimonials-people">
+              <img
+                alt="..."
+                className="right-first-person img-raised rellax"
+                data-rellax-speed="5"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/tonypeterson/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="right-second-person img-raised rellax"
+                data-rellax-speed="1"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/dancounsell/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="right-fourth-person img-raised rellax"
+                data-rellax-speed="7"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/mattsince87/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="right-fifth-person img-raised rellax"
+                data-rellax-speed="3"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/rem/128.jpg"
+              ></img>
+              <img
+                alt="..."
+                className="right-sixth-person img-raised rellax"
+                data-rellax-speed="5"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/chadengle/128.jpg"
+              ></img>
+            </div>
+          </Col>
+        </Row>
       </div>
     </>
   );

@@ -158,8 +158,8 @@ function ContactUs() {
                   <div className="description">
                     <h4 className="info-title">Give us a ring</h4>
                     <p className="description">
-                      Michael Jordan <br></br>
-                      +40 762 321 762 <br></br>
+                      Edgar Mena <br></br>
+                      +1 941 518 1657 <br></br>
                       Mon - Fri, 8:00-22:00
                     </p>
                   </div>

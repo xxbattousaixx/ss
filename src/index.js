@@ -38,9 +38,14 @@ import Presentation from "views/Presentation.js";
 import Presentation2 from "views/Presentation2.js";
 import Pricing from "views/examples/Pricing.js";
 import ProductPage from "views/examples/ProductPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import ProfilePage from "views/ProfilePage.js";
 import Sections from "views/Sections.js";
-import SignupPage from "views/examples/SignupPage.js";
+import Testimonials from "views/Testimonials2.js";
+import Carousel2 from "views/Carousel2.js";
+
+
+
+import SignupPage from "views/SignupPage.js";
 // others
 
 ReactDOM.render(
@@ -51,6 +56,7 @@ ReactDOM.render(
       <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
+      <Route path="/Testimonials2" render={(props) => <Testimonials {...props} />} />
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
         path="/landing-page"

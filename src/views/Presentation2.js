@@ -70,19 +70,19 @@ function Presentation2() {
         <div className="services">
         <PlainCards/>
 </div>
-        <Container>
-                    <Link href="presentation#PlainCards"
-                        tooltip="Get a quote"
-                        icon="far fa-sticky-note" />
-                    <Link href="presentation2#PlainCards"
-                        tooltip="Call us"
-                        icon="fas fa-user-plus" />
-                    <Button
-                        tooltip="Get a quote!"
-                        icon="fas fa-plus"
-                        rotate={true}
-                        onClick={() => alert('FAB Rocks!')} />
-                </Container>
+<Container>
+            <Link href="/contact-us"
+                tooltip="Get a quote"
+                icon="far fa-sticky-note" />
+            <Link href="/contact-us"
+                tooltip="Call us"
+                icon="fas fa-user-plus" />
+            <Button
+                tooltip="Get a quote!"
+                icon="fas fa-plus"
+                rotate={true}
+                onClick={() => alert('Call us at 941-518-1657')} />
+        </Container>
             <FooterBlack />
 
       </div>

@@ -33,7 +33,7 @@ function WhiteNavbar() {
       <Navbar className="bg-white fixed-top" expand="lg">
         <Container>
         <div className="navbar-translate">
-        <NavbarBrand to="/index" tag={Link} id="navbar-brand">
+        <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
 
         <img
           alt="..."
@@ -43,33 +43,37 @@ function WhiteNavbar() {
         &nbsp;&nbsp; 941-518-1657<br/>
         edmena23@gmail.com
         <br/>
-        <Button>
+
+        </NavbarBrand>
+        <UncontrolledTooltip target="navbar-brand">
+          Contact us today!
+        </UncontrolledTooltip>
+        <Button
+        href="/index">
           View all of our services</Button>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+        <button
+          onClick={() => {
+            document.documentElement.classList.toggle("nav-open");
+            setCollapseOpen(!collapseOpen);
+          }}
+          aria-expanded={collapseOpen}
+          className="navbar-toggler"
+        >
 
-        <br/>
-</NavbarBrand>
-<UncontrolledTooltip target="navbar-brand">
-  Contact us today!
-</UncontrolledTooltip>
-<button
-  onClick={() => {
-    document.documentElement.classList.toggle("nav-open");
-    setCollapseOpen(!collapseOpen);
-  }}
-  aria-expanded={collapseOpen}
-  className="navbar-toggler"
->
-  <span className="navbar-toggler-bar top-bar"></span>
-  <span className="navbar-toggler-bar middle-bar"></span>
-  <span className="navbar-toggler-bar bottom-bar"></span>
-</button>
-</div>
-<a href="/presentation">HOME</a>
-<Collapse isOpen={collapseOpen} navbar>
+          <span className="navbar-toggler-bar top-bar"></span>
+          <span className="navbar-toggler-bar middle-bar"></span>
+
+          <span className="navbar-toggler-bar bottom-bar"></span>
+        </button>
+      </div>
+        <a href="/presentation">HOME</a>
+      <Collapse isOpen={collapseOpen} navbar>
 
 
-<Nav className="ml-auto" id="ceva" navbar>
-  <UncontrolledDropdown nav>
+        <Nav className="ml-auto" id="ceva" navbar>
+
+          <UncontrolledDropdown nav>
   <a href="/AboutUs">
       <i
         aria-hidden={true}
@@ -89,31 +93,31 @@ function WhiteNavbar() {
       nav
       onClick={(e) => e.preventDefault()}
     >
-      <i
-        aria-hidden={true}
-        className="now-ui-icons loader_gear"
-      ></i>&nbsp;
-      <p>Services&nbsp;</p>
-    </DropdownToggle>
-    <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-      <DropdownItem tag={Link} to="/product-page">
-        <i className="now-ui-icons ui-2_settings-90"></i>
-        Paving
-      </DropdownItem>
-      <DropdownItem tag={Link} to="/product-page">
-        <i className="now-ui-icons design-2_ruler-pencil"></i>
+    <i
+      aria-hidden={true}
+      className="now-ui-icons loader_gear"
+    ></i>&nbsp;
+    <p>Services&nbsp;</p>
+  </DropdownToggle>
+  <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+    <DropdownItem tag={Link} to="/sections">
+      <i className="now-ui-icons ui-2_settings-90"></i>
+      Paving
+    </DropdownItem>
+    <DropdownItem tag={Link} to="/sign-up">
+      <i className="now-ui-icons design-2_ruler-pencil"></i>
 Painting
-      </DropdownItem>
+    </DropdownItem>
 
-      <DropdownItem tag={Link} to="/product-page">
-        <i className="now-ui-icons education_atom"></i>
-        Pressure Washing
-      </DropdownItem>
+    <DropdownItem tag={Link} to="/profile-page">
+      <i className="now-ui-icons education_atom"></i>
+      Pressure Washing
+    </DropdownItem>
 
     </DropdownMenu>
   </UncontrolledDropdown>
   <UncontrolledDropdown nav>
-  <a href="/sections#testimonials">
+  <a href="/Testimonials2">
       <i
         aria-hidden={true}
         className="now-ui-icons design_image"

@@ -65,17 +65,17 @@ function Presentation() {
         <PresentationHeader />
         <PlainCards/>
         <Container>
-                    <Link href="presentation#PlainCards"
+                    <Link href="/contact-us"
                         tooltip="Get a quote"
                         icon="far fa-sticky-note" />
-                    <Link href="presentation2#PlainCards"
+                    <Link href="/contact-us"
                         tooltip="Call us"
                         icon="fas fa-user-plus" />
                     <Button
                         tooltip="Get a quote!"
                         icon="fas fa-plus"
                         rotate={true}
-                        onClick={() => alert('FAB Rocks!')} />
+                        onClick={() => alert('Call us at 941-518-1657')} />
                 </Container>
         <FooterBlack />
       </div>
