@@ -20,7 +20,7 @@ import PreFooter from "./index-sections/PreFooter.js";
 import Footers from "./index-sections/Footers.js";
 import Typography from "./index-sections/Typography.js";
 import ContentAreas from "./index-sections/ContentAreas.js";
-import Carousel from "./index-sections/Carousel.js";
+import Carousel2 from "./index-sections/Carousel2.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 
 function Index() {
@@ -52,7 +52,7 @@ function Index() {
         <BlogPostsHeader />
         <div className="main">
 
-          <Carousel />
+          <Carousel2 />
           <Container>
                       <Link href="/contact-us"
                           tooltip="E-Mail"

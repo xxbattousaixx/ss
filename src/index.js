@@ -41,7 +41,7 @@ import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/ProfilePage.js";
 import Sections from "views/Sections.js";
 import Testimonials from "views/Testimonials2.js";
-import Carousel2 from "views/Carousel2.js";
+import Carousel2 from "./views/Carousel2.js";
 
 
 

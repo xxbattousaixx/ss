@@ -31,7 +31,7 @@ function Projects() {
           <Container fluid>
             <Row>
               <Col className="mr-auto ml-auto text-center" md="8">
-                <h6 className="category text-muted">Paving</h6>
+                <h6 className="category text-muted">Industrial Paint</h6>
                 <h4 className="title">We proudly serve the Tampa Bay Area industrial painting needs.</h4>
               </Col>
             </Row>
@@ -88,7 +88,7 @@ Excellence is our priority.
                     className="card-fashion card-background"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/project15.jpg") + ")",
+                        "url(" + require("assets/img/painters.jpg") + ")",
                     }}
                   ></Card>
                 </div>

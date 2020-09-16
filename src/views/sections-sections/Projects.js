@@ -88,7 +88,7 @@ Excellence is our priority.
                     className="card-fashion card-background"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/project15.jpg") + ")",
+                        "url(" + require("assets/img/pavers.jpg") + ")",
                     }}
                   ></Card>
                 </div>

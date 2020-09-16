@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.15954019.chunk.css",
-    "main.js": "/static/js/main.1d02b904.chunk.js",
-    "main.js.map": "/static/js/main.1d02b904.chunk.js.map",
+    "main.js": "/static/js/main.ba7660b2.chunk.js",
+    "main.js.map": "/static/js/main.ba7660b2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.083e3432.js",
     "runtime-main.js.map": "/static/js/runtime-main.083e3432.js.map",
-    "static/js/2.82b4332c.chunk.js": "/static/js/2.82b4332c.chunk.js",
-    "static/js/2.82b4332c.chunk.js.map": "/static/js/2.82b4332c.chunk.js.map",
+    "static/js/2.cee49354.chunk.js": "/static/js/2.cee49354.chunk.js",
+    "static/js/2.cee49354.chunk.js.map": "/static/js/2.cee49354.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9012a08a9a9f79009893dea72c550862.js": "/precache-manifest.9012a08a9a9f79009893dea72c550862.js",
+    "precache-manifest.552c0050c05208a30b44e8096cdebe9a.js": "/precache-manifest.552c0050c05208a30b44e8096cdebe9a.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.15954019.chunk.css.map": "/static/css/main.15954019.chunk.css.map",
-    "static/js/2.82b4332c.chunk.js.LICENSE.txt": "/static/js/2.82b4332c.chunk.js.LICENSE.txt",
-    "static/js/main.1d02b904.chunk.js.LICENSE.txt": "/static/js/main.1d02b904.chunk.js.LICENSE.txt",
+    "static/js/2.cee49354.chunk.js.LICENSE.txt": "/static/js/2.cee49354.chunk.js.LICENSE.txt",
+    "static/js/main.ba7660b2.chunk.js.LICENSE.txt": "/static/js/main.ba7660b2.chunk.js.LICENSE.txt",
     "static/media/about-us.jpg": "/static/media/about-us.be2748f1.jpg",
     "static/media/balmain.jpg": "/static/media/balmain.cb76e72b.jpg",
     "static/media/basic_thumb.jpg": "/static/media/basic_thumb.4e2f95c3.jpg",
@@ -127,6 +127,7 @@
     "static/media/nuk-pro-buildings.png": "/static/media/nuk-pro-buildings.51d7a386.png",
     "static/media/olivia.jpg": "/static/media/olivia.5e57125a.jpg",
     "static/media/pages2_thumb.jpg": "/static/media/pages2_thumb.b6b4e1d5.jpg",
+    "static/media/pavers.jpg": "/static/media/pavers.d3b0667f.jpg",
     "static/media/polo.jpg": "/static/media/polo.53f3ed1e.jpg",
     "static/media/pp-1.jpg": "/static/media/pp-1.30fa29b5.jpg",
     "static/media/pp-2.jpg": "/static/media/pp-2.e72a510c.jpg",
@@ -135,6 +136,7 @@
     "static/media/pp-5.jpg": "/static/media/pp-5.e6dff4ee.jpg",
     "static/media/pp-cov.jpg": "/static/media/pp-cov.6e44ec5e.jpg",
     "static/media/prada.jpg": "/static/media/prada.9039713e.jpg",
+    "static/media/pressure.jpg": "/static/media/pressure.38ee9009.jpg",
     "static/media/pressure1.jpg": "/static/media/pressure1.b6a38907.jpg",
     "static/media/pressure2.jpg": "/static/media/pressure2.03b05ab8.jpg",
     "static/media/pricing.jpg": "/static/media/pricing.c5248390.jpg",
@@ -150,7 +152,6 @@
     "static/media/project11.jpg": "/static/media/project11.98032fc1.jpg",
     "static/media/project12.jpg": "/static/media/project12.820eca53.jpg",
     "static/media/project14.jpg": "/static/media/project14.9f134b05.jpg",
-    "static/media/project15.jpg": "/static/media/project15.e77e5196.jpg",
     "static/media/project16.jpg": "/static/media/project16.3e0870a9.jpg",
     "static/media/project17.jpg": "/static/media/project17.c825662c.jpg",
     "static/media/project6.jpg": "/static/media/project6.df61b95f.jpg",
@@ -183,8 +184,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.083e3432.js",
-    "static/js/2.82b4332c.chunk.js",
+    "static/js/2.cee49354.chunk.js",
     "static/css/main.15954019.chunk.css",
-    "static/js/main.1d02b904.chunk.js"
+    "static/js/main.ba7660b2.chunk.js"
   ]
 }
