@@ -12,7 +12,7 @@ import FooterBlack from "components/Footers/FooterBlack.js";
 
 import Carousel2 from "./index-sections/Carousel2.js";
 
-function Index() {
+function Indexy() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -62,4 +62,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Indexy;

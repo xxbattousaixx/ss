@@ -64,7 +64,6 @@ function DropdownWhiteNavbar() {
                         <span className="navbar-toggler-bar bottom-bar"></span>
                       </button>
                     </div>
-                      <a href="/presentation">HOME</a>
                     <Collapse isOpen={collapseOpen} navbar>
 
 

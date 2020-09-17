@@ -30,7 +30,7 @@ import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Ecommerce from "views/examples/Ecommerce.js";
-import Index from "views/Index.js";
+import Indexy from "views/Indexy.js";
 import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -57,7 +57,7 @@ ReactDOM.render(
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
       <Route path="/Testimonials2" render={(props) => <Testimonials {...props} />} />
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/index" render={(props) => <Indexy {...props} />} />
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
