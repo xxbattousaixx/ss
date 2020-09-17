@@ -80,7 +80,7 @@ edmena23@gmail.com
               Contact us today!
             </UncontrolledTooltip>
             <Button
-            href="/index">
+            href="./views/index">
               View all of our services</Button>
               &nbsp;&nbsp;&nbsp;&nbsp;
             <button
