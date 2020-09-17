@@ -9,20 +9,9 @@ import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 
 // sections for this page
-import Components from "./presentation-sections/Components.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
-import Carousel from "./index-sections/Carousel.js";
-import BasicComponents from "./presentation-sections/BasicComponents.js";
-import Cards from "./presentation-sections/Cards.js";
-import Content from "./presentation-sections/Content.js";
-import Sections from "./presentation-sections/Sections.js";
-import Examples from "./presentation-sections/Examples.js";
-import FreeDemo from "./presentation-sections/FreeDemo.js";
-import Icons from "./presentation-sections/Icons.js";
-import Image from "./presentation-sections/Image.js";
+
 import Testimonials from "./presentation-sections/Testimonials.js";
-import Pricing from "./presentation-sections/Pricing.js";
-import PlainCards from "./index-sections/PlainCards.js";
+
 
 function Testimonials2() {
   React.useEffect(() => {
@@ -67,6 +56,19 @@ function Testimonials2() {
       <div className="wrapper">
 <BlogPostsHeader/>
 <Testimonials />
+<Container>
+            <Link href="/contact-us"
+                tooltip="E-Mail"
+                icon="far fa-sticky-note" />
+            <Link href="/contact-us"
+                tooltip="Call Us"
+                icon="fas fa-user-plus" />
+            <Button
+                tooltip="Get a quote!"
+                icon="fas fa-plus"
+                rotate={true}
+                onClick={() => alert('Contact us here!')} />
+        </Container>
             <FooterBlack />
 
       </div>
