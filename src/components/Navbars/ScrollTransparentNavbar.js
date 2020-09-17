@@ -101,9 +101,18 @@ edmena23@gmail.com
             <Nav className="ml-auto" id="ceva" navbar>
 
               <UncontrolledDropdown nav>
-              <a href="/presentation">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+              <a href="/presentation">
+              <i
+                aria-hidden={true}
+                className="now-ui-icons business_bank"
+              ></i>&nbsp;
+              <span></span>
+              <p>HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+              </a>
+              </UncontrolledDropdown>
 
-              <a href="/index">
+<UncontrolledDropdown nav>
+              <a href="/Testimonials1">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
@@ -126,6 +135,8 @@ edmena23@gmail.com
                     aria-hidden={true}
                     className="now-ui-icons loader_gear"
                   ></i>&nbsp;
+                  <span></span>
+
                   <p>Services&nbsp;</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>

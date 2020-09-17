@@ -30,7 +30,7 @@ import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Ecommerce from "views/examples/Ecommerce.js";
-import Indexy from "views/Indexy.js";
+import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -41,6 +41,8 @@ import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/ProfilePage.js";
 import Sections from "views/Sections.js";
 import Testimonials from "views/Testimonials2.js";
+import Testimonials1 from "views/Testimonials1.js";
+
 import Carousel2 from "./views/Carousel2.js";
 
 
@@ -57,7 +59,7 @@ ReactDOM.render(
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
       <Route path="/Testimonials2" render={(props) => <Testimonials {...props} />} />
-      <Route path="/index" render={(props) => <Indexy {...props} />} />
+      <Route path="/Testimonials1" render={(props) => <Testimonials1 {...props} />} />
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}

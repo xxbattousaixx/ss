@@ -69,34 +69,46 @@ function WhiteNavbar() {
                   <Collapse isOpen={collapseOpen} navbar>
 
 
-                    <Nav className="ml-auto" id="ceva" navbar>
-                      <UncontrolledDropdown nav>
-                      <a href="/presentation">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                  <Nav className="ml-auto" id="ceva" navbar>
 
-                      <a href="/index">
-                          <i
-                            aria-hidden={true}
-                            className="now-ui-icons business_globe"
-                          ></i>&nbsp;
-                          <span></span>
-                          <p>About Us&nbsp;</p>
-                      </a>
-                      </UncontrolledDropdown>
-                      <UncontrolledDropdown nav>
-                        <DropdownToggle
-                          caret
-                          color="default"
-                          data-toggle="dropdown"
-                          href="#pablo"
-                          id="navbarDropdownMenuLink"
-                          nav
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          <i
-                            aria-hidden={true}
-                            className="now-ui-icons loader_gear"
-                          ></i>&nbsp;
-                          <p>Services&nbsp;</p>
+                    <UncontrolledDropdown nav>
+                    <a href="/presentation">
+                    <i
+                      aria-hidden={true}
+                      className="now-ui-icons business_bank"
+                    ></i>&nbsp;
+                    <span></span>
+                    <p>HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </a>
+                    </UncontrolledDropdown>
+
+      <UncontrolledDropdown nav>
+                    <a href="/Testimonials1">
+                        <i
+                          aria-hidden={true}
+                          className="now-ui-icons business_globe"
+                        ></i>&nbsp;
+                        <span></span>
+                        <p>About Us&nbsp;</p>
+                    </a>
+                    </UncontrolledDropdown>
+                    <UncontrolledDropdown nav>
+                      <DropdownToggle
+                        caret
+                        color="default"
+                        data-toggle="dropdown"
+                        href="#pablo"
+                        id="navbarDropdownMenuLink"
+                        nav
+                        onClick={(e) => e.preventDefault()}
+                      >
+                        <i
+                          aria-hidden={true}
+                          className="now-ui-icons loader_gear"
+                        ></i>&nbsp;
+                        <span></span>
+
+                        <p>Services&nbsp;</p>
                         </DropdownToggle>
                         <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                           <DropdownItem tag={Link} to="/sections">

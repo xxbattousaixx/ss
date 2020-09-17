@@ -145,7 +145,14 @@ function ContactUs() {
                     We'll get in touch with you as soon as possible. <br></br>
                     <br></br>
                   </p>
-                  <Form id="contact-form" method="post" role="form">
+                  <Form action="https://postmail.invotes.com/send"
+    method="post" id="contact_form" role="form">
+    <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+        <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
+
+
                     <label>Your name</label>
                     <InputGroup
                       className={nameFocus ? "input-group-focus" : ""}
@@ -160,6 +167,7 @@ function ContactUs() {
                         autoComplete="name"
                         placeholder="Your Name..."
                         type="text"
+                        name="subject"
                         onFocus={() => setNameFocus(true)}
                         onBlur={() => setNameFocus(false)}
                       ></Input>
@@ -178,6 +186,7 @@ function ContactUs() {
                         autoComplete="email"
                         placeholder="Email Here..."
                         type="email"
+                        name="text"
                         onFocus={() => setEmailFocus(true)}
                         onBlur={() => setEmailFocus(false)}
                       ></Input>
@@ -195,29 +204,37 @@ function ContactUs() {
                         autoComplete="number"
                         placeholder="Number Here..."
                         type="text"
+                        name="extra_text"
+                        onFocus={() => setNumberFocus(true)}
+                        onBlur={() => setNumberFocus(false)}
+                      ></Input>
+
+                    </InputGroup>
+                    <label>Message</label>
+                    <InputGroup
+                      className={numberFocus ? "input-group-focus" : ""}
+                    >
+                      <InputGroupAddon addonType="prepend">
+                        <InputGroupText>
+                          <i className="now-ui-icons text_align-center"></i>
+                        </InputGroupText>
+                      </InputGroupAddon>
+                      <Input
+                        placeholder="Message Here..."
+                        type="text"
+                        name="extra_Message"
                         onFocus={() => setNumberFocus(true)}
                         onBlur={() => setNumberFocus(false)}
                       ></Input>
                     </InputGroup>
-                    <FormGroup>
-                      <label>SOLAFIDE</label>
-                      <Input
-                        id="message"
-                        name="message"
-                        rows="6"
-                        type="textarea"
-                      ></Input>
-                    </FormGroup>
                     <div className="submit text-center">
-                      <Button
-                        className="btn-raised btn-round"
-                        color="info"
-                        defaultValue="Contact Us"
-                        type="submit"
-                      >
-                        Contact Us
-                      </Button>
-                    </div>
+                    <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
+
+
+
+ <input id="submit_form" type="submit" value="Contact Us" />
+
+                     </div>
                   </Form>
                 </Col>
                 <Col className="ml-auto mr-auto" md="5">
@@ -241,8 +258,8 @@ function ContactUs() {
                     <div className="description">
                       <h4 className="info-title">Give us a ring</h4>
                       <p>
-                        Michael Jordan <br></br>
-                        +40 762 321 762 <br></br>
+                        Edgar Mena <br></br>
+                        +1 941 518 1657 <br></br>
                         Mon - Fri, 8:00-22:00
                       </p>
                     </div>

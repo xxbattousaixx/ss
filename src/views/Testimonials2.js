@@ -26,7 +26,7 @@ import PlainCards from "./index-sections/PlainCards.js";
 
 function Testimonials2() {
   React.useEffect(() => {
-    document.body.classList.add("presentation-page");
+    document.body.classList.add("Testimonials2-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
     window.scrollTo(0, 0);
@@ -51,7 +51,7 @@ function Testimonials2() {
     document.body.appendChild(script);
 
     return function cleanup() {
-      document.body.classList.remove("presentation-page");
+      document.body.classList.remove("Testimonials2-page");
       document.body.classList.remove("sidebar-collapse");
 
       // we need to remove the script when we change the page
