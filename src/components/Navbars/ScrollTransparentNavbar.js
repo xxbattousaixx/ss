@@ -79,10 +79,7 @@ edmena23@gmail.com
             <UncontrolledTooltip target="navbar-brand">
               Contact us today!
             </UncontrolledTooltip>
-            <Button
-            href="./views/index">
-              View all of our services</Button>
-              &nbsp;&nbsp;&nbsp;&nbsp;
+
             <button
               onClick={() => {
                 document.documentElement.classList.toggle("nav-open");
@@ -98,14 +95,15 @@ edmena23@gmail.com
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-            <a href="/presentation">HOME</a>
           <Collapse isOpen={collapseOpen} navbar>
 
 
             <Nav className="ml-auto" id="ceva" navbar>
 
               <UncontrolledDropdown nav>
-              <a href="/AboutUs">
+              <a href="/presentation">HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+
+              <a href="/index">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
