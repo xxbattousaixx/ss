@@ -30,7 +30,6 @@ import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
 import Ecommerce from "views/examples/Ecommerce.js";
-import Index from "views/Index.js";
 import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -43,7 +42,6 @@ import Sections from "views/Sections.js";
 import Testimonials from "views/Testimonials2.js";
 import Testimonials1 from "views/Testimonials1.js";
 
-import Carousel2 from "./views/Carousel2.js";
 
 
 

@@ -43,11 +43,12 @@ function PresentationHeader() {
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
           At your service.
         </h3>
-        <h6
+        <h4
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
-        >Value. Professionalism. Flexibility. Reliability. Efficiency.
-        </h6>
+        >
+        <i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i>
+        </h4>
 
       </div>
     </>

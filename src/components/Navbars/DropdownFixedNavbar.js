@@ -77,7 +77,7 @@ function DropdownFixedNavbar() {
                         className="now-ui-icons business_bank"
                       ></i>&nbsp;
                       <span></span>
-                      <p>HOME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                      <p>Home</p>
                       </a>
                       </UncontrolledDropdown>
 

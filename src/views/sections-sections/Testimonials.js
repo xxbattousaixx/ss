@@ -20,7 +20,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="#pablo" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
             <img
               alt="..."
               className="img img-raised rounded"
@@ -54,7 +54,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="#pablo" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
             <img
               alt="..."
               className="img img-raised rounded"
@@ -88,7 +88,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="#pablo" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
             <img
               alt="..."
               className="img img-raised rounded"
@@ -215,7 +215,7 @@ function Testimonials() {
               <a
                 className="left carousel-control carousel-control-prev"
                 data-slide="prev"
-                href="#pablo"
+                href="/contact-us"
                 onClick={(e) => {
                   e.preventDefault();
                   previous();
@@ -228,7 +228,7 @@ function Testimonials() {
               <a
                 className="right carousel-control carousel-control-next"
                 data-slide="next"
-                href="#pablo"
+                href="/contact-us"
                 onClick={(e) => {
                   e.preventDefault();
                   next();

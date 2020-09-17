@@ -21,7 +21,7 @@ import {
 
 // core components
 
-function Projects() {
+function Projects3() {
   const [pills, setPills] = React.useState("1");
   return (
     <>
@@ -47,7 +47,7 @@ function Projects() {
                   <CardBody>
                     <CardTitle className="text-left" tag="div">
                       <h2>
-                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <a href="/contact-us" >
                           Get a quote now.
                         </a>
                       </h2>
@@ -67,7 +67,7 @@ function Projects() {
                 <div className="card-container">
                   <Card className="card-fashion">
                     <CardTitle tag="div">
-                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <a href="/contact-us" >
                         <h4>
                           Commercial Projects
                         </h4>
@@ -107,7 +107,7 @@ Excellence is our priority.
                   <Card className="card-fashion arrow-left">
                     <CardTitle tag="div">
                       <h4>
-                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <a href="/contact-us" >
                           Get a quote now.
                         </a>
                       </h4>
@@ -136,7 +136,7 @@ Excellence is our priority.
                   <CardBody>
                     <CardTitle className="text-left" tag="div">
                       <h2>
-                        <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <a href="/contact-us" >
                           Residential projects
                         </a>
                       </h2>
@@ -161,4 +161,4 @@ Excellence is our priority.
   );
 }
 
-export default Projects;
+export default Projects3;
