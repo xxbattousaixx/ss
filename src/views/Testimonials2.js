@@ -56,6 +56,7 @@ function Testimonials2() {
       <div className="wrapper">
 <BlogPostsHeader/>
 <Testimonials />
+
 <Container>
             <Link href="/contact-us"
                 tooltip="E-Mail"

@@ -71,7 +71,7 @@ function ScrollTransparentNavbar() {
 ></img>
 
 &nbsp;&nbsp; 941-518-1657<br/>
-edmena23@gmail.com
+edmena24@gmail.com
 <br/>
 
 

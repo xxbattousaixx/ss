@@ -35,19 +35,19 @@ function PresentationHeader() {
           ></div>
         </div>
         <div className="rellax-text-container rellax-text">
-          <h1 className="h1-seo" data-rellax-speed="-1">
+        <h1 className="h1-seo" data-rellax-speed="-1">
             Solafide
           </h1>
-          <div className="pro">SS</div>
+          <div className="pro">Your Service</div>
         </div>
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-          At your service.
+        <a className="text-primary">  Operating in Tampa Bay and Sarasota.</a>
         </h3>
         <h4
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
         >
-        <i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i>
+        <a className="text-transparent"><i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i></a>
         </h4>
 
       </div>

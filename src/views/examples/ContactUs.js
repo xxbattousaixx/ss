@@ -152,9 +152,9 @@ function ContactUs() {
                     <div className="description">
                       <h4 className="info-title">Find us at the office</h4>
                       <p>
-                        Bld Mihail Kogalniceanu, nr. 8, <br></br>
-                        7652 Bucharest, <br></br>
-                        Romania
+                        Solafide Services <br></br>
+                        Manatee Ave. <br></br>
+                        Bradenton, FL
                       </p>
                     </div>
                   </div>
@@ -178,10 +178,9 @@ function ContactUs() {
                     <div className="description">
                       <h4 className="info-title">Legal Information</h4>
                       <p>
-                        DC7. <br></br>
-                        VAT · XXX <br></br>
-                        IBAN · XXX <br></br>
-                        Bank · XXX
+                        Solafide Services LLC <br></br>
+                    
+
                       </p>
                     </div>
                   </div>

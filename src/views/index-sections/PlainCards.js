@@ -20,9 +20,9 @@ function PlainCards() {
       <div className="section section-plain-cards">
         <Container>
           <div className="title">
-            <h3>SOLAFIDE SERVICES</h3>
+              <a className="text-success"><h3>SOLAFIDE SERVICES</h3></a>
             <h3>
-              <small>Service Offered</small>
+            <i className="now-ui-icons business_bulb-63"></i>  <small>Services Offered</small>  <i className="now-ui-icons business_bulb-63"></i>
             </h3>
           </div>
           <Row>
@@ -37,7 +37,7 @@ function PlainCards() {
                 </div>
                 <CardBody>
                   <h6 className="category text-warning">
-                    <i className="now-ui-icons business_bulb-63"></i> Painting
+                    <i className="now-ui-icons design_palette"></i> Painting
                   </h6>
                   <CardTitle tag="h5">
                     <a href="/contact-us">
@@ -70,7 +70,7 @@ function PlainCards() {
                   </a>
                 </div>
                 <CardBody>
-                  <h6 className="category text-info">Pavement</h6>
+                  <h6 className="category text-info"><i className="now-ui-icons design_app">  </i>  Pavement</h6>
                   <CardTitle tag="h5">
                     <a href="/contact-us">
                       Only the highest quality work.

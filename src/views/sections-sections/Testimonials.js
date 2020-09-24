@@ -20,7 +20,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us">
             <img
               alt="..."
               className="img img-raised rounded"
@@ -54,7 +54,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us" >
             <img
               alt="..."
               className="img img-raised rounded"
@@ -88,7 +88,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="/contact-us" onClick={(e) => e.preventDefault()}>
+          <a href="/contact-us" >
             <img
               alt="..."
               className="img img-raised rounded"
