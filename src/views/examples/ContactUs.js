@@ -48,7 +48,7 @@ function ContactUs() {
                 <Col className="ml-auto mr-auto" md="5">
                   <h2 className="title">Send us a message</h2>
                   <p className="description">
-                    You can contact us with anything related to our Products.
+                    You can contact us with anything related to our services.
                     We'll get in touch with you as soon as possible. <br></br>
                     <br></br>
                   </p>
@@ -145,19 +145,7 @@ function ContactUs() {
                   </Form>
                 </Col>
                 <Col className="ml-auto mr-auto" md="5">
-                  <div className="info info-horizontal mt-5">
-                    <div className="icon icon-info">
-                      <i className="now-ui-icons location_pin"></i>
-                    </div>
-                    <div className="description">
-                      <h4 className="info-title">Find us at the office</h4>
-                      <p>
-                        Solafide Services <br></br>
-                        Manatee Ave. <br></br>
-                        Bradenton, FL
-                      </p>
-                    </div>
-                  </div>
+
                   <div className="info info-horizontal">
                     <div className="icon icon-info">
                       <i className="now-ui-icons tech_mobile"></i>
@@ -167,7 +155,7 @@ function ContactUs() {
                       <p>
                         Edgar Mena <br></br>
                         +1 941 518 1657 <br></br>
-                        Mon - Fri, 8:00-22:00
+                        Mon - Fri, 8:00-18:00
                       </p>
                     </div>
                   </div>
@@ -179,7 +167,7 @@ function ContactUs() {
                       <h4 className="info-title">Legal Information</h4>
                       <p>
                         Solafide Services LLC <br></br>
-                    
+
 
                       </p>
                     </div>
