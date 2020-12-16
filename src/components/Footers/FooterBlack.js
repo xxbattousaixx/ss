@@ -12,45 +12,41 @@ function FooterBlack() {
       <footer className="footer" data-background-color="black">
         <Container>
           <nav>
-            <ul>
-              <li>
-                <a
-                  href="www.google.com"
-                  target="_blank"
-                >
-                  DC7
-                </a>
-              </li>
-              <li>
-                <a
-                  href="www.google.com"
-                  target="_blank"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="www.google.com"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
+          <ul>
+            <li>
+              <a
+                href="/presentation"
+              >
+                Solafide
+              </a>
+            </li>
+            <li>
+              <a
+                href="/Testimonials1"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact-us"
+
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
           </nav>
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
             >
               DC7
             </a>
             . Coded by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
             >
               DC7
             </a>

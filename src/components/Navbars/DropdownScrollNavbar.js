@@ -134,14 +134,14 @@ function DropdownScrollNavbar() {
                           <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                             <DropdownItem tag={Link} to="/sections">
                               <i className="now-ui-icons ui-2_settings-90"></i>
-                              Paving
+                              Pavers
                             </DropdownItem>
-                            <DropdownItem tag={Link} to="/sign-up">
+                            <DropdownItem tag={Link} to="/profile-page">
                               <i className="now-ui-icons design-2_ruler-pencil"></i>
               Painting
                             </DropdownItem>
 
-                            <DropdownItem tag={Link} to="/profile-page">
+                            <DropdownItem tag={Link} to="/sign-up">
                               <i className="now-ui-icons education_atom"></i>
                               Pressure Washing
                             </DropdownItem>
@@ -155,7 +155,7 @@ function DropdownScrollNavbar() {
                               className="now-ui-icons design_image"
                             ></i>&nbsp;
                             <span></span>
-                            <p>Reviews&nbsp;</p>
+                            <p>Gallery/Reviews</p>
                         </a>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown nav>

@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import { motion } from "framer-motion";
 
 // reactstrap components
 
@@ -20,34 +21,47 @@ function PresentationHeader() {
             }}
           ></div>
         </div>
+
         <div
           className="rellax-header rellax-header-buildings"
           data-rellax-speed="0"
         >
+
           <div
             className="page-header-image page-header-city"
+
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/presentation-page/nuk-pro-buildings.png") +
+                require("assets/img/main.png") +
                 ")",
             }}
           ></div>
         </div>
-        <div className="rellax-text-container rellax-text">
+        <div className="rellax-text-container rellax-text"
+        >
+
         <h1 className="h1-seo" data-rellax-speed="-1">
             Solafide
           </h1>
           <div className="pro">Our Services</div>
         </div>
+
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
-        <a className="text-primary">  Serving Manatee, Sarasota, Hillsborough, Polk, and Hardee counties.</a>
-        </h3>
+        <motion.div whileHover={{ scale: 1.1, duration: 200000000000000 }} >
+        <a className="text-primary">  Serving Manatee, Sarasota, Hillsborough, Polk, Charlotte, Citrus, DeSoto and Hardee counties.</a>
+      </motion.div>  </h3>
         <h4
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
-        >
-        <a className="text-transparent"><i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i><br/><i className="text-warning">Family owned and operated for 15 years...</i></a>
+        >        <motion.div whileHover={{ scale: 1.6, duration: 200000000000000 }} >
+
+        <a className="text-default"><i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i></a><br/>
+
+</motion.div>
+<br/><br/>
+
+        <i className="text-info">Family owned and operated for 15 years...</i>
         </h4>
 
       </div>

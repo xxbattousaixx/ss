@@ -11,46 +11,44 @@ function FooterDefault() {
     <>
       <footer className="footer footer-default">
         <Container>
-          <nav>
-            <ul>
-              <li>
-                <a
-                  href="www.google.com"
-                  target="_blank"
-                >
-                  SOLAFIDE
-                </a>
-              </li>
-              <li>
-                <a
-                  href="www.google.com"
-                  target="_blank"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="www.solafide-service.com"
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <nav>
+          <ul>
+            <li>
+              <a
+                href="/presentation"
+              >
+                Solafide
+              </a>
+            </li>
+            <li>
+              <a
+                href="/Testimonials1"
+              >
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact-us"
+
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
+            
             >
               DC7
             </a>
             . Coded by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
+
             >
               DC7
             </a>

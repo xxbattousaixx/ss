@@ -1,12 +1,16 @@
 import React from "react";
 // javascript library that creates a parrallax effect
-import Rellax from "rellax";
 // reactstrap components
 import { Container, Button, Link } from 'react-floating-action-button'
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
+import PricingHeader from "components/Headers/PricingHeader.js";
+import ProductPageHeader from "components/Headers/ProductPageHeader.js";
+
 import FooterBlack from "components/Footers/FooterBlack.js";
+import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
+import ContactUsHeader2 from "components/Headers/ContactUsHeader2.js";
+
 
 // sections for this page
 
@@ -18,44 +22,32 @@ function Testimonials2() {
     document.body.classList.add("Testimonials2-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
-    document.body.scrollTop = 0;
-
-    // initialise Rellax for this page
-    if (window.innerWidth >= 991) {
-      setTimeout(function () {
-        new Rellax(".rellax", {
-          center: true,
-        });
-      }, 5000);
-      new Rellax(".rellax-header");
-      new Rellax(".rellax-text");
+    var href = window.location.href.substring(
+      window.location.href.lastIndexOf("#/") + 2
+    );
+    var hrefId = href.substring(href.lastIndexOf("#") + 1);
+    if (href.lastIndexOf("#") > 0) {
+      document.getElementById(hrefId).scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+      });
     }
-
-
-    // we need to add a script for the github buttons
-    let script = document.createElement("script");
-    script.src = "https://buttons.github.io/buttons.js";
-    script.id = "github-buttons-script-id";
-    document.body.appendChild(script);
-
     return function cleanup() {
       document.body.classList.remove("Testimonials2-page");
       document.body.classList.remove("sidebar-collapse");
-
-      // we need to remove the script when we change the page
-      script.parentNode.removeChild(script);
     };
   });
   return (
     <>
 
-      <ScrollTransparentNavbar />
+    <ScrollTransparentNavbar />
 
 
       <div className="wrapper">
-<BlogPostsHeader/>
+<ProfilePageHeader/>
 <Testimonials />
+<ContactUsHeader2/>
 
 <Container>
             <Link href="/contact-us"

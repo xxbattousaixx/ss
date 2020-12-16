@@ -14,23 +14,23 @@ import {
 
 const items = [
   {
-    src: require("assets/img/bg1.jpg"),
+    src: require("assets/img/a1.jpg"),
     altText: "",
     caption: "Bradenton, Florida, United States",
   },
   {
-    src: require("assets/img/bg3.jpg"),
+    src: require("assets/img/a2.jpg"),
     altText: "",
-    caption: "Sarasota, Florida, United States",
+    caption: "Same day",
   },
   {
-    src: require("assets/img/bg4.jpg"),
+    src: require("assets/img/a3.jpg"),
     altText: "",
-    caption: "Tampa, Florida, United States",
+    caption: "A finished product",
   },
 ];
 
-function CarouselSections() {
+function Carousel2() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -124,4 +124,4 @@ function CarouselSections() {
   );
 }
 
-export default CarouselSections;
+export default Carousel2;

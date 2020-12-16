@@ -17,7 +17,7 @@ import {
 // core components
 import DropdownWhiteNavbar from "components/Navbars/DropdownWhiteNavbar.js";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
-import Footer from "components/Footers/Footer.js";
+import FooterBlack from "components/Footers/FooterBlack.js";
 
 
 
@@ -178,7 +178,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <Footer />
+        <FooterBlack />
       </div>
     </>
   );

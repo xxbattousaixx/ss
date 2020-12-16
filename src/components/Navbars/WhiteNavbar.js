@@ -78,7 +78,7 @@ function WhiteNavbar() {
                       className="now-ui-icons business_bank"
                     ></i>&nbsp;
                     <span></span>
-                    <p>Home</p>
+                    <p>Home&nbsp;&nbsp;&nbsp;</p>
                     </a>
                     </UncontrolledDropdown>
 
@@ -89,44 +89,10 @@ function WhiteNavbar() {
                           className="now-ui-icons business_globe"
                         ></i>&nbsp;
                         <span></span>
-                        <p>About Us&nbsp;</p>
+                        <p>About Us&nbsp;&nbsp;&nbsp;</p>
                     </a>
                     </UncontrolledDropdown>
-                    <UncontrolledDropdown nav>
-                      <DropdownToggle
-                        caret
-                        color="default"
-                        data-toggle="dropdown"
-                        href="#pablo"
-                        id="navbarDropdownMenuLink"
-                        nav
-                        onClick={(e) => e.preventDefault()}
-                      >
-                        <i
-                          aria-hidden={true}
-                          className="now-ui-icons loader_gear"
-                        ></i>&nbsp;
-                        <span></span>
 
-                        <p>Services&nbsp;</p>
-                        </DropdownToggle>
-                        <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                          <DropdownItem tag={Link} to="/sections">
-                            <i className="now-ui-icons ui-2_settings-90"></i>
-                            Paving
-                          </DropdownItem>
-                          <DropdownItem tag={Link} to="/sign-up">
-                            <i className="now-ui-icons design-2_ruler-pencil"></i>
-            Painting
-                          </DropdownItem>
-
-                          <DropdownItem tag={Link} to="/profile-page">
-                            <i className="now-ui-icons education_atom"></i>
-                            Pressure Washing
-                          </DropdownItem>
-
-                        </DropdownMenu>
-                      </UncontrolledDropdown>
                       <UncontrolledDropdown nav>
                       <a href="/Testimonials2">
                           <i
@@ -134,9 +100,44 @@ function WhiteNavbar() {
                             className="now-ui-icons design_image"
                           ></i>&nbsp;
                           <span></span>
-                          <p>Reviews&nbsp;</p>
+                          <p>Gallery/Reviews&nbsp;&nbsp;&nbsp;</p>
                       </a>
                       </UncontrolledDropdown>
+                      <UncontrolledDropdown nav>
+                        <DropdownToggle
+                          caret
+                          color="default"
+                          data-toggle="dropdown"
+                          href="#pablo"
+                          id="navbarDropdownMenuLink"
+                          nav
+                          onClick={(e) => e.preventDefault()}
+                        >
+                          <i
+                            aria-hidden={true}
+                            className="now-ui-icons loader_gear"
+                          ></i>&nbsp;
+                          <span></span>
+
+                          <p>Services&nbsp;&nbsp;&nbsp;</p>
+                          </DropdownToggle>
+                          <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
+                            <DropdownItem tag={Link} to="/sections">
+                              <i className="now-ui-icons ui-2_settings-90"></i>
+                              Pavers
+                            </DropdownItem>
+                            <DropdownItem tag={Link} to="/profile-page">
+                              <i className="now-ui-icons design-2_ruler-pencil"></i>
+              Painting
+                            </DropdownItem>
+
+                            <DropdownItem tag={Link} to="/sign-up">
+                              <i className="now-ui-icons education_atom"></i>
+                              Pressure Washing
+                            </DropdownItem>
+
+                          </DropdownMenu>
+                        </UncontrolledDropdown>
                       <UncontrolledDropdown nav>
                       <a href="/contact-us">
                           <i
@@ -144,7 +145,7 @@ function WhiteNavbar() {
                             className="now-ui-icons files_paper"
                           ></i>&nbsp;
                           <span></span>
-                          <p>Contact Us&nbsp;</p>
+                          <p>Contact Us&nbsp;&nbsp;&nbsp;</p>
                       </a>
                       </UncontrolledDropdown>
                     </Nav>

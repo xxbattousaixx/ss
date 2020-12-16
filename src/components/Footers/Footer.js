@@ -15,26 +15,24 @@ function Footer() {
             <ul>
               <li>
                 <a
-                  href="www.google.com"
-                  target="_blank"
+                  href="/presentation"
                 >
-                  DC7
+                  Solafide
                 </a>
               </li>
               <li>
                 <a
-                  href="www.google.com"
-                  target="_blank"
+                  href="/Testimonials1"
                 >
                   About Us
                 </a>
               </li>
               <li>
                 <a
-                  href="www.google.com"
-                  target="_blank"
+                  href="/contact-us"
+
                 >
-                  Blog
+                  Contact
                 </a>
               </li>
             </ul>
@@ -42,15 +40,13 @@ function Footer() {
           <div className="copyright" id="copyright">
             © {new Date().getFullYear()}, Designed by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
             >
               DC7
             </a>
             . Coded by{" "}
             <a
-              href="www.google.com"
-              target="_blank"
+              href="mailto:dcarrassi@outlook.com"
             >
               DC7
             </a>

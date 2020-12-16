@@ -20,7 +20,7 @@ function IndexHeader() {
             }}
           ></div>
         </div>
-      
+
     </div>
   </>
   );

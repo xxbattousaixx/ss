@@ -12,8 +12,13 @@ import {
   CarouselItem,
   CarouselIndicators,
 } from "reactstrap";
+import AwesomeSlider from 'react-awesome-slider';
+
+import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation.scss';
+
 
 // core components
+
 
 const items = [
   {
@@ -146,10 +151,22 @@ function Testimonials() {
   };
   return (
     <>
+
+
+
+
+
       <div
         className="section section-testimonials"
         data-background-color="black"
       >
+      <AwesomeSlider cssModule={AwesomeSliderStyles}>
+        <div data-src="../../assets/img/2.jpg" />
+        <div data-src="../../assets/img/3.jpg" />
+        <div data-src="../../assets/img/4.jpg" />
+      </AwesomeSlider>
+
+
         <Row>
           <Col className="ml-auto mr-auto text-center" md="8">
             <h2 className="title">Trusted by 800+ People</h2>

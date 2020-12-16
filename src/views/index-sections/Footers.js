@@ -47,12 +47,7 @@ function Footers() {
                 </li>
                 <li>
                   <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Blog
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink href="#pablo" onClick={(e) => e.preventDefault()}>
-                    Licenses
+                    Conact
                   </NavLink>
                 </li>
               </ul>
