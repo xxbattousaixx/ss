@@ -33,7 +33,7 @@ function PresentationHeader() {
             style={{
               backgroundImage:
                 "url(" +
-                require("assets/img/main.png") +
+                require("assets/img/main.jpg") +
                 ")",
             }}
           ></div>
