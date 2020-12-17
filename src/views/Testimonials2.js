@@ -46,7 +46,6 @@ function Testimonials2() {
 
       <div className="wrapper">
 <ProfilePageHeader/>
-<Testimonials />
 <ContactUsHeader2/>
 
 <Container>

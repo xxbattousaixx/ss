@@ -49,19 +49,19 @@ function PresentationHeader() {
 
         <h3 className="h3-description rellax-text" data-rellax-speed="-1">
         <motion.div whileHover={{ scale: 1.1, duration: 200000000000000 }} >
-        <a className="text-primary">  Serving Manatee, Sarasota, Hillsborough, Polk, Charlotte, Citrus, DeSoto and Hardee counties.</a>
+        <a className="category text-info">  Serving Manatee, Sarasota, Hillsborough, Polk, Charlotte, Citrus, DeSoto and Hardee counties.</a>
       </motion.div>  </h3>
         <h4
           className="category category-absolute rellax-text"
           data-rellax-speed="-1"
         >        <motion.div whileHover={{ scale: 1.6, duration: 200000000000000 }} >
 
-        <a className="text-default"><i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i></a><br/>
+        <a className="category text-info"><i className="now-ui-icons media-2_sound-wave"></i>Value<i className="now-ui-icons media-2_sound-wave"></i>Professionalism<i className="now-ui-icons media-2_sound-wave"></i>Flexibility<i className="now-ui-icons media-2_sound-wave"></i>Reliability<i className="now-ui-icons media-2_sound-wave"></i>Efficiency<i className="now-ui-icons media-2_sound-wave"></i></a><br/>
 
 </motion.div>
 <br/><br/>
 
-        <i className="text-info">Family owned and operated for 15 years...</i>
+        <i className="category text-info">Family owned and operated for 15 years...</i>
         </h4>
 
       </div>
