@@ -95,7 +95,7 @@ function ScrollTransparentNavbar() {
           </div>
           <Collapse isOpen={collapseOpen} navbar>
 
-<Col><Row>941-518-1657</Row><br/><Row>EdMena24@gmail.com</Row></Col>
+<Col><Row lg="4">941-518-1657</Row><Row>EdMena24@gmail.com</Row></Col>
 
 
 
