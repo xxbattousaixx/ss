@@ -1,6 +1,7 @@
 import React from "react";
 // react plugin used to create google maps
 
+import Lottie from 'react-lottie';
 
 // reactstrap components
 import {
@@ -13,11 +14,12 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import animationData from 'views/lotties/surf.json';// reactstrap components
 
 // core components
 import DropdownWhiteNavbar from "components/Navbars/DropdownWhiteNavbar.js";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
-import FooterBlack from "components/Footers/FooterBlack.js";
+import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
 
 
 
@@ -25,6 +27,14 @@ function ContactUs() {
   const [nameFocus, setNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [numberFocus, setNumberFocus] = React.useState(false);
+  const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
   React.useEffect(() => {
     document.body.classList.add("contact-page");
     document.body.classList.add("sidebar-collapse");
@@ -171,6 +181,10 @@ function ContactUs() {
 
                       </p>
                     </div>
+                    <Lottie
+                               options={defaultOptions}
+
+                               />
                   </div>
                 </Col>
               </Row>
@@ -178,7 +192,7 @@ function ContactUs() {
           </div>
         </div>
 
-        <FooterBlack />
+        <FooterBlackSocial />
       </div>
     </>
   );

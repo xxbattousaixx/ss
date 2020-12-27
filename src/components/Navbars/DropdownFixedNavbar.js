@@ -11,6 +11,8 @@ import {
   NavbarBrand,
   Navbar,
   NavItem,
+  Col,
+  Row,
   Nav,
   Container,
   UncontrolledTooltip,
@@ -35,17 +37,14 @@ function DropdownFixedNavbar() {
           <div className="navbar-translate">
           <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
 
-          <img
+        <img
             alt="..."
             src={require("assets/img/logo1.png")}
           ></img>
 
-          &nbsp;&nbsp; 941-518-1657<br/>
-          edmena24@gmail.com
-          <br/>
 
 
-                      </NavbarBrand>
+                      </NavbarBrand><Col><Row>941-518-1657</Row><Row>EdMena24@gmail.com</Row></Col>
                       <UncontrolledTooltip target="navbar-brand">
                         Contact us today!
                       </UncontrolledTooltip>
@@ -133,7 +132,7 @@ function DropdownFixedNavbar() {
                               className="now-ui-icons design_image"
                             ></i>&nbsp;
                             <span></span>
-                            <p>Gallery/Reviews</p>
+                            <p>Gallery</p>
                         </a>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown nav>

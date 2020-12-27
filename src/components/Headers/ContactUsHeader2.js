@@ -11,23 +11,68 @@ import {
   CarouselIndicators,
 } from "reactstrap";
 import AwesomeSlider from 'react-awesome-slider';
+import Lottie from 'react-lottie';
 
 import 'react-awesome-slider/dist/styles.css';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
-
+import animationData3 from 'views/lotties/laser.json';// reactstrap components
+import animationData4 from 'views/lotties/build.json';// reactstrap components
 // reactstrap components
+import animationData from 'views/lotties/flawda.json';// reactstrap components
+
+import animationData2 from 'views/lotties/bar1.json';// reactstrap components
 
 // core components
 
 function ContactUsHeader2() {
-
+  const defaultOptions3 = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData3,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
+      const defaultOptions4 = {
+            loop: true,
+            autoplay: true,
+            animationData: animationData4,
+            rendererSettings: {
+              preserveAspectRatio: "xMidYMid slice"
+            }
+          };
+          const defaultOptions = {
+                loop: true,
+                autoplay: true,
+                animationData: animationData,
+                rendererSettings: {
+                  preserveAspectRatio: "xMidYMid slice"
+                }
+              };
+              const defaultOptions2 = {
+                    loop: true,
+                    autoplay: true,
+                    animationData: animationData2,
+                    rendererSettings: {
+                      preserveAspectRatio: "xMidYMid slice"
+                    }
+                  };
   return (
     <>
 <div style={{
-  backgroundImage: "url(" + require("assets/img/bg98.jpg") + ")",
-}}>
+  backgroundImage: "url(" + require("assets/img/tigris.jpg") + ")",
+}}>    <center>  <img
+          alt="..."
+          className="rounded img-raised"
+          src={require("assets/img/solafide.png")}
+        ></img>   </center>
+<div className="info"><Lottie
+       options={defaultOptions3}
+
+       /></div>
+
       <Row><br/>
-            <Col md="6">
+            <Col md="5">
 <br/><br/><br/>
                 <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
                 <div data-src="/11.jpg" />
@@ -44,7 +89,18 @@ function ContactUsHeader2() {
                 <div data-src="/133.jpg" />
                 </AwesomeSlider>
 <br/>   <br/> <br/></Col>
-        <Col md="6">
+<Col span="8" md="2"><div className="info text-horizontal">
+<Lottie
+       options={defaultOptions}
+
+       />      <Lottie
+                          options={defaultOptions4}
+
+                          />
+   <Lottie
+              options={defaultOptions}
+
+              /></div> </Col> <Col md="5">
         <br/><br/><br/>
 
                       <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
@@ -69,6 +125,7 @@ function ContactUsHeader2() {
 
                       <br/>  <br/>  <br/></Col>
       </Row>
+<br/><br/><br/><br/>
 </div>
     </>
   );

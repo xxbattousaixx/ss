@@ -4,17 +4,9 @@ import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
 import niceColors from 'nice-color-palettes'
 import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
+
   CardTitle,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
+
   Container,
   Row,
   Col,
@@ -27,8 +19,7 @@ import Footer from "components/Footers/Footer.js";
 // sections for this page
 
 import Projects from "./sections-sections/Projects.js";
-import Carousel2 from "./index-sections/Carousel2.js";
-import Carousel from "./index-sections/Carousel.js";
+
 
 // Makes these prototypes available as "native" jsx-string elements
 
@@ -117,7 +108,7 @@ function Sections() {
              <Cubes number={200} />
            </Physics>
          </Canvas>
-
+<br/><br/><br/><br/>
          <div className="projects-3" data-background-color="black">
          <Container>
                  <Row>

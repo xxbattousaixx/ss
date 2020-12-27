@@ -127,9 +127,7 @@ function Projects2() {
                    <Lights />
                    <Content />
                  </Canvas>
-                 <Col className="mr-auto ml-auto text-center" md="12">
-                <h5>We proudly serve the Tampa Bay Area industrial painting needs.</h5>
-              </Col>
+
             </Row>
             <Row>
               <Col className="px-0" md="6">
@@ -140,7 +138,8 @@ function Projects2() {
                       "url(" + require("assets/img/project14.jpg") + ")",
                   }}
                 >
-                  <CardBody>
+                  <CardBody>  <h1 className="h1-seo" data-rellax-speed="-1">
+PAINT EXPERTS                      </h1>
                     <CardTitle className="text-left" tag="div">
                       <h2>
                         <a href="/contact-us" >

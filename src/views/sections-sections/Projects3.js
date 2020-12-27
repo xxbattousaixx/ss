@@ -128,9 +128,7 @@ function Projects3() {
                    <Lights />
                    <Content />
                  </Canvas>
-                 <Col className="mr-auto ml-auto text-center" md="12">
-                 <h5>We proudly serve the Tampa Bay Area pressure washing needs.</h5>
-              </Col>
+
             </Row>
             <Row>
               <Col className="px-0" md="6">
@@ -141,7 +139,8 @@ function Projects3() {
                       "url(" + require("assets/img/project14.jpg") + ")",
                   }}
                 >
-                  <CardBody>
+                  <CardBody>  <h2 className="h1-seo" data-rellax-speed="-1">
+EXPERIENCED PRESSURE WASHING                   </h2>
                     <CardTitle className="text-left" tag="div">
                       <h2>
                         <a href="/contact-us" >

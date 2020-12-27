@@ -11,6 +11,8 @@ import {
   NavbarBrand,
   Navbar,
   NavItem,
+  Row,
+  Col,
   Nav,
   Container,
   UncontrolledTooltip,
@@ -61,24 +63,20 @@ function ScrollTransparentNavbar() {
         />
       ) : null}
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
-        <Container>
-          <div className="navbar-translate">
-<NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
+      <Container>
 
-<img
-  alt="..."
-  src={require("assets/img/logo1.png")}
-></img>
+        <div className="navbar-translate">
 
-&nbsp;&nbsp; 941-518-1657<br/>
-edmena24@gmail.com
-<br/>
+                  <Col>     <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
 
+                    <img
+                          alt="..."
+                          src={require("assets/img/logo1.png")}
+                        ></img>  </NavbarBrand></Col>
 
-            </NavbarBrand>
-            <UncontrolledTooltip target="navbar-brand">
-              Contact us today!
-            </UncontrolledTooltip>
+                    <UncontrolledTooltip target="navbar-brand">
+                      Contact us today!
+                    </UncontrolledTooltip>
 
             <button
               onClick={() => {
@@ -97,20 +95,24 @@ edmena24@gmail.com
           </div>
           <Collapse isOpen={collapseOpen} navbar>
 
+<Col><Row>941-518-1657</Row><br/><Row>EdMena24@gmail.com</Row></Col>
 
-            <Nav className="ml-auto" id="ceva" navbar>
 
-              <UncontrolledDropdown nav>
+
+
+
+             <Nav className="ml-auto" id="ceva" navbar>
+
+         <UncontrolledDropdown nav>
               <a href="/presentation">
               <i
                 aria-hidden={true}
                 className="now-ui-icons business_bank"
               ></i>&nbsp;
               <span></span>
-              <p>Home</p>
+              <p>HOME&nbsp;</p>
               </a>
               </UncontrolledDropdown>
-
 <UncontrolledDropdown nav>
               <a href="/Testimonials1">
                   <i
@@ -118,7 +120,7 @@ edmena24@gmail.com
                     className="now-ui-icons business_globe"
                   ></i>&nbsp;
                   <span></span>
-                  <p>About Us&nbsp;</p>
+                  <p>ABOUT US&nbsp;</p>
               </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
@@ -126,7 +128,6 @@ edmena24@gmail.com
                   caret
                   color="default"
                   data-toggle="dropdown"
-                  href="#pablo"
                   id="navbarDropdownMenuLink"
                   nav
                   onClick={(e) => e.preventDefault()}
@@ -137,7 +138,7 @@ edmena24@gmail.com
                   ></i>&nbsp;
                   <span></span>
 
-                  <p>Services&nbsp;</p>
+                  <p style={{fontSize:"140%"}}>Services&nbsp;</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/sections">
@@ -163,7 +164,7 @@ edmena24@gmail.com
                     className="now-ui-icons design_image"
                   ></i>&nbsp;
                   <span></span>
-                  <p>Gallery/Reviews</p>
+                  <p>GALLERY&nbsp;</p>
               </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
@@ -173,13 +174,19 @@ edmena24@gmail.com
                     className="now-ui-icons files_paper"
                   ></i>&nbsp;
                   <span></span>
-                  <p>Contact Us&nbsp;</p>
+                  <p>CONTACT US&nbsp;</p>
               </a>
               </UncontrolledDropdown>
+
             </Nav>
           </Collapse>
         </Container>
-      </Navbar>
+        </Navbar>
+
+
+
+
+
     </>
   );
 }

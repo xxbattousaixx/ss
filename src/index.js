@@ -14,9 +14,13 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
+
+
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-awesome-slider/dist/captioned.css';
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -42,6 +46,8 @@ import Sections from "views/Sections.js";
 import Testimonials from "views/Testimonials2.js";
 import Testimonials1 from "views/Testimonials1.js";
 
+
+import "./styles.css";
 
 
 

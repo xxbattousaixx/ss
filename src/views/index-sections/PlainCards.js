@@ -17,22 +17,25 @@ import {
 function PlainCards() {
   return (
     <>
-      <div className="section section-plain-cards"
 
-    >
-        <Container>
 
-          <div className="title">
-        <img
-            alt="..."
-            className="rounded img-raised"
-            src={require("assets/img/solafide.png")}
-          ></img>            <h3>
-          <br/>
-          <br/>
-          <br/>
-            </h3>
-          </div>
+    <div className="section section-plain-cards"
+  
+          >
+<Container>
+
+
+  <Container>
+
+    <div className="title">
+
+
+        <center> <h3>
+
+      <i className="category text-black">Family owned and operated for 15 years...</i>
+    <br/><br/><br/><br/>
+      </h3></center>
+    </div></Container>
           <Row>
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
@@ -62,7 +65,7 @@ function PlainCards() {
                     We have been in this industry for decades and guarantee quality work.
                   </p>
                   <CardFooter>
-                    <motion.div
+                  <center>  <motion.div
                       whileHover={{ scale: 1.5 }}
                       whileTap={{ scale: .70 }}
                       ><Button
@@ -70,7 +73,7 @@ function PlainCards() {
                       href="/contact-us"
                     >
                       Request a quote
-                    </Button></motion.div>
+                    </Button></motion.div></center>
                   </CardFooter>
                 </CardBody>
               </Card>
@@ -97,7 +100,7 @@ function PlainCards() {
                   <p className="card-description text-info">
                   We can fulfill your commercial and residential painting needs...
                   </p>
-                  <CardFooter>
+                  <CardFooter><center>
                   <motion.div
                     whileHover={{ scale: 1.5 }}
                     whileTap={{ scale: .70 }}
@@ -106,7 +109,7 @@ function PlainCards() {
                       href="/contact-us"
                     >
                       Request a quote
-                    </Button></motion.div>
+                    </Button></motion.div></center>
                   </CardFooter>
                 </CardBody>
               </Card>

@@ -4,8 +4,7 @@ import React from "react";
 import { Container, Button, Link } from 'react-floating-action-button'
 // core components
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
-import PricingHeader from "components/Headers/PricingHeader.js";
-import ProductPageHeader from "components/Headers/ProductPageHeader.js";
+
 
 import FooterBlack from "components/Footers/FooterBlack.js";
 import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
@@ -14,7 +13,6 @@ import ContactUsHeader2 from "components/Headers/ContactUsHeader2.js";
 
 // sections for this page
 
-import Testimonials from "./presentation-sections/Testimonials.js";
 
 
 function Testimonials2() {
@@ -56,7 +54,7 @@ function Testimonials2() {
                 tooltip="Call Us"
                 icon="fas fa-user-plus" />
             <Button
-                tooltip="Get a quote!"
+                tooltip="Get a Free Estimate!"
                 icon="fas fa-plus"
                 rotate={true}
                 onClick={() => alert('Contact us here!')} />

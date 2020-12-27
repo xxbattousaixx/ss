@@ -51,7 +51,7 @@ function Carousel5() {
   };
   return (
     <>
-      <div className="section" id="carousel">
+      <div className="section" id="carousel" data-background-color="black">
         <Container>
           <div className="title">
 

@@ -132,7 +132,7 @@ function FixedTransparentNavbar() {
                               className="now-ui-icons design_image"
                             ></i>&nbsp;
                             <span></span>
-                            <p>Gallery/Reviews</p>
+                            <p>Gallery</p>
                         </a>
                         </UncontrolledDropdown>
                         <UncontrolledDropdown nav>

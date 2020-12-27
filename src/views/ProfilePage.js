@@ -4,18 +4,8 @@ import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
 import niceColors from 'nice-color-palettes'
 import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
   CardTitle,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Container,
+Container,
   Row,
   Col,
 } from "reactstrap";
@@ -116,12 +106,99 @@ function ProfilePage() {
 
 
 
-                          <div >
+                          <div > <br/><br/><br/><div className="projects-3" data-background-color="black">
+                          <Container>
+
+                                  <Row>
+                                    <Col className="ml-auto mr-auto text-center" md="8">
+                                      <h6 className="category text-muted">Our work</h6>
+                                      <h2 className="title">Some of Our Painting Projects</h2>
+                                    </Col>
+                                  </Row>
+                                  <div className="section-story-overview">
+                                    <Row>
+                                      <Col md="6">
+                                        <div
+                                          className="image-container image-left"
+                                          style={{
+                                            backgroundImage:
+                                              "url(" + require("assets/img/pt2.jpg") + ")",
+                                          }}
+                                        >
+                                          <p className="blockquote blockquote-info">
+                                            Solafide is available to assist in all aspects of
+                                            a project from start to finish, including consulting with
+                                            Architects and Builders.
+                                          </p>
+                                        </div>
+                                      </Col>
+                                      <Col md="5">
+                                        <div
+                                          className="image-container image-right"
+                                          style={{
+                                            backgroundImage:
+                                              "url(" + require("assets/img/pt4.jpg") + ")",
+                                          }}
+                                        ></div>
+                                        <h6 className="category text-info">Roof</h6>
+                                        <CardTitle tag="h4">Artisanal technique</CardTitle>
+                                        <p>
+                                          Our style has been developed over the years to bring you an exceptional experience.
+                                        </p>
+                                      </Col>
+                                    </Row>
+                                  </div>
+                                  <div className="section-story-overview">
+                                    <Row>
+                                      <Col md="6">
+                                        <div
+                                          className="image-container image-left"
+                                          style={{
+                                            backgroundImage:
+                                              "url(" + require("assets/img/pt5.jpg") + ")",
+                                          }}
+                                        >
+                                          <p className="blockquote blockquote-info">
+                                           We provide a simple, approachable means to perform the toughest jobs...
+                                          </p>
+                                        </div>
+                                      </Col>
+                                      <Col md="5">
+                                        <div
+                                          className="image-container image-right"
+                                          style={{
+                                            backgroundImage:
+                                              "url(" + require("assets/img/pt1.jpg") + ")",
+                                          }}
+                                        ></div>
+                                        <h6 className="category text-info">Walls and Roofs</h6>
+                                        <CardTitle tag="h4">Same Day service</CardTitle>
+                                        <p>
+                                          We are proud to offer same day services -- please inquire as to our availability when requesting a quote.
+                                        </p>
+                                      </Col>
+                                      <Col md="6">
+                                      
+
+                                      </Col>
+                                      <Col md="6">
+                                        <div
+                                          className="image-container image-center"
+                                          style={{
+                                            backgroundImage:
+                                              "url(" + require("assets/img/pt7.jpg") + ")",
+                                          }}
+                                        ></div>
+
+                                      </Col></Row>
+                                  </div>
+                                </Container>
+
                  <Row><Col md="4">
                  <Carousel3/>
                  </Col><Col md="4"><Carousel4/></Col><Col md="4"><Carousel5/></Col></Row>
 
-                 </div>
+            </div>     </div>
 
         <Footer />
       </div>
