@@ -31,6 +31,7 @@ function BlogPostsHeader() {
           ref={pageHeader}
         ></div>
         <div className="content-center">
+        <br/>
           <Row>
             <Col className="ml-auto mr-auto text-center" md="8">
             _________________________________________________________________________________

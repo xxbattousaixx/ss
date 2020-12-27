@@ -111,7 +111,7 @@ function SignupPage() {
                      <Cubes number={200} />
                    </Physics>
                  </Canvas>
-                 <div > <br/><br/><br/><br/><div className="projects-3" data-background-color="black">
+                 <div > <div className="projects-3" data-background-color="black">
         <Row>
         <Col md="6">
         <Carousel6/>

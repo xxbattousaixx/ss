@@ -72,7 +72,7 @@ function SignupPage() {
                    <spotLight position={[5, 5, 5]} angle={0.3} penumbra={1} intensity={2} castShadow shadow-mapSize-width={256} shadow-mapSize-height={256} />
                    <Physics>
                      <Plane rotation={[-Math.PI / 2, 0, 0]} />
-                     <Cubes number={200} />
+                     <Cubes number={500} />
                    </Physics>
                  </Canvas>
 

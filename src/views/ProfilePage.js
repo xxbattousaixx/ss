@@ -106,7 +106,7 @@ function ProfilePage() {
 
 
 
-                          <div > <br/><br/><br/><div className="projects-3" data-background-color="black">
+                          <div ><div className="projects-3" data-background-color="black">
                           <Container>
 
                                   <Row>
@@ -178,7 +178,7 @@ function ProfilePage() {
                                         </p>
                                       </Col>
                                       <Col md="6">
-                                      
+
 
                                       </Col>
                                       <Col md="6">

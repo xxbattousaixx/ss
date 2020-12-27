@@ -155,6 +155,64 @@
         right: 155px;
         z-index: 0;
     }
+    .image-container2{
+        height: 90vh;
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: $box-shadow-raised;
+        border-radius: .25rem;
+
+        & + .category{
+            padding-top: 15px;
+        }
+
+        &.image-right{
+            z-index: 2;
+
+            + h3.title{
+                margin-top: 120px;
+            }
+        }
+
+        &.image-left{
+            z-index: 1;
+        }
+
+        &:nth-child(2){
+            margin-top: 420px;
+            margin-left: -105px;
+        }
+    }
+    .image-container3{
+        height: 70vh;
+        position: relative;
+        background-position: center center;
+        background-size: cover;
+        box-shadow: $box-shadow-raised;
+        border-radius: .25rem;
+
+        & + .category{
+            padding-top: 15px;
+        }
+
+        &.image-right{
+            z-index: 2;
+
+            + h3.title{
+                margin-top: 120px;
+            }
+        }
+
+        &.image-left{
+            z-index: 1;
+        }
+
+        &:nth-child(2){
+            margin-top: 420px;
+            margin-left: -105px;
+        }
+    }
 }
 
 .section-nucleo-icons{

@@ -59,7 +59,7 @@ function ContactUsHeader2() {
                   };
   return (
     <>
-<div style={{
+<div className="wrapper" style={{
   backgroundImage: "url(" + require("assets/img/tigris.jpg") + ")",
 }}>    <center>  <img
           alt="..."

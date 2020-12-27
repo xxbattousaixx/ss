@@ -67,13 +67,18 @@ function ScrollTransparentNavbar() {
 
         <div className="navbar-translate">
 
-                  <Col>     <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
+              <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
 
-                    <img
-                          alt="..."
-                          src={require("assets/img/logo1.png")}
-                        ></img>  </NavbarBrand></Col>
+                      <img
+                        alt="..."
+                        src={require("assets/img/logo1.png")}
+                      ></img>
 
+                      &nbsp;&nbsp; 941-518-1657<br/>
+                      edmena24@gmail.com
+                      <br/>
+
+                                  </NavbarBrand>
                     <UncontrolledTooltip target="navbar-brand">
                       Contact us today!
                     </UncontrolledTooltip>
@@ -93,9 +98,9 @@ function ScrollTransparentNavbar() {
               <span className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
+
           <Collapse isOpen={collapseOpen} navbar>
 
-<Col><Row lg="4">941-518-1657</Row><Row>EdMena24@gmail.com</Row></Col>
 
 
 

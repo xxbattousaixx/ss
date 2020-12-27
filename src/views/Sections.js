@@ -108,7 +108,6 @@ function Sections() {
              <Cubes number={200} />
            </Physics>
          </Canvas>
-<br/><br/><br/><br/>
          <div className="projects-3" data-background-color="black">
          <Container>
                  <Row>
@@ -179,16 +178,24 @@ function Sections() {
                          We are proud to offer same day services -- please inquire as to our availability when requesting a quote.
                        </p>
                      </Col>
-                     <Col md="8">
+                     <Col md="6">
                        <div
-                         className="image-container image-center"
+                         className="image-container2"
                          style={{
                            backgroundImage:
                              "url(" + require("assets/img/a3.jpg") + ")",
                          }}
-                       ></div>
+                       ></div>   </Col>
 
-                     </Col>
+                       <Col md="6">
+                         <div
+                           className="image-container3"
+                           style={{
+                             backgroundImage:
+                               "url(" + require("assets/img/a33.jpg") + ")",
+                           }}
+                         ></div>   </Col>
+
                    </Row>
                  </div>
                </Container>
