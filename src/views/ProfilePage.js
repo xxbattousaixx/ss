@@ -1,4 +1,6 @@
 import * as THREE from 'three'
+import Rellax from "rellax";
+
 import React, { useMemo } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
@@ -12,7 +14,8 @@ Container,
 // core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar.js";
 import Footer from "components/Footers/Footer.js";
-
+import Lottie from 'react-lottie';
+import animationData from 'views/lotties/cube1.json';// reactstrap components
 // sections for this page
 
 import Projects2 from "./sections-sections/Projects2.js";
@@ -68,22 +71,31 @@ function ProfilePage() {
     document.body.classList.add("profile-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    var href = window.location.href.substring(
-      window.location.href.lastIndexOf("#/") + 2
-    );
-    var hrefId = href.substring(href.lastIndexOf("#") + 1);
-    if (href.lastIndexOf("#") > 0) {
-      document.getElementById(hrefId).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+
+    // initialise Rellax for this page
+    if (window.innerWidth >= 991) {
+      setTimeout(function () {
+        new Rellax(".rellax", {
+          center: true,
+        });
+      }, 5000);
+      new Rellax(".rellax-header");
+      new Rellax(".rellax-text");
     }
-    return function cleanup() {
-      document.body.classList.remove("profile-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
+
+
   });
+
+  const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+          preserveAspectRatio: "xMidYMid slice"
+        }
+      };
   return (
     <>
       <WhiteNavbar />
@@ -111,8 +123,8 @@ function ProfilePage() {
 
                                   <Row>
                                     <Col className="ml-auto mr-auto text-center" md="8">
-                                      <h6 className="category text-muted">Our work</h6>
-                                      <h2 className="title">Some of Our Painting Projects</h2>
+                                      <h2 className="category text-muted">Our work</h2>
+                                      <h4 className="title">Some of Our Painting Projects</h4>
                                     </Col>
                                   </Row>
                                   <div className="section-story-overview">
@@ -125,45 +137,51 @@ function ProfilePage() {
                                               "url(" + require("assets/img/pt2.jpg") + ")",
                                           }}
                                         >
-                                          <p className="blockquote blockquote-info">
-                                            Solafide is available to assist in all aspects of
-                                            a project from start to finish, including consulting with
-                                            Architects and Builders.
-                                          </p>
+
                                         </div>
+                                        <p className="blockquote text-white">
+                                          Solafide is available to assist in all aspects of
+                                          a project from start to finish, including consulting with
+                                          Architects and Builders.
+                                        </p>
                                       </Col>
                                       <Col md="5">
                                         <div
                                           className="image-container image-right"
                                           style={{
                                             backgroundImage:
-                                              "url(" + require("assets/img/pt4.jpg") + ")",
+                                              "url(" + require("assets/img/pt5.jpg") + ")",
                                           }}
-                                        ></div>
-                                        <h6 className="category text-info">Roof</h6>
+                                        ></div><br/><br/><br/><div className="blockquote blockquote-danger">
+                                        <h3 className="category text-danger">Roofing</h3>
                                         <CardTitle tag="h4">Artisanal technique</CardTitle>
                                         <p>
                                           Our style has been developed over the years to bring you an exceptional experience.
-                                        </p>
+                                        </p></div>
                                       </Col>
                                     </Row>
                                   </div>
                                   <div className="section-story-overview">
                                     <Row>
-                                      <Col md="6">
+                                      <Col md="7">
                                         <div
-                                          className="image-container image-left"
+                                          className="image-container image-center"
                                           style={{
                                             backgroundImage:
-                                              "url(" + require("assets/img/pt5.jpg") + ")",
+                                              "url(" + require("assets/img/a333.jpg") + ")",
                                           }}
                                         >
-                                          <p className="blockquote blockquote-info">
-                                           We provide a simple, approachable means to perform the toughest jobs...
-                                          </p>
+
                                         </div>
-                                      </Col>
-                                      <Col md="5">
+
+                                      </Col>&nbsp; &nbsp; <Col md="4"> <Lottie
+                                              options={defaultOptions}
+
+                                              /></Col></Row>
+
+                                              <Row>
+                                      <Col md="7">
+
                                         <div
                                           className="image-container image-right"
                                           style={{
@@ -171,17 +189,17 @@ function ProfilePage() {
                                               "url(" + require("assets/img/pt1.jpg") + ")",
                                           }}
                                         ></div>
-                                        <h6 className="category text-info">Walls and Roofs</h6>
-                                        <CardTitle tag="h4">Same Day service</CardTitle>
-                                        <p>
-                                          We are proud to offer same day services -- please inquire as to our availability when requesting a quote.
-                                        </p>
-                                      </Col>
-                                      <Col md="6">
+                                        <div className="blockquote text-warning">
+                                             We provide a simple, approachable means to perform the toughest jobs...We believe excellence is attained through utmost care in every step of the way in our projects.
+                                            </div>  </Col>
 
 
-                                      </Col>
-                                      <Col md="6">
+
+                                          </Row>
+                                          <br/><br/>
+                                          <br/>
+
+                                      <Col md="12">
                                         <div
                                           className="image-container image-center"
                                           style={{
@@ -190,9 +208,19 @@ function ProfilePage() {
                                           }}
                                         ></div>
 
-                                      </Col></Row>
+                                      </Col><br/><br/><br/><Row>
+                                    <Col md="8">  <div className="blockquote blockquote-info">
+                                      <h3 className="category text-info text-left">Walls and Roofs</h3>
+
+                                      <h6><CardTitle tag="h4">Same Day service</CardTitle></h6>
+                                    <br/>  <p>
+                                        We are proud to offer same day services -- please inquire as to our availability when requesting a quote.
+                                      </p></div></Col></Row>
                                   </div>
+                                  <Row><Col md="12">  <div className="info">
+                                  </div></Col></Row>
                                 </Container>
+
 
                  <Row><Col md="4">
                  <Carousel3/>

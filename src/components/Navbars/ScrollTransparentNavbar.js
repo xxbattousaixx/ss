@@ -119,7 +119,7 @@ function ScrollTransparentNavbar() {
               </a>
               </UncontrolledDropdown>
 <UncontrolledDropdown nav>
-              <a href="/Testimonials1">
+              <a href="/AboutUs">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
@@ -163,7 +163,7 @@ function ScrollTransparentNavbar() {
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
-              <a href="/Testimonials2">
+              <a href="/gallery">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons design_image"

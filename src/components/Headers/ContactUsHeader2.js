@@ -1,14 +1,9 @@
 import React from "react";
 import {
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
+ 
   Row,
   Col,
-  Carousel,
-  CarouselItem,
-  CarouselIndicators,
+ 
 } from "reactstrap";
 import AwesomeSlider from 'react-awesome-slider';
 import Lottie from 'react-lottie';
@@ -20,11 +15,11 @@ import animationData4 from 'views/lotties/build.json';// reactstrap components
 // reactstrap components
 import animationData from 'views/lotties/flawda.json';// reactstrap components
 
-import animationData2 from 'views/lotties/bar1.json';// reactstrap components
 
 // core components
 
 function ContactUsHeader2() {
+  
   const defaultOptions3 = {
         loop: true,
         autoplay: true,
@@ -49,14 +44,7 @@ function ContactUsHeader2() {
                   preserveAspectRatio: "xMidYMid slice"
                 }
               };
-              const defaultOptions2 = {
-                    loop: true,
-                    autoplay: true,
-                    animationData: animationData2,
-                    rendererSettings: {
-                      preserveAspectRatio: "xMidYMid slice"
-                    }
-                  };
+          
   return (
     <>
 <div className="wrapper" style={{

@@ -1,4 +1,6 @@
 import * as THREE from 'three'
+import Rellax from "rellax";
+
 import React, { useMemo } from 'react'
 import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
@@ -72,21 +74,21 @@ function Sections() {
     document.body.classList.add("sections-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    var href = window.location.href.substring(
-      window.location.href.lastIndexOf("#/") + 2
-    );
-    var hrefId = href.substring(href.lastIndexOf("#") + 1);
-    if (href.lastIndexOf("#") > 0) {
-      document.getElementById(hrefId).scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-        inline: "nearest",
-      });
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0;
+
+    // initialise Rellax for this page
+    if (window.innerWidth >= 991) {
+      setTimeout(function () {
+        new Rellax(".rellax", {
+          center: true,
+        });
+      }, 5000);
+      new Rellax(".rellax-header");
+      new Rellax(".rellax-text");
     }
-    return function cleanup() {
-      document.body.classList.remove("sections-page");
-      document.body.classList.remove("sidebar-collapse");
-    };
+
+
   });
 
   return (

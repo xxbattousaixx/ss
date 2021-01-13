@@ -29,7 +29,6 @@ import "assets/demo/demo.css?v=1.4.0";
 import "assets/demo/react-demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages
-import AboutUs from "views/examples/AboutUs.js";
 import BlogPost from "views/examples/BlogPost.js";
 import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
@@ -43,8 +42,8 @@ import Pricing from "views/examples/Pricing.js";
 import ProductPage from "views/examples/ProductPage.js";
 import ProfilePage from "views/ProfilePage.js";
 import Sections from "views/Sections.js";
-import Testimonials from "views/Testimonials2.js";
-import Testimonials1 from "views/Testimonials1.js";
+import Gallery from "views/Gallery.js";
+import AboutUs from "views/AboutUs.js";
 
 
 import "./styles.css";
@@ -62,8 +61,8 @@ ReactDOM.render(
       <Route path="/blog-posts" render={(props) => <BlogPosts {...props} />} />
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/e-commerce" render={(props) => <Ecommerce {...props} />} />
-      <Route path="/Testimonials2" render={(props) => <Testimonials {...props} />} />
-      <Route path="/Testimonials1" render={(props) => <Testimonials1 {...props} />} />
+      <Route path="/gallery" render={(props) => <Gallery {...props} />} />
+      <Route path="/AboutUs" render={(props) => <AboutUs {...props} />} />
       <Route
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}

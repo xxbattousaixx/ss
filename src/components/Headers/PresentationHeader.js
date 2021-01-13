@@ -54,16 +54,7 @@ function PresentationHeader() {
           data-rellax-speed="0"
         >
 
-          <div
-            className="page-header-image"
-
-            style={{
-              backgroundImage:
-                "url(" +
-                require("assets/img/work1.jpg") +
-                ")",
-            }}
-          ></div>
+      
         </div>
         <div className="rellax-text-container"
         >
