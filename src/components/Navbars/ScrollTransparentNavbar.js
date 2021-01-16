@@ -146,16 +146,16 @@ function ScrollTransparentNavbar() {
                   <p style={{fontSize:"140%"}}>Services&nbsp;</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
-                  <DropdownItem tag={Link} to="/sections">
+                  <DropdownItem tag={Link} to="/Pavement">
                     <i className="now-ui-icons ui-2_settings-90"></i>
                     Pavers
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/profile-page">
+                  <DropdownItem tag={Link} to="/Paint">
                     <i className="now-ui-icons design-2_ruler-pencil"></i>
     Painting
                   </DropdownItem>
 
-                  <DropdownItem tag={Link} to="/sign-up">
+                  <DropdownItem tag={Link} to="/pressureWashing">
                     <i className="now-ui-icons education_atom"></i>
                     Pressure Washing
                   </DropdownItem>

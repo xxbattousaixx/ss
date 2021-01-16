@@ -37,11 +37,10 @@ import LandingPage from "views/examples/LandingPage.js";
 import LoginPage from "views/examples/LoginPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import Presentation from "views/Presentation.js";
-import Presentation2 from "views/Presentation2.js";
 import Pricing from "views/examples/Pricing.js";
 import ProductPage from "views/examples/ProductPage.js";
-import ProfilePage from "views/ProfilePage.js";
-import Sections from "views/Sections.js";
+import Paint from "views/Paint.js";
+import Pavement from "views/Pavement.js";
 import Gallery from "views/Gallery.js";
 import AboutUs from "views/AboutUs.js";
 
@@ -50,7 +49,7 @@ import "./styles.css";
 
 
 
-import SignupPage from "views/SignupPage.js";
+import PressureWashing from "views/PressureWashing.js";
 // others
 
 ReactDOM.render(
@@ -67,7 +66,6 @@ ReactDOM.render(
         path="/landing-page"
         render={(props) => <LandingPage {...props} />}
       />
-      <Route path="/login-page" render={(props) => <LoginPage {...props} />} />
       <Route
         path="/nucleo-icons"
         render={(props) => <NucleoIcons {...props} />}
@@ -76,21 +74,18 @@ ReactDOM.render(
         path="/presentation"
         render={(props) => <Presentation {...props} />}
       />
-      <Route
-        path="/presentation2"
-        render={(props) => <Presentation2 {...props} />}
-      />
+
       <Route path="/pricing" render={(props) => <Pricing {...props} />} />
       <Route
         path="/product-page"
         render={(props) => <ProductPage {...props} />}
       />
       <Route
-        path="/profile-page"
-        render={(props) => <ProfilePage {...props} />}
+        path="/paint"
+        render={(props) => <Paint {...props} />}
       />
-      <Route path="/sections" render={(props) => <Sections {...props} />} />
-      <Route path="/sign-up" render={(props) => <SignupPage {...props} />} />
+      <Route path="/pavement" render={(props) => <Pavement {...props} />} />
+      <Route path="/pressureWashing" render={(props) => <PressureWashing {...props} />} />
       <Redirect to="/presentation" />
     </Switch>
   </BrowserRouter>,

@@ -22,7 +22,7 @@ function FooterBlack() {
             </li>
             <li>
               <a
-                href="/Testimonials1"
+                href="/AboutUs"
               >
                 About Us
               </a>

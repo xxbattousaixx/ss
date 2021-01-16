@@ -1,9 +1,9 @@
 import React from "react";
 import {
- 
+
   Row,
   Col,
- 
+
 } from "reactstrap";
 import AwesomeSlider from 'react-awesome-slider';
 import Lottie from 'react-lottie';
@@ -19,7 +19,7 @@ import animationData from 'views/lotties/flawda.json';// reactstrap components
 // core components
 
 function ContactUsHeader2() {
-  
+
   const defaultOptions3 = {
         loop: true,
         autoplay: true,
@@ -44,7 +44,7 @@ function ContactUsHeader2() {
                   preserveAspectRatio: "xMidYMid slice"
                 }
               };
-          
+
   return (
     <>
 <div className="wrapper" style={{
