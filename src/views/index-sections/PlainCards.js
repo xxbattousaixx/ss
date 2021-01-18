@@ -20,7 +20,9 @@ function PlainCards() {
 
 
     <div className="section section-plain-cards"
-  
+    style={{
+      backgroundImage: "url(" + require("assets/img/777.jpg") + ")",
+    }}
           >
 <Container>
 
@@ -39,19 +41,12 @@ function PlainCards() {
           <Row>
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
-                <motion.div className="card-image"
-                whileHover={{
-      scale: [1, 1.2, 1.5, 1.2, 1],
-      rotate: [0, 90, 180, 270, 360],
-    }}
 
-              >
                   <img
                     alt="..."
                     className="img rounded img-raised"
                     src={require("assets/img/card-blog2.jpg")}
                   ></img>
-                </motion.div>
                 <CardBody>
                   <h6 className="category text-warning">
                     <i className="now-ui-icons design_palette"></i> Pavers
@@ -65,15 +60,12 @@ function PlainCards() {
                     We have been in this industry for decades and guarantee quality work.
                   </p>
                   <CardFooter>
-                  <center>  <motion.div
-                      whileHover={{ scale: 1.5 }}
-                      whileTap={{ scale: .70 }}
-                      ><Button
+                  <center> <Button
                     color="info"
                       href="/contact-us"
                     >
                       Request a quote
-                    </Button></motion.div></center>
+                    </Button></center>
                   </CardFooter>
                 </CardBody>
               </Card>
