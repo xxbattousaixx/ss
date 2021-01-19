@@ -278,7 +278,7 @@ function AboutUs() {
   While paver units are extremely durable and strong, there are times when they become damaged by excessive use or even due to a heavy impact. Improper installation can also result in shifting and sinking of paver units. The one way to ensure that the problem doesn’t become aggravated is to get timely paver repairs done. Paver restoration companies can handle this job expertly. The will replace units that have become cracked and reinstall the ones that have shifted or sunk.
 </p>
   <p className="info-title text-white">
-  Paver maintenance is something you should always entrust to experts like the ones at Webber Inc. They will assess the condition of the paver surfaces; identify which treatments will be required to get the units back into a good condition. These services not only improve the appearance of the paved surfaces, but also improve their integrity and lifespan.
+  Paver maintenance is something you should always entrust to experts like us. They will assess the condition of the paver surfaces; identify which treatments will be required to get the units back into a good condition. These services not only improve the appearance of the paved surfaces, but also improve their integrity and lifespan.
               </p> </CardBody>
               </Card>
             </Col></AccordionDetails>
