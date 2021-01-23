@@ -41,12 +41,12 @@ function PlainCards() {
           <Row>
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
-
+  <a href="/contact-us">
                   <img
                     alt="..."
                     className="img rounded img-raised"
                     src={require("assets/img/card-blog2.jpg")}
-                  ></img>
+                  ></img></a>
                 <CardBody>
                   <h6 className="category text-warning">
                     <i className="now-ui-icons design_palette"></i> Pavers
@@ -108,9 +108,7 @@ function PlainCards() {
             </Col>
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
-                <motion.div className="card-image"
-                  whileHover={{ scale: [1, 1.2, 1.5, 1.2, 1],
-                  rotate: [0, 90, 180, 270, 360] }}>
+
                   <a href="/contact-us">
                     <img
                       alt="..."
@@ -118,7 +116,6 @@ function PlainCards() {
                       src={require("assets/img/examples/card-blog6.jpg")}
                     ></img>
                   </a>
-                </motion.div>
                 <CardBody className="text-center">
                   <h6 className="category text-danger">
                     <i className="now-ui-icons media-2_sound-wave"></i> Pressure Washing
