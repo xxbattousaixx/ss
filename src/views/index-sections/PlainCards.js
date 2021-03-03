@@ -41,7 +41,7 @@ function PlainCards() {
           <Row>
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
-  <a href="/contact-us">
+  <a href="/Pavement">
                   <img
                     alt="..."
                     className="img rounded img-raised"
@@ -52,7 +52,7 @@ function PlainCards() {
                     <i className="now-ui-icons design_palette"></i> Pavers
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="/contact-us">
+                    <a href="/Pavement">
                       Only the highest quality work.
                     </a>
                   </CardTitle>
@@ -73,7 +73,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
                 <div className="card-image">
-                  <a href="/contact-us">
+                  <a href="/Paint">
                     <img
 
                       alt="..."
@@ -85,7 +85,7 @@ function PlainCards() {
                 <CardBody>
                   <h6 className="category text-info"><i className="now-ui-icons design_app">  </i> Painting </h6>
                   <CardTitle tag="h5">
-                    <a href="/contact-us">
+                    <a href="/Paint">
                       We only utilize premium materials.
                     </a>
                   </CardTitle>
@@ -109,7 +109,7 @@ function PlainCards() {
             <Col lg="4" md="6">
               <Card className="card-blog card-plain">
 
-                  <a href="/contact-us">
+                  <a href="/PressureWashing">
                     <img
                       alt="..."
                       className="img img-raised rounded"
@@ -121,7 +121,7 @@ function PlainCards() {
                     <i className="now-ui-icons media-2_sound-wave"></i> Pressure Washing
                   </h6>
                   <CardTitle tag="h5">
-                    <a href="/contact-us">
+                    <a href="/PressureWashing">
                       Quality is our only standard.
                     </a>
                   </CardTitle>
