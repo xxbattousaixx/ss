@@ -59,13 +59,16 @@ function PlainCards() {
                   <p className="card-description text-warning">
                     We have been in this industry for decades and guarantee quality work.
                   </p>
-                  <CardFooter>
-                  <center> <Button
+                  <CardFooter><center>
+                  <motion.div
+                    whileHover={{ scale: 1.5 }}
+                    whileTap={{ scale: .70 }}
+                    ><Button
                     color="info"
                       href="/contact-us"
                     >
                       Request a quote
-                    </Button></center>
+                    </Button></motion.div></center>
                   </CardFooter>
                 </CardBody>
               </Card>

@@ -317,7 +317,7 @@ Extensive Product Selection            </h3>
                   <CardTitle tag="h2">Pattern Styles
         </CardTitle>
                   <p className="info-title text-white">
-        There are many patterns to choose from. You are sure to find a style that best fits your paving project. You can also visit our beautiful showroom and see all of our patterns and designs on the showroom floor display.
+        There are many patterns to choose from. You are sure to find a style that best fits your paving project.
 
                   </p>
 
@@ -397,7 +397,7 @@ Extensive Product Selection            </h3>
 
                   <CardTitle tag="h2">Shapes</CardTitle>
                   <p className="info-title text-white">
-                  Here are Standard Paver Shapes for you to get familliar with. Please visit our Showroom to see the new shapes and styles available.
+                  Here are Standard Paver Shapes for you to get familliar with.
                            </p>
                           <br/> <Carousel8/>
                                             <br/>
@@ -443,7 +443,7 @@ Extensive Product Selection            </h3>
                   <CardTitle tag="h2">Colors
         </CardTitle>
                   <p className="info-title text-white">
-                  With a large variety of colors to choose from the possibilites are endless. In our showroom we carry sample boards from all our manufacturers. This allow's our contacted customers to take them home. This way we can provide many solutions to our customers, so you make the right color choice for your paving project.
+                  With a large variety of colors to choose from the possibilites are endless. This allows our contacted customers to take them home. This way we can provide many solutions to our customers, so you make the right color choice for your paving project.
                 </p>  <p className="info-title text-white">  Here are just some of the colors we carry to give you an idea of what you might like. Remember we do have many different maufacturers so there are tons of colors to choose from.</p>
                   <Row>    <Col>    <AwesomeSlider
                       cssModule={AwesomeSliderStyles}
