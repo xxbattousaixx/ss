@@ -6,7 +6,10 @@ import React, { useEffect, useRef, useMemo, useState } from 'react';
 import niceColors from 'nice-color-palettes';
 import { makeStyles } from "@material-ui/core/styles";
 import { Canvas, useFrame } from 'react-three-fiber';
+import Effects from 'views/Effects.js';
 import 'react-awesome-slider/dist/styles.css';
+import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
+
 import Carousel8 from "./index-sections/Carousel8.js";
 import animationData from 'views/lotties/robot.json';// reactstrap components
 import Lottie from 'react-lottie';
@@ -15,7 +18,7 @@ import animationData4 from 'views/lotties/dots.json';// reactstrap components
 
 
 
-import Effects from 'views/Effects.js';
+
 import {
   Badge,
   Card,
@@ -39,7 +42,6 @@ import animationData2 from 'views/lotties/laser.json';// reactstrap components
 import AwesomeSlider from 'react-awesome-slider';
 
 
-import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
 
 
 
