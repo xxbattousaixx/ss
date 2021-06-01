@@ -55,7 +55,7 @@ function ContactUs() {
           <div className="contact-content">
             <Container>
               <Row>
-                <Col className="ml-auto mr-auto" md="5">
+                <Col className="ml-auto mr-auto" md="5" >
                   <h2 className="title">Send us a message</h2>
                   <p className="description">
                     You can contact us with anything related to our services.

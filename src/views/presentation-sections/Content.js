@@ -1,7 +1,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
+import { Button, Container, Row, Col } from "reactstrap";
 
 // core components
 
@@ -12,33 +12,31 @@ function Content() {
         <Container>
           <Row>
             <Col md="5">
-              <div className="image-container">
-                <img
-                  alt="..."
-                  className="img img-raised rounded img-comments rellax"
-                  data-rellax-speed="1"
-                  src={require("assets/img/presentation-page/content1.jpg")}
-                ></img>
+                <h1 className="title">Solafide Services</h1>
+{/*    
+          <div className="image-container">
                 <img
                   alt="..."
                   className="img img-raised rounded img-blog rellax"
                   data-rellax-speed="4"
-                  src={require("assets/img/presentation-page/content4.jpg")}
+                  src={require("assets/img/presentation-page/124.JPG")}
                 ></img>
-              </div>
+  </div> 
+  */}
             </Col>
             <Col className="ml-auto mr-auto" md="4">
               <div className="section-description">
-                <h2 className="title">Content Areas</h2>
-                <h6 className="category">For Areas that Need More Space</h6>
+              
                 <h5 className="description">
-                  We took into consideration multiple use cases and came up with
-                  some specific areas for you. If you need elements such as
-                  tables, comments, description areas, tabs and many others,
-                  we've got you covered. They're beautiful and easy to use for
-                  the end user navigating your website.
+                It’s time to think beyond tired old asphalt and concrete. Don’t settle for boring - brick pavers are a lasting, beautiful solution for driveways, pool decks, walls, patios, and more. Find out why we’re the Tampa Bay Area's most trusted hardscape design and installation company. Let us create a hardscape solution that you and your family will enjoy for years to come.
                 </h5>
-              </div>
+                <center><Button
+                    color="info"
+                      href="/contact-us"
+                    >
+                      FREE ESTIMATE
+                    </Button>
+                    </center>              </div>
             </Col>
           </Row>
         </Container>

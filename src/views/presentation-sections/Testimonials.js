@@ -12,10 +12,8 @@ import {
   CarouselItem,
   CarouselIndicators,
 } from "reactstrap";
-import AwesomeSlider from 'react-awesome-slider';
 
 import 'react-awesome-slider/dist/styles.css';
-import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
 
 // core components
 
@@ -146,7 +144,6 @@ function Testimonials() {
     <>
       <div
         className="section section-testimonials"
-        data-background-color="black"
       >
     
               <Row>

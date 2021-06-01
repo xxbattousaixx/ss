@@ -5,8 +5,8 @@ import {
   Col,
 
 } from "reactstrap";
-import AwesomeSlider from 'react-awesome-slider';
 import Lottie from 'react-lottie';
+import AwesomeSlider from 'react-awesome-slider';
 
 import 'react-awesome-slider/dist/styles.css';
 import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation';
@@ -48,19 +48,24 @@ function ContactUsHeader2() {
   return (
     <>
 <div className="wrapper" style={{
-  backgroundImage: "url(" + require("assets/img/tigris.jpg") + ")",
-}}>    <center>  <img
+  backgroundImage: "url(" + require("assets/img/111.jpg") + ")",
+}}>  
+
+<br/><br/><br/>
+
+  <center>  <img
           alt="..."
           className="rounded img-raised"
           src={require("assets/img/solafide.png")}
         ></img>   </center>
+{/*
 <div className="info"><Lottie
        options={defaultOptions3}
 
        /></div>
-
+*/}
       <Row><br/>
-            <Col md="5">
+            <Col md="6">
 <br/><br/><br/>
                 <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
                 <div data-src="/11.jpg" />
@@ -77,18 +82,20 @@ function ContactUsHeader2() {
                 <div data-src="/133.jpg" />
                 </AwesomeSlider>
 <br/>   <br/> <br/></Col>
-<Col span="8" md="2"><div className="info text-horizontal">
+{/*<Col span="8" md="2"><div className="info text-horizontal">
 <Lottie
        options={defaultOptions}
 
-       />      <Lottie
-                          options={defaultOptions4}
-
-                          />
+       />   
+      
+     <Lottie options={defaultOptions4}/>
    <Lottie
               options={defaultOptions}
 
-              /></div> </Col> <Col md="5">
+              />
+
+              </div> </Col>*/}
+               <Col md="6">
         <br/><br/><br/>
 
                       <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>

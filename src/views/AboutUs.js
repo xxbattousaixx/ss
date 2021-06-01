@@ -48,7 +48,7 @@ import AwesomeSlider from 'react-awesome-slider';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-    background: "lightpink"
+    background: "gray"
 
   },
   heading: {
@@ -180,16 +180,22 @@ function AboutUs() {
     <>
     <ScrollTransparentNavbar  />
     <BlogPostsHeader />
+    <Canvas
+              gl={{ antialias: false, alpha: false }}
+              camera={{ position: [0, 0, 15], near: 5, far: 20 }}
+              onCreated={({ gl }) => gl.setClearColor('lightpink')}>
+              <ambientLight />
+              <pointLight position={[150, 150, 150]} intensity={0.55} />
+              <Boxes />
+              <Effects />
+            </Canvas>
       <div className="wrapper" style={{
         backgroundImage:
           "url(" + require("assets/img/xxixx.jpg") + ")",
       }}>
 
        <div className="info text-center">
-     <Lottie
-            options={defaultOptions2}
-
-            /></div>
+    </div>
 
         <div className="about-description text-center">
 
@@ -479,24 +485,13 @@ Extensive Product Selection            </h3>
         </Accordion>  </div> </Col>
             </Row>
           </Container><br/><br/><br/><br/><br/>
-          <Canvas
-              gl={{ antialias: false, alpha: false }}
-              camera={{ position: [0, 0, 15], near: 5, far: 20 }}
-              onCreated={({ gl }) => gl.setClearColor('lightpink')}>
-              <ambientLight />
-              <pointLight position={[150, 150, 150]} intensity={0.55} />
-              <Boxes />
-              <Effects />
-            </Canvas><div style={{
+       <div style={{
               backgroundImage:
                 "url(" + require("assets/img/examples/xixi.jpg") + ")",
             }}>
           <Container>
 
-                                                <Row><Col md="3">  <div className="separator-line bg-info"></div></Col>
-                                                <Col md="3">  <div className="separator-line bg-info"></div></Col>
-                                                <Col md="3">  <div className="separator-line bg-info"></div></Col>
-                                                <Col md="3">  <div className="separator-line bg-info"></div></Col></Row>
+                                             
             <Row>
 
               <Col className="mr-auto ml-auto" md="8">
@@ -509,10 +504,7 @@ Extensive Product Selection            </h3>
 
 
             </Row>
-            <Row><Col md="3">  <div className="separator-line bg-success"></div></Col>
-            <Col md="3">  <div className="separator-line bg-success"></div></Col>
-            <Col md="3">  <div className="separator-line bg-success"></div></Col>
-            <Col md="3">  <div className="separator-line bg-success"></div></Col></Row>
+           
             <Row>
               <Col md="2">
                 <div className="info info-hover">
@@ -571,28 +563,13 @@ Extensive Product Selection            </h3>
               </Col>
             </Row>
 
-                                      <Row><Col md="3">  <div className="separator-line bg-danger"></div></Col>
-                                      <Col md="3">  <div className="separator-line bg-danger"></div></Col>
-                                      <Col md="3">  <div className="separator-line bg-danger"></div></Col>
-                                      <Col md="3">  <div className="separator-line bg-danger"></div></Col></Row>
-
           </Container>
 
 
           </div>
         </div>
 
-                <Canvas
-                    gl={{ antialias: false, alpha: false }}
-                    camera={{ position: [0, 0, 15], near: 5, far: 20 }}
-                    onCreated={({ gl }) => gl.setClearColor('lightpink')}>
-                    <ambientLight />
-                    <pointLight position={[150, 150, 150]} intensity={0.55} />
-                    <Boxes />
-                    <Effects />
-
-                  </Canvas>
-
+             
         <div className="projects-5" data-background="gray" style={{
           backgroundImage:
             "url(" + require("assets/img/xxixx.jpg") + ")",
@@ -617,10 +594,7 @@ Extensive Product Selection            </h3>
                 <div className="section-space"></div>
               </Col>
             </Row></Container>
-            <Lottie
-                   options={defaultOptions}
-
-                   /><br/><br/><br/><Container>
+            <br/><br/><br/><Container>
             <Row>
               <Col className="ml-auto" md="5">
                 <Card

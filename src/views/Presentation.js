@@ -5,10 +5,14 @@ import Rellax from "rellax";
 import { Container, Button, Link } from 'react-floating-action-button'
 
 // core components
-import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
+import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
+import Content from "views/presentation-sections/Content.js";
+import Pricing from "views/presentation-sections/Pricing.js";
+import Image from "views/presentation-sections/Image.js";
 
+import Carousel11 from "./index-sections/Carousel11.js";
 // sections for this page
 
 import PlainCards from "./index-sections/PlainCards.js";
@@ -48,11 +52,15 @@ function Presentation() {
   });
   return (
     <>
-      <ScrollTransparentNavbar />
-
+      <WhiteNavbar />
 
       <div className="wrapper">
         <PresentationHeader />
+        <Content/>
+        <Carousel11/>
+
+{/*<Image/>*/}
+
         <PlainCards/>
         <Container>
                     <Link href="/contact-us"
