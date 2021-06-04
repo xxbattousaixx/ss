@@ -57,9 +57,9 @@ function Presentation() {
       <div className="wrapper">
         <PresentationHeader />
         <Content/>
-        <Carousel11/>
+       {/* <Carousel11/>
 
-{/*<Image/>*/}
+<Image/>*/}
 
         <PlainCards/>
         <Container>
