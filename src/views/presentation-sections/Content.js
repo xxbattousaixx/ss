@@ -28,7 +28,7 @@ function Content() {
               <div className="section-description">
               
                 <h5 className="description">
-                It’s time to think beyond tired old asphalt and concrete. Don’t settle for boring - brick pavers are a lasting, beautiful solution for driveways, pool decks, walls, patios, and more. Find out why we’re the Tampa Bay Area's most trusted hardscape design and installation company. Let us create a hardscape solution that you and your family will enjoy for years to come.
+                Out with the tired concrete and asphalt look. Renovate your home's presentation - brick pavers are a lasting, beautiful solution for driveways, pool decks, walls, patios, and more. Find out why we’re the Tampa Bay Area's most trusted hardscape design and installation company. Let us create a hardscape solution that you and your family will enjoy for years to come.
                 </h5>
                 <center><Button
                     color="info"
