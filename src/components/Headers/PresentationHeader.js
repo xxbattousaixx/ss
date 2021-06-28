@@ -16,6 +16,8 @@ import {
   Col,
 } from "reactstrap";// core components
 // core components
+
+
 function preloadImage()
 {
     var img=new Image();
@@ -40,7 +42,7 @@ function PresentationHeader() {
           };
   return (
     <>
-      <div className="page-header clear-filter"
+      <div className="page-header clear-filter img-fluid"
       style={{
         backgroundImage:
           "url(" +
@@ -50,7 +52,7 @@ function PresentationHeader() {
 
 
        
-        <div className="rellax-text-container"
+        <div className="rellax-text-container vw-100"
         >
 
         <h1 className="h1-seo" data-rellax-speed="-1">
@@ -59,6 +61,7 @@ function PresentationHeader() {
           
 
         </div>
+
 
       </div>
     </>

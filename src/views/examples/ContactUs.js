@@ -17,7 +17,7 @@ import {
 import animationData from 'views/lotties/surf.json';// reactstrap components
 
 // core components
-import DropdownWhiteNavbar from "components/Navbars/DropdownWhiteNavbar.js";
+import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
 import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
 
@@ -48,7 +48,7 @@ function ContactUs() {
   }, []);
   return (
     <>
-      <DropdownWhiteNavbar />
+      <WhiteNavbar />
       <div className="wrapper">
         <ContactUsHeader />
         <div className="main">

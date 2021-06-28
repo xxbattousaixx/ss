@@ -106,7 +106,7 @@ function ScrollTransparentNavbar() {
 
 
 
-             <Nav className="ml-auto" id="ceva" navbar>
+             <Nav className="ml-auto align-items-center" id="ceva" navbar>
 
          <UncontrolledDropdown nav>
               <a href="/presentation">

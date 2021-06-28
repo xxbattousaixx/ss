@@ -69,7 +69,7 @@ function WhiteNavbar() {
 
                   <Collapse isOpen={collapseOpen} navbar>
 
-<Nav className="ml-auto" id="ceva" navbar>
+<Nav className="ml-auto align-items-center" id="ceva" navbar>
 
 <UncontrolledDropdown nav>
  <a href="/presentation">
@@ -99,14 +99,14 @@ function WhiteNavbar() {
      id="navbarDropdownMenuLink"
      nav
      onClick={(e) => e.preventDefault()}
-   >
+      >
      <i
        aria-hidden={true}
        className="now-ui-icons loader_gear"
      ></i>&nbsp;
      <span></span>
 
-     <p style={{fontSize:"140%"}}>Services&nbsp;</p>
+     <p style={{fontSize:"130%"}}>Services&nbsp;</p>
    </DropdownToggle>
    <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
      <DropdownItem tag={Link} to="/pavement">
