@@ -68,6 +68,12 @@ function ContactUsHeader2() {
             <Col md="6">
 <br/><br/><br/>
                 <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
+                <div data-src="/p1.jpeg" />
+                <div data-src="/p2.jpeg" />
+                <div data-src="/p3.jpeg" />
+                <div data-src="/p4.jpeg" />
+                <div data-src="/p5.jpeg" />
+                
                 <div data-src="/11.jpg" />
                 <div data-src="/12.jpg" />
                 <div data-src="/13.jpg" />
@@ -99,6 +105,11 @@ function ContactUsHeader2() {
         <br/><br/><br/>
 
                       <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
+                      <div data-src="/p6.jpeg" />
+                <div data-src="/p7.jpeg" />
+                <div data-src="/p8.jpeg" />
+                <div data-src="/p9.jpeg" />
+                     
                       <div data-src="/134.jpg" />
                       <div data-src="/135.jpg" />
                       <div data-src="/114.jpg" />
