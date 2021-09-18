@@ -121,7 +121,6 @@ function AboutUs() {
     document.body.classList.add("about-us-page");
     document.body.classList.add("sidebar-collapse");
     document.documentElement.classList.remove("nav-open");
-    window.scrollTo(0, 0);
     document.body.scrollTop = 0;
 
     // initialise Rellax for this page
@@ -247,7 +246,7 @@ function AboutUs() {
                 </CardBody>
               </Card>
             </Col></AccordionDetails>
-        </Accordion> <br/><br/> </div> <div className={classes.root}>
+        </Accordion></div> <div className={classes.root}>
       <Accordion
       expanded={expanded === "panel5"}
       onChange={handleChange("panel5")}
@@ -376,7 +375,7 @@ Extensive Product Selection            </h3>
                 </CardBody>
               </Card>
             </Col></AccordionDetails>
-        </Accordion> <br/><br/> </div>  <div className={classes.root}>
+        </Accordion></div>  <div className={classes.root}>
       <Accordion
       expanded={expanded === "panel3"}
       onChange={handleChange("panel3")}
@@ -421,7 +420,7 @@ Extensive Product Selection            </h3>
                 </CardBody>
               </Card>
             </Col></AccordionDetails>
-        </Accordion> <br/><br/> </div>
+        </Accordion></div>
         <div className={classes.root}>
       <Accordion
       expanded={expanded === "panel4"}
