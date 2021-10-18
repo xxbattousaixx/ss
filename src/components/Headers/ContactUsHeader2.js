@@ -130,7 +130,49 @@ function ContactUsHeader2() {
 
 
                       <br/>  <br/>  <br/></Col>
+                      
       </Row>
+      <Row>
+      <Col md="6">
+        <br/><br/><br/>
+
+                      <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
+                      <div data-src="/331.jpg" />
+                <div data-src="/332.jpg" />
+                <div data-src="/333.jpg" />
+                <div data-src="/334.jpg" />
+                     
+                      <div data-src="/335.jpg" />
+                      <div data-src="/336.jpg" />
+                      <div data-src="/337.jpg" />
+                      <div data-src="/338.jpg" />
+                      <div data-src="/339.jpg" />
+                      <div data-src="/340.jpg" />
+                      <div data-src="/341.jpg" />
+                      <div data-src="/342.jpg" />
+                      <div data-src="/343.jpg" />
+                      <div data-src="/344.jpg" />
+                  
+
+
+                      </AwesomeSlider>
+
+
+                      <br/>  <br/>  <br/></Col>
+                      <Col md="6">
+        <br/><br/><br/>
+
+                      <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
+                      <div data-src="/350.mp4" />
+                <div data-src="/351.mp4" />
+                  
+
+
+                      </AwesomeSlider>
+
+
+                      <br/>  <br/>  <br/></Col>
+                      </Row>
 <br/><br/><br/><br/>
 </div>
     </>
