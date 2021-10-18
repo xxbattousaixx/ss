@@ -139,7 +139,6 @@ function ContactUsHeader2() {
                       <AwesomeSlider animation="cubeAnimation" cssModule={AwesomeSliderStyles}>
                       <div data-src="/331.jpg" />
                 <div data-src="/332.jpg" />
-                <div data-src="/333.jpg" />
                 <div data-src="/334.jpg" />
                      
                       <div data-src="/335.jpg" />
