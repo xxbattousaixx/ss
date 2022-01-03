@@ -1,20 +1,20 @@
 import React from "react";
 // react plugin used to create google maps
 
-import Lottie from 'react-lottie';
 
 // reactstrap components
 import {
   Form,
   InputGroupAddon,
   InputGroupText,
+  Input,
+
   InputGroup,
   Container,
   Row,
   Col,
 } from "reactstrap";
 import animationData from 'views/lotties/surf.json';// reactstrap components
-import CustomInput from "components/CustomInput/CustomInput.js";// core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
 import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
@@ -22,6 +22,9 @@ import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
 
 
 function ContactUs() {
+  const [nameFocus, setNameFocus] = React.useState(false);
+  const [emailFocus, setEmailFocus] = React.useState(false);
+  const [numberFocus, setNumberFocus] = React.useState(false);
   const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -74,13 +77,13 @@ function ContactUs() {
                           <i className="now-ui-icons users_circle-08"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <CustomInput
+                      <Input
                         aria-label="Your Name..."
                         autoComplete="name"
                         placeholder="Your Name..."
                         type="text"
                         name="subject"
-                      ></CustomInput>
+                      ></Input>
                     </InputGroup>
                     <label>Email address</label>
                     <InputGroup
@@ -91,12 +94,12 @@ function ContactUs() {
                           <i className="now-ui-icons ui-1_email-85"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <CustomInput
+                      <Input
                         aria-label="Email Here..."
                         autoComplete="email"
                         placeholder="Email Here..."
                         type="text"
-                        name="text"></CustomInput>
+                        name="text"></Input>
                         </InputGroup>
                     <label>Phone</label>
                     <InputGroup
@@ -107,11 +110,11 @@ function ContactUs() {
                           <i className="now-ui-icons tech_mobile"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <CustomInput
+                      <Input
                         autoComplete="number"
                         placeholder="Number Here..."
                         type="text"
-                        name="extra_text"></CustomInput>
+                        name="extra_text"></Input>
                         </InputGroup>
 <label>Message</label>
                     <InputGroup
@@ -122,11 +125,11 @@ function ContactUs() {
                           <i className="now-ui-icons text_align-center"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <CustomInput
+                      <Input
                         placeholder="Message Here..."
                         type="text"
                         name="extra_Message"
-                      ></CustomInput>
+                      ></Input>
                     </InputGroup>
                     <div className="submit text-center">
                     <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />

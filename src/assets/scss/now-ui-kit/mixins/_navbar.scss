@@ -1,8 +1,5 @@
 @mixin navbar-responsive() {
-    &.menu-on-left .navbar-translate {
-      flex-direction: row-reverse;
-    }
-
+  
     .navbar{
         .navbar-nav{
             margin-top: 53px;
@@ -229,7 +226,9 @@
     }
 
     @include navbar-responsive();
-
+    .navbar-collapse.menu-on-left .navbar-translate {
+        flex-direction: row-reverse;
+      }
 
     [class*="navbar-expand-"] .navbar-collapse{
         width: 300px;

@@ -6,18 +6,6 @@ import { Canvas, useFrame } from 'react-three-fiber'
 import { Physics, usePlane, useBox } from 'use-cannon'
 import niceColors from 'nice-color-palettes'
 import {
-  Badge,
-  Button,
-  Card,
-  CardBody,
-  CardFooter,
-  CardTitle,
-  NavItem,
-  NavLink,
-  Nav,
-  TabContent,
-  TabPane,
-  Container,
   Row,
   Col,
 } from "reactstrap";
