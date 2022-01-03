@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo, useState } from 'react';
+import React from 'react';
 // javascript library that creates a parrallax effect
 import Rellax from "rellax";
 

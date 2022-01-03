@@ -6,7 +6,6 @@ import Lottie from 'react-lottie';
 // reactstrap components
 import {
   Form,
-  Input,
   InputGroupAddon,
   InputGroupText,
   InputGroup,
@@ -15,8 +14,7 @@ import {
   Col,
 } from "reactstrap";
 import animationData from 'views/lotties/surf.json';// reactstrap components
-
-// core components
+import CustomInput from "components/CustomInput/CustomInput.js";// core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
 import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
@@ -24,9 +22,6 @@ import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
 
 
 function ContactUs() {
-  const [nameFocus, setNameFocus] = React.useState(false);
-  const [emailFocus, setEmailFocus] = React.useState(false);
-  const [numberFocus, setNumberFocus] = React.useState(false);
   const defaultOptions = {
         loop: true,
         autoplay: true,
@@ -79,15 +74,13 @@ function ContactUs() {
                           <i className="now-ui-icons users_circle-08"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input
+                      <CustomInput
                         aria-label="Your Name..."
                         autoComplete="name"
                         placeholder="Your Name..."
                         type="text"
                         name="subject"
-                        onFocus={() => setNameFocus(true)}
-                        onBlur={() => setNameFocus(false)}
-                      ></Input>
+                      ></CustomInput>
                     </InputGroup>
                     <label>Email address</label>
                     <InputGroup
@@ -98,16 +91,13 @@ function ContactUs() {
                           <i className="now-ui-icons ui-1_email-85"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input
+                      <CustomInput
                         aria-label="Email Here..."
                         autoComplete="email"
                         placeholder="Email Here..."
-                        type="email"
-                        name="text"
-                        onFocus={() => setEmailFocus(true)}
-                        onBlur={() => setEmailFocus(false)}
-                      ></Input>
-                    </InputGroup>
+                        type="text"
+                        name="text"></CustomInput>
+                        </InputGroup>
                     <label>Phone</label>
                     <InputGroup
                       className={numberFocus ? "input-group-focus" : ""}
@@ -117,17 +107,13 @@ function ContactUs() {
                           <i className="now-ui-icons tech_mobile"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input
+                      <CustomInput
                         autoComplete="number"
                         placeholder="Number Here..."
                         type="text"
-                        name="extra_text"
-                        onFocus={() => setNumberFocus(true)}
-                        onBlur={() => setNumberFocus(false)}
-                      ></Input>
-
-                    </InputGroup>
-                    <label>Message</label>
+                        name="extra_text"></CustomInput>
+                        </InputGroup>
+<label>Message</label>
                     <InputGroup
                       className={numberFocus ? "input-group-focus" : ""}
                     >
@@ -136,13 +122,11 @@ function ContactUs() {
                           <i className="now-ui-icons text_align-center"></i>
                         </InputGroupText>
                       </InputGroupAddon>
-                      <Input
+                      <CustomInput
                         placeholder="Message Here..."
                         type="text"
                         name="extra_Message"
-                        onFocus={() => setNumberFocus(true)}
-                        onBlur={() => setNumberFocus(false)}
-                      ></Input>
+                      ></CustomInput>
                     </InputGroup>
                     <div className="submit text-center">
                     <input type="hidden" name="access_token" value="63yiwt3vt3p7kwh8m7zcdmd0" />
