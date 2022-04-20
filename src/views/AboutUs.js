@@ -603,7 +603,7 @@ function AboutUs() {
           <div
             style={{
               backgroundImage:
-                "url(" + require("assets/img/examples/xixi.jpg") + ")",
+                "url(" + require("assets/img/xxixx.jpg") + ")",
             }}
           >
             <Container>
