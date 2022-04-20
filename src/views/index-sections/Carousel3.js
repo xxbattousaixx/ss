@@ -23,7 +23,6 @@ const items = [
     altText: "",
     caption: "Incredible results",
   },
-
 ];
 
 function Carousel3() {
@@ -53,10 +52,7 @@ function Carousel3() {
     <>
       <div className="section" id="carousel" data-background-color="black">
         <Container>
-          <div className="title">
-
-
-          </div>
+          <div className="title"></div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
               <Carousel

@@ -20,9 +20,8 @@ function IndexHeader() {
             }}
           ></div>
         </div>
-
-    </div>
-  </>
+      </div>
+    </>
   );
 }
 

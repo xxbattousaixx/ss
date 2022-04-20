@@ -63,25 +63,18 @@ function ScrollTransparentNavbar() {
         />
       ) : null}
       <Navbar className={"fixed-top" + navbarColor} color="white" expand="lg">
-      <Container>
-
-        <div className="navbar-translate">
-
-              <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
-
-                      <img
-                        alt="..."
-                        src={require("assets/img/logo1.png")}
-                      ></img>
-
-                      &nbsp;&nbsp; 941-518-1657<br/>
-                      edmena24@gmail.com
-                      <br/>
-
-                                  </NavbarBrand>
-                    <UncontrolledTooltip target="navbar-brand">
-                      Contact us today!
-                    </UncontrolledTooltip>
+        <Container>
+          <div className="navbar-translate">
+            <NavbarBrand to="/contact-us" tag={Link} id="navbar-brand">
+              <img alt="..." src={require("assets/img/logo1.png")}></img>
+              &nbsp;&nbsp; 941-518-1657
+              <br />
+              edmena24@gmail.com
+              <br />
+            </NavbarBrand>
+            <UncontrolledTooltip target="navbar-brand">
+              Contact us today!
+            </UncontrolledTooltip>
 
             <button
               onClick={() => {
@@ -91,7 +84,6 @@ function ScrollTransparentNavbar() {
               aria-expanded={collapseOpen}
               className="navbar-toggler"
             >
-
               <span className="navbar-toggler-bar top-bar"></span>
               <span className="navbar-toggler-bar middle-bar"></span>
 
@@ -100,33 +92,28 @@ function ScrollTransparentNavbar() {
           </div>
 
           <Collapse isOpen={collapseOpen} navbar>
-
-
-
-
-
-
-             <Nav className="ml-auto align-items-center" id="ceva" navbar>
-
-         <UncontrolledDropdown nav>
-              <a href="/presentation">
-              <i
-                aria-hidden={true}
-                className="now-ui-icons business_bank"
-              ></i>&nbsp;
-              <span></span>
-              <p>HOME&nbsp;</p>
-              </a>
+            <Nav className="ml-auto align-items-center" id="ceva" navbar>
+              <UncontrolledDropdown nav>
+                <a href="/presentation">
+                  <i
+                    aria-hidden={true}
+                    className="now-ui-icons business_bank"
+                  ></i>
+                  &nbsp;
+                  <span></span>
+                  <p>HOME&nbsp;</p>
+                </a>
               </UncontrolledDropdown>
-<UncontrolledDropdown nav>
-              <a href="/AboutUs">
+              <UncontrolledDropdown nav>
+                <a href="/AboutUs">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons business_globe"
-                  ></i>&nbsp;
+                  ></i>
+                  &nbsp;
                   <span></span>
                   <p>ABOUT US&nbsp;</p>
-              </a>
+                </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
                 <DropdownToggle
@@ -140,10 +127,10 @@ function ScrollTransparentNavbar() {
                   <i
                     aria-hidden={true}
                     className="now-ui-icons loader_gear"
-                  ></i>&nbsp;
+                  ></i>
+                  &nbsp;
                   <span></span>
-
-                  <p style={{fontSize:"140%"}}>Services&nbsp;</p>
+                  <p style={{ fontSize: "140%" }}>Services&nbsp;</p>
                 </DropdownToggle>
                 <DropdownMenu aria-labelledby="navbarDropdownMenuLink" right>
                   <DropdownItem tag={Link} to="/Pavement">
@@ -152,46 +139,41 @@ function ScrollTransparentNavbar() {
                   </DropdownItem>
                   <DropdownItem tag={Link} to="/Paint">
                     <i className="now-ui-icons design-2_ruler-pencil"></i>
-    Painting
+                    Painting
                   </DropdownItem>
 
                   <DropdownItem tag={Link} to="/pressureWashing">
                     <i className="now-ui-icons education_atom"></i>
                     Pressure Washing
                   </DropdownItem>
-
                 </DropdownMenu>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
-              <a href="/gallery">
+                <a href="/gallery">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons design_image"
-                  ></i>&nbsp;
+                  ></i>
+                  &nbsp;
                   <span></span>
                   <p>GALLERY&nbsp;</p>
-              </a>
+                </a>
               </UncontrolledDropdown>
               <UncontrolledDropdown nav>
-              <a href="/contact-us">
+                <a href="/contact-us">
                   <i
                     aria-hidden={true}
                     className="now-ui-icons files_paper"
-                  ></i>&nbsp;
+                  ></i>
+                  &nbsp;
                   <span></span>
                   <p>CONTACT US&nbsp;</p>
-              </a>
+                </a>
               </UncontrolledDropdown>
-
             </Nav>
           </Collapse>
         </Container>
-        </Navbar>
-
-
-
-
-
+      </Navbar>
     </>
   );
 }

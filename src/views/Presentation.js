@@ -2,7 +2,7 @@ import React from "react";
 // javascript library that creates a parrallax effect
 import Rellax from "rellax";
 // reactstrap components
-import { Container, Button, Link } from 'react-floating-action-button'
+import { Container, Button, Link } from "react-floating-action-button";
 
 // core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
@@ -56,26 +56,27 @@ function Presentation() {
 
       <div className="wrapper">
         <PresentationHeader />
-        <Content/>
-       {/* 
+        <Content />
+        {/* 
        <Carousel11/>
 <Image/>
 */}
 
-        <PlainCards/>
+        <PlainCards />
         <Container>
-                    <Link href="/contact-us"
-                        tooltip="Get a Free Estimate"
-                        icon="far fa-sticky-note" />
-                    <Link href="/contact-us"
-                        tooltip="Call us"
-                        icon="fas fa-user-plus" />
-                    <Button
-                        tooltip="Get a quote!"
-                        icon="fas fa-plus"
-                        rotate={true}
-                        onClick={() => alert('Call us at 941-518-1657')} />
-                </Container>
+          <Link
+            href="/contact-us"
+            tooltip="Get a Free Estimate"
+            icon="far fa-sticky-note"
+          />
+          <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
+          <Button
+            tooltip="Get a quote!"
+            icon="fas fa-plus"
+            rotate={true}
+            onClick={() => alert("Call us at 941-518-1657")}
+          />
+        </Container>
         <FooterBlack />
       </div>
     </>

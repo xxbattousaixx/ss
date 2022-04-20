@@ -228,7 +228,7 @@ function AboutUs() {
               </Row>
             </Container>
           </div>
-          
+
           <div className="about-office">
             <Container>
               <Row className="text-center">
@@ -280,7 +280,6 @@ function AboutUs() {
               </Row>
             </Container>
           </div>
-
         </div>
         <Footer />
       </div>

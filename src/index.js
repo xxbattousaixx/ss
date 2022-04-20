@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
-import 'react-awesome-slider/dist/captioned.css';
+import "react-awesome-slider/dist/captioned.css";
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -24,17 +24,14 @@ import Pavement from "views/Pavement.js";
 import Gallery from "views/Gallery.js";
 import AboutUs from "views/AboutUs.js";
 
-
 import "./styles.css";
-
-
 
 import PressureWashing from "views/PressureWashing.js";
 // others
 
 ReactDOM.render(
   <BrowserRouter>
-  <Switch>
+    <Switch>
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />
       <Route path="/gallery" render={(props) => <Gallery {...props} />} />
       <Route path="/AboutUs" render={(props) => <AboutUs {...props} />} />
@@ -43,12 +40,12 @@ ReactDOM.render(
         render={(props) => <Presentation {...props} />}
       />
 
-      <Route
-        path="/paint"
-        render={(props) => <Paint {...props} />}
-      />
+      <Route path="/paint" render={(props) => <Paint {...props} />} />
       <Route path="/pavement" render={(props) => <Pavement {...props} />} />
-      <Route path="/pressureWashing" render={(props) => <PressureWashing {...props} />} />
+      <Route
+        path="/pressureWashing"
+        render={(props) => <PressureWashing {...props} />}
+      />
       <Redirect to="/presentation" />
     </Switch>
   </BrowserRouter>,

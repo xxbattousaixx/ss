@@ -22,35 +22,36 @@ function BlogPostHeader() {
   });
   return (
     <>
-    <div className="page-header page-header-small">
-      <div
-        className="page-header-image"
-        style={{
-          backgroundImage: "url(" + require("assets/img/bg99.jpg") + ")",
-        }}
-        ref={pageHeader}
-      ></div>
-      <div className="content-center">
-        <Row>
-          <Col className="ml-auto mr-auto text-center" md="8">
-          _________________________________________________________________________________
-
-            <h6 className="title">
-            We offer residential and commercial services alike -- we are driven to please and look forward to adding value to your project.
-            <br/>
-            We are trusted to work with the highest quality materials and bring you an exceptional experience.
-            <br/>
-            <br/>
-            We specialize in pavement, painting, and pressure washing.
-
-            </h6>
-          _________________________________________________________________________________
-          </Col>
-        </Row>
+      <div className="page-header page-header-small">
+        <div
+          className="page-header-image"
+          style={{
+            backgroundImage: "url(" + require("assets/img/bg99.jpg") + ")",
+          }}
+          ref={pageHeader}
+        ></div>
+        <div className="content-center">
+          <Row>
+            <Col className="ml-auto mr-auto text-center" md="8">
+              _________________________________________________________________________________
+              <h6 className="title">
+                We offer residential and commercial services alike -- we are
+                driven to please and look forward to adding value to your
+                project.
+                <br />
+                We are trusted to work with the highest quality materials and
+                bring you an exceptional experience.
+                <br />
+                <br />
+                We specialize in pavement, painting, and pressure washing.
+              </h6>
+              _________________________________________________________________________________
+            </Col>
+          </Row>
+        </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
 }
 
 export default BlogPostHeader;

@@ -12,8 +12,8 @@ function Content() {
         <Container>
           <Row>
             <Col md="5">
-                <h1 className="title">Solafide Services</h1>
-{/*    
+              <h1 className="title">Solafide Services</h1>
+              {/*    
           <div className="image-container">
                 <img
                   alt="..."
@@ -26,17 +26,21 @@ function Content() {
             </Col>
             <Col className="ml-auto mr-auto" md="4">
               <div className="section-description">
-              
                 <h5 className="description">
-                Out with the tired concrete and asphalt look. Renovate your home's presentation - brick pavers are a lasting, beautiful solution for driveways, pool decks, walls, patios, and more. Find out why we’re the Tampa Bay Area's most trusted hardscape design and installation company. Let us create a hardscape solution that you and your family will enjoy for years to come.
+                  Out with the tired concrete and asphalt look. Renovate your
+                  home's presentation - brick pavers are a lasting, beautiful
+                  solution for driveways, pool decks, walls, patios, and more.
+                  Find out why we’re the Tampa Bay Area's most trusted hardscape
+                  design and installation company. Let us create a hardscape
+                  solution that you and your family will enjoy for years to
+                  come.
                 </h5>
-                <center><Button
-                    color="info"
-                      href="/contact-us"
-                    >
-                      FREE ESTIMATE
-                    </Button>
-                    </center>              </div>
+                <center>
+                  <Button color="info" href="/contact-us">
+                    FREE ESTIMATE
+                  </Button>
+                </center>{" "}
+              </div>
             </Col>
           </Row>
         </Container>

@@ -122,7 +122,7 @@ function ContactUs() {
   const [email1Focus, setEmail1Focus] = React.useState(false);
   const [first2Focus, setFirst2Focus] = React.useState(false);
   const [email2Focus, setEmail2Focus] = React.useState(false);
-  
+
   return (
     <>
       <div className="cd-section" id="contact-us">

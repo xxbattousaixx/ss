@@ -12,13 +12,11 @@ import {
   CarouselItem,
   CarouselIndicators,
 } from "reactstrap";
-import AwesomeSlider from 'react-awesome-slider';
+import AwesomeSlider from "react-awesome-slider";
 
-import AwesomeSliderStyles from 'react-awesome-slider/src/styled/cube-animation.scss';
-
+import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation.scss";
 
 // core components
-
 
 const items = [
   {
@@ -59,7 +57,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="/contact-us" >
+          <a href="/contact-us">
             <img
               alt="..."
               className="img img-raised rounded"
@@ -93,7 +91,7 @@ const items = [
     content: (
       <Card className="card-testimonial card-plain">
         <div className="card-avatar">
-          <a href="/contact-us" >
+          <a href="/contact-us">
             <img
               alt="..."
               className="img img-raised rounded"
@@ -151,28 +149,23 @@ function Testimonials() {
   };
   return (
     <>
-
-
-
-
-
       <div
         className="section section-testimonials"
         data-background-color="black"
       >
-      <AwesomeSlider cssModule={AwesomeSliderStyles}>
-        <div data-src="../../assets/img/2.jpg" />
-        <div data-src="../../assets/img/3.jpg" />
-        <div data-src="../../assets/img/4.jpg" />
-      </AwesomeSlider>
-
+        <AwesomeSlider cssModule={AwesomeSliderStyles}>
+          <div data-src="../../assets/img/2.jpg" />
+          <div data-src="../../assets/img/3.jpg" />
+          <div data-src="../../assets/img/4.jpg" />
+        </AwesomeSlider>
 
         <Row>
           <Col className="ml-auto mr-auto text-center" md="8">
             <h2 className="title">Trusted by 800+ People</h2>
             <h5 className="description">
-              Our work is confirmed to be of the highest quality by <b>800+ people</b> in over{" "}
-              <b>5 cities</b>. This is what some of them think:
+              Our work is confirmed to be of the highest quality by{" "}
+              <b>800+ people</b> in over <b>5 cities</b>. This is what some of
+              them think:
             </h5>
           </Col>
         </Row>

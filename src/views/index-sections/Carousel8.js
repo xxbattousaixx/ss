@@ -22,36 +22,42 @@ const items = [
     src: require("assets/img/s2.jpg"),
     altText: "",
     caption: "Boca Rectangles & Squares",
-  },{
+  },
+  {
     src: require("assets/img/s3.jpg"),
     altText: "",
     caption: "Bishop's Hat",
-  },{
+  },
+  {
     src: require("assets/img/s4.jpg"),
     altText: "",
     caption: "Boca Grande Rectangles & Squares",
-  },{
+  },
+  {
     src: require("assets/img/s5.jpg"),
     altText: "",
     caption: "Cobblestone",
-  },{
+  },
+  {
     src: require("assets/img/s6.jpg"),
     altText: "",
     caption: "8 x 8 Square",
-  },{
+  },
+  {
     src: require("assets/img/s7.jpg"),
     altText: "",
     caption: "Decor",
-  },{
+  },
+  {
     src: require("assets/img/s8.jpg"),
     altText: "",
     caption: "Boca Trip",
-  },{
+  },
+  {
     src: require("assets/img/s9.jpg"),
     altText: "",
     caption: "Key Largo",
   },
-
 ];
 
 function Carousel8() {
@@ -81,10 +87,7 @@ function Carousel8() {
     <>
       <div className="section" id="carousel" data-background-color="black">
         <Container>
-          <div className="title">
-
-
-          </div>
+          <div className="title"></div>
           <Row className="justify-content-center">
             <Col lg="40" md="12">
               <Carousel

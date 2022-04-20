@@ -6,7 +6,6 @@ import React from "react";
 function ProfilePageHeader() {
   let pageHeader = React.createRef();
 
-
   return (
     <>
       <div
@@ -20,7 +19,6 @@ function ProfilePageHeader() {
           }}
           ref={pageHeader}
         ></div>
-
       </div>
     </>
   );

@@ -69,7 +69,7 @@ function Image() {
       </Col>
       */}
 
-<Col className="px-0" md="6">
+            <Col className="px-0" md="6">
               <Col sm="12">
                 <div className="info info-horizontal">
                   <div className="icon">
