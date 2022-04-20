@@ -21,7 +21,7 @@ import {
 function preloadImage()
 {
     var img=new Image();
-    img.src="assets/img/work.jpeg";
+    img.src="assets/img/work2.jpeg";
 }
 function PresentationHeader() {
   const defaultOptions = {
