@@ -35,15 +35,42 @@ function BlogPostHeader() {
             <Col className="ml-auto mr-auto text-center" md="8">
               _________________________________________________________________________________
               <h6 className="title">
-                We offer residential and commercial services alike -- we are
-                driven to please and look forward to adding value to your
-                project.
-                <br />
-                We are trusted to work with the highest quality materials and
-                bring you an exceptional experience.
-                <br />
-                <br />
-                We specialize in pavement, painting, and pressure washing.
+                <Row>
+                  <Col md="6">
+                    - Preparación de impuestos <br />
+                    - Impuestos de Compañía <br />
+                    - Apertura de Negocio <br />
+                    - Matrimonio <br />
+                    - Divorcio
+                    <br />
+                    - Preparación de formularios de Inmigración
+                    <br />
+                    - Traducciones certificadas <br />
+                    - Interpretaciones <br />
+                    - Clases de Ciudadanía <br />
+                    - Clases de Inglés
+                    <br />
+                    - Aplicación para estampillas
+                    <br />- Medicaid{" "}
+                  </Col>
+                  <Col>
+                    - Tax preparation <br />
+                    - Company Taxes <br />
+                    - Opening a new business <br />
+                    - Marriage <br />
+                    - Divorce
+                    <br />
+                    - Immigration formulary preparation
+                    <br />
+                    - Certified translation <br />
+                    - Interpreter services <br />
+                    - Citizenship courses <br />
+                    - English courses
+                    <br />
+                    - Food stamps applications
+                    <br />- Medicaid{" "}
+                  </Col>
+                </Row>
               </h6>
               _________________________________________________________________________________
             </Col>

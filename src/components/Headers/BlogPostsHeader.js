@@ -36,15 +36,14 @@ function BlogPostsHeader() {
             <Col className="ml-auto mr-auto text-center" md="8">
               _________________________________________________________________________________
               <h6 className="title">
-                We offer residential and commercial services alike -- we are
-                driven to please and look forward to adding value to your
-                project.
-                <br />
-                We are trusted to work with the highest quality materials and
-                bring you an exceptional experience.
+                We provide document preparation services at a cost effective
+                price. Please contact us today to inquire about any of our
+                services.
                 <br />
                 <br />
-                We specialize in pavement, painting, and pressure washing.
+                Ofrecemos servicios de preparacion de documentos a un precio
+                economico. Contactanos si tienes alguna pregunta sobre nuestros
+                servicios.
               </h6>
               _________________________________________________________________________________
             </Col>

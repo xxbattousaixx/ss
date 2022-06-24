@@ -7,51 +7,50 @@ const isProduction = process.env.NODE_ENV == "production";
 const stylesHandler = "style-loader";
 
 const config = {
-  entry: path.resolve(__dirname, 'src/') + '/index.js',
+  entry: path.resolve(__dirname, "src/") + "/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
   },
   resolve: {
-    modules: [path.resolve(__dirname,'src'),'node_modules'],
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
     fallback: {
-      "stream": false,
-      "zlib": false,
-      "buffer": false
+      stream: false,
+      zlib: false,
+      buffer: false,
     },
-    extensions: ['.js', '.jsx']
-},
+    extensions: [".js", ".jsx"],
+  },
   devServer: {
     open: true,
     host: "localhost",
   },
-    
+
   module: {
-    
     rules: [
       {
-        test:/\.js$/,
+        test: /\.js$/,
         use: [
           {
-        loader:'babel-loader',
-        options: {
-          cacheDirectory: true,
-          presets: ['@babel/env', '@babel/react']
-        }
-      },
-    ],        
-  },
-        {
-            test:/\.jsx$/,
-            use: [
-              {
-                loader: 'babel-loader',
-                options: {
-                  cacheDirectory: true,
-                  presets: ['@babel/react', '@babel/env']
-                }
-              },
-            ],        
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+              presets: ["@babel/env", "@babel/react"],
+            },
           },
+        ],
+      },
+      {
+        test: /\.jsx$/,
+        use: [
+          {
+            loader: "babel-loader",
+            options: {
+              cacheDirectory: true,
+              presets: ["@babel/react", "@babel/env"],
+            },
+          },
+        ],
+      },
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
         use: [
@@ -68,16 +67,16 @@ const config = {
         use: [stylesHandler, "css-loader"],
       },
       {
-       test: /\.s[ca]ss/i,
-				use: [stylesHandler,
-        
-            // Translates CSS into CommonJS
-            "css-loader",
-            // Compiles Sass to CSS
-            "sass-loader",
-          ]
-				
-			},
+        test: /\.s[ca]ss/i,
+        use: [
+          stylesHandler,
+
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
       // {
       //   test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
       //   type: "asset",

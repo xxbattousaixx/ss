@@ -20,7 +20,7 @@ function FooterBlackSocial() {
                     <a href="/presentation">Solafide</a>
                   </li>
                   <li>
-                    <a href="/Testimonials1">About Us</a>
+                    <a href="/AboutUs">About Us</a>
                   </li>
                 </center>
               </ul>

@@ -9,13 +9,23 @@ import { Canvas, useFrame } from "react-three-fiber";
 import Effects from "views/Effects.js";
 import "react-awesome-slider/dist/styles.css";
 import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation";
+import Anime, { anime } from "react-anime";
+import { useSprings, a } from "react-spring/three";
+import {
+  CubeTextureLoader,
+  CubeCamera,
+  WebGLCubeRenderTarget,
+  RGBFormat,
+  LinearMipmapLinearFilter,
+} from "three";
+import RubberBand from "react-reveal/RubberBand";
 
 import Carousel8 from "./index-sections/Carousel8.js";
 import animationData from "views/lotties/robot.json"; // reactstrap components
 import Lottie from "react-lottie";
 import animationData3 from "views/lotties/cube.json"; // reactstrap components
 import animationData4 from "views/lotties/dots.json"; // reactstrap components
-
+import TypeWriterEffect from "react-typewriter-effect";
 import {
   Badge,
   Card,
@@ -35,8 +45,133 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import FooterBlack from "components/Footers/FooterBlack.js";
 import animationData2 from "views/lotties/laser.json"; // reactstrap components
+import { Physics, usePlane, useBox } from "use-cannon";
 
-import AwesomeSlider from "react-awesome-slider";
+function Content() {
+  const tempObject = new THREE.Object3D();
+  const tempColor = new THREE.Color();
+  const colors = new Array(1000)
+    .fill()
+    .map(() => niceColors[17][Math.floor(Math.random() * 5)]);
+
+  const number = 35;
+  const random = (i) => {
+    const r = Math.random();
+    return {
+      position: [100 - Math.random() * 200, 100 - Math.random() * 200, i * 1.5],
+      color: colors[Math.round(Math.random() * (colors.length - 1))],
+      scale: [1 + r * 14, 1 + r * 14, 1],
+      rotation: [0, 0, THREE.Math.degToRad(Math.round(Math.random()) * 45)],
+    };
+  };
+
+  const data = new Array(number).fill().map(() => {
+    return {
+      color: colors[Math.round(Math.random() * (colors.length - 1))],
+      args: [0.1 + Math.random() * 9, 0.1 + Math.random() * 9, 10],
+    };
+  });
+
+  const [springs, set] = useSprings(number, (i) => ({
+    from: random(i),
+    ...random(i),
+    config: { mass: 20, tension: 150, friction: 50 },
+  }));
+  useEffect(
+    () =>
+      void setInterval(
+        () => set((i) => ({ ...random(i), delay: i * 40 })),
+        3000
+      ),
+    []
+  );
+  return data.map((d, index) => (
+    <a.mesh key={index} {...springs[index]} castShadow receiveShadow>
+      <boxBufferGeometry attach="geometry" args={d.args} />
+      <a.meshStandardMaterial
+        attach="material"
+        color={springs[index].color}
+        roughness={0.75}
+        metalness={0.5}
+      />
+    </a.mesh>
+  ));
+}
+
+function Lights() {
+  return (
+    <group>
+      <pointLight intensity={0.3} />
+      <ambientLight intensity={2} />
+      <spotLight
+        castShadow
+        intensity={0.2}
+        angle={Math.PI / 7}
+        position={[150, 150, 250]}
+        penumbra={1}
+        shadow-mapSize-width={2048}
+        shadow-mapSize-height={2048}
+      />
+    </group>
+  );
+}
+
+// core components
+
+function Plane(props) {
+  const [ref] = usePlane(() => ({ mass: 0, ...props }));
+  return (
+    <mesh ref={ref} receiveShadow>
+      <planeBufferGeometry attach="geometry" args={[5, 5]} />
+      <shadowMaterial attach="material" color="#171717" opacity={0.5} />
+    </mesh>
+  );
+}
+
+function Cubes({ number }) {
+  const [ref, api] = useBox(() => ({
+    mass: 1,
+    args: [0.1, 0.1, 0.1],
+    position: [Math.random() - 0.5, Math.random() * 2, Math.random() - 0.5],
+  }));
+
+  const colors = useMemo(() => {
+    const array = new Float32Array(number * 3);
+    const color = new THREE.Color();
+    for (let i = 0; i < number; i++)
+      color
+        .set(niceColors[17][Math.floor(Math.random() * 5)])
+        .convertSRGBToLinear()
+        .toArray(array, i * 3);
+    return array;
+  }, [number]);
+
+  useFrame(() =>
+    api
+      .at(Math.floor(Math.random() * number))
+      .position.set(0, Math.random() * 2, 0)
+  );
+
+  return (
+    <instancedMesh
+      receiveShadow
+      castShadow
+      ref={ref}
+      args={[null, null, number]}
+    >
+      <boxBufferGeometry attach="geometry" args={[0.1, 0.1, 0.1]}>
+        <instancedBufferAttribute
+          attachObject={["attributes", "color"]}
+          args={[colors, 3]}
+        />
+      </boxBufferGeometry>
+      <meshLambertMaterial
+        attach="material"
+        vertexColors={THREE.VertexColors}
+      />
+    </instancedMesh>
+  );
+}
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -142,6 +277,7 @@ function AboutUs() {
       new Rellax(".rellax-text");
     }
   });
+
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
@@ -204,7 +340,7 @@ function AboutUs() {
         <div className="info text-center"></div>
 
         <div className="about-description text-center">
-          <Container>
+          {/* <Container>
             <div className="title">
               <h3>Professional Services For Home or Business</h3>
             </div>
@@ -599,13 +735,238 @@ function AboutUs() {
           <br />
           <br />
           <br />
-          <br />
-          <div
-            style={{
-              backgroundImage:
-                "url(" + require("assets/img/xxixx.jpg") + ")",
-            }}
-          >
+          <br /> */}
+          <div>
+            <RubberBand>
+              <h1>DOCUMENT PREPARATION SERVICES</h1>
+              <br />
+              <br />
+            </RubberBand>
+            <Row>
+              <Col md="2"></Col>
+              <Col md="4">
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Preparación de impuestos "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Impuestos de Compañía "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Apertura de negocio "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Matrimonio "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Divorcio "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="-  Preparación de formularios de Inmigración "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Traducciones certificadas "
+                  typeSpeed={100}
+                />
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Interpretaciones "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Clases de Ciudadanía "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Clases de Inglés "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Aplicación para estampillas "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Medicaid "
+                  typeSpeed={100}
+                />{" "}
+              </Col>
+              <Col md="4">
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Tax preparation "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Company taxes "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Opening a new business "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Marriage "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Divorce "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="-  Immigration formulary preparation "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Certified translation "
+                  typeSpeed={100}
+                />
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Interpreter services "
+                  typeSpeed={100}
+                />{" "}
+                <br />
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Citizenship courses "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- English courses "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Food stamps applications "
+                  typeSpeed={100}
+                />{" "}
+                <br />{" "}
+                <TypeWriterEffect
+                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
+                  startDelay={100}
+                  cursorColor="transparent"
+                  text="- Medicaid "
+                  typeSpeed={100}
+                />
+              </Col>
+              <Col md="2"></Col>
+            </Row>
+
+            <br />
+            <br />
+
+            <Canvas
+              shadowMap
+              colorManagement
+              gl={{ alpha: false }}
+              camera={{ position: [-1, 1, 2.5], fov: 50 }}
+            >
+              <color attach="background" args={["lightblue"]} />
+              <hemisphereLight intensity={0.35} />
+              <spotLight
+                position={[5, 5, 5]}
+                angle={0.3}
+                penumbra={1}
+                intensity={2}
+                castShadow
+                shadow-mapSize-width={256}
+                shadow-mapSize-height={256}
+              />
+              <Physics>
+                <Plane rotation={[-Math.PI / 2, 0, 0]} />
+                <Cubes number={200} />
+              </Physics>
+            </Canvas>
+
             <Container>
               <Row>
                 <Col className="mr-auto ml-auto" md="8">
@@ -681,42 +1042,62 @@ function AboutUs() {
           </div>
         </div>
 
-        <div
-          className="projects-5"
-          data-background="gray"
-          style={{
-            backgroundImage: "url(" + require("assets/img/xxixx.jpg") + ")",
-          }}
-        >
+        <div>
+          <Canvas
+            shadowMap
+            camera={{ position: [0, 0, 100], fov: 100 }}
+            onCreated={({ gl }) => gl.setClearColor("lightpink")}
+          >
+            <Lights />
+            <Content />
+          </Canvas>
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
-                <h2 className="title">We have the edge on the competition.</h2>{" "}
-              </Col>
-            </Row>
-          </Container>
-          <div className="info">
-            <Lottie options={defaultOptions4} />
-          </div>
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <h4 className="info-title">
-                  Nobody works with the quality of materials we do.
-                </h4>
                 <br />
-                <h4 className="info-title"> We make your time worthwhile.</h4>
-                <div className="section-space"></div>
+                <br />
+                <h2 className="title">
+                  We have the edge over the competition.
+                </h2>{" "}
+                <br />
+                <br />
+                <h3>
+                  My name is Edgar Mena -- Born in Costa Rica, natural American
+                  citizen; I have a AA in Paralegal Studies, a BA in legal
+                  studies and experience as a Paralegal. I have prepared a range
+                  documents, to include a variety of Immigration Applications,
+                  Citizenship Applications, and Notary Services. I launched my
+                  own business with Solafide Services. I enjoy fishing and
+                  boating in sunny Florida. I offer non-lawyer services; paper
+                  preparation of immigration, citizenship, simple divorce, child
+                  support documents; Notary services; Signing Agent in Florida;
+                  and officiate marriages in Florida
+                </h3>
               </Col>
             </Row>
           </Container>
-          <br />
-          <br />
-          <br />
+          <div className="info"></div>
           <Container>
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8"></Col>
+            </Row>
+          </Container>
+
+          <Container>
+            <Lottie options={defaultOptions3} />
+            <br />
+            <br />
+            <br />
+            <br />
+            <img
+              alt="..."
+              className="img rounded img-raised"
+              src={require("assets/img/edgar.jpg")}
+            ></img>
+
             <Row>
               <Col className="ml-auto" md="5">
-                <Card
+                {/* <Card
                   className="card-background card-background-product card-raised"
                   style={{
                     backgroundImage:
@@ -770,15 +1151,14 @@ function AboutUs() {
                       home projects.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </Col>
             </Row>
-            <Lottie options={defaultOptions3} />
             <Row>
               <Col className="mr-auto" md="5">
                 <br />
                 <br />
-                <Card
+                {/* <Card
                   className="card-background card-background-product card-raised"
                   style={{
                     backgroundImage:
@@ -834,7 +1214,7 @@ function AboutUs() {
                       your needs.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </Col>
             </Row>
           </Container>

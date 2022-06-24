@@ -104,7 +104,7 @@ function DropdownScrollNavbar() {
                   <p>About Us&nbsp;</p>
                 </a>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -148,7 +148,7 @@ function DropdownScrollNavbar() {
                   <span></span>
                   <p>Gallery</p>
                 </a>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               <UncontrolledDropdown nav>
                 <a href="/contact-us">
                   <i

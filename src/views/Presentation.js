@@ -9,12 +9,6 @@ import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
 import FooterBlack from "components/Footers/FooterBlack.js";
 import Content from "views/presentation-sections/Content.js";
-import Pricing from "views/presentation-sections/Pricing.js";
-import Image from "views/presentation-sections/Image.js";
-
-import Carousel11 from "./index-sections/Carousel11.js";
-// sections for this page
-
 import PlainCards from "./index-sections/PlainCards.js";
 
 function Presentation() {
@@ -66,7 +60,7 @@ function Presentation() {
         <Container>
           <Link
             href="/contact-us"
-            tooltip="Get a Free Estimate"
+            tooltip="Book online"
             icon="far fa-sticky-note"
           />
           <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />

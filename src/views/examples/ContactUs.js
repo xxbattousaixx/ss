@@ -16,8 +16,9 @@ import animationData from "views/lotties/surf.json"; // reactstrap components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import ContactUsHeader from "components/Headers/ContactUsHeader.js";
 import FooterBlackSocial from "components/Footers/FooterBlackSocial.js";
+import Calendar1 from "components/Calendar1.js";
 
-function ContactUs() {
+function ContactUs(props) {
   const [nameFocus, setNameFocus] = React.useState(false);
   const [emailFocus, setEmailFocus] = React.useState(false);
   const [numberFocus, setNumberFocus] = React.useState(false);
@@ -164,12 +165,9 @@ function ContactUs() {
                       <i className="now-ui-icons tech_mobile"></i>
                     </div>
                     <div className="description">
-                      <h4 className="info-title">Give us a ring</h4>
-                      <p>
-                        Edgar Mena <br></br>
-                        +1 941 518 1657 <br></br>
-                        Mon - Fri, 8:00-18:00
-                      </p>
+                      <h4 className="info-title">Book an Appointment</h4>
+
+                      <Calendar1 />
                     </div>
                   </div>
                   <div className="info info-horizontal">
@@ -182,19 +180,22 @@ function ContactUs() {
                         Solafide Services LLC <br></br>
                       </p>
                     </div>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900479.4260303846!2d-83.51405382615067!3d27.40805671871131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c337e69db2c22b%3A0xe335341d1d5715d9!2sSarasota%2C%20FL!5e0!3m2!1sen!2sus!4v1609108906889!5m2!1sen!2sus"
-                      height="170vh"
-                      width="340vh"
-                      frameborder="0"
-                      allowfullscreen=""
-                      aria-hidden="false"
-                      tabindex="0"
-                    ></iframe>
+
+                    <br />
+                    <br />
                   </div>
                 </Col>
               </Row>
             </Container>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d900479.4260303846!2d-83.51405382615067!3d27.40805671871131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c337e69db2c22b%3A0xe335341d1d5715d9!2sSarasota%2C%20FL!5e0!3m2!1sen!2sus!4v1609108906889!5m2!1sen!2sus"
+              height="300vh"
+              width="100%"
+              frameBorder="0"
+              allowFullScreen=""
+              aria-hidden="false"
+              tabIndex="0"
+            ></iframe>
           </div>
         </div>
 

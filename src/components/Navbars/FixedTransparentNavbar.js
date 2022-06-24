@@ -82,7 +82,7 @@ function FixedTransparentNavbar() {
                   <p>ABOUT US&nbsp;</p>
                 </a>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -125,7 +125,7 @@ function FixedTransparentNavbar() {
                   <span></span>
                   <p>GALLERY&nbsp;</p>
                 </a>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               <UncontrolledDropdown nav>
                 <a href="/contact-us">
                   <i
