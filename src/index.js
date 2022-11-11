@@ -1,13 +1,13 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
   Redirect,
   Switch,
 } from "react-router-dom";
 import "react-awesome-slider/dist/captioned.css";
+import { render } from 'react-snapshot';
 
 // styles
 import "assets/css/bootstrap.min.css";
@@ -16,26 +16,16 @@ import "assets/demo/demo.css";
 import "assets/demo/react-demo.css";
 import "assets/demo/nucleo-icons-page-styles.css";
 // pages
-import BlogPost from "views/examples/BlogPost.js";
-import BlogPosts from "views/examples/BlogPosts.js";
 import ContactUs from "views/examples/ContactUs.js";
-import Ecommerce from "views/examples/Ecommerce.js";
-import LandingPage from "views/examples/LandingPage.js";
 import NucleoIcons from "views/NucleoIcons.js";
 import Presentation from "views/Presentation.js";
-import Pricing from "views/examples/Pricing.js";
-import ProductPage from "views/examples/ProductPage.js";
-import Paint from "views/Paint.js";
-import Pavement from "views/Pavement.js";
-import Gallery from "views/Gallery.js";
 import AboutUs from "views/AboutUs.js";
-import Appointment from "components/Appointment.js";
+
 import "./styles.css";
 
-import PressureWashing from "views/PressureWashing.js";
 // others
 
-ReactDOM.render(
+render(
   <Router>
     <Switch>
       <Route path="/contact-us" render={(props) => <ContactUs {...props} />} />

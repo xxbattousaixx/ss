@@ -22,6 +22,9 @@ var event = {
     dateTime: "2021-07-10T17:00:00-07:30",
     timeZone: "America/Los_Angeles",
   },
+  anyoneCanAddSelf: true,
+  guestsCanModify:true,
+  accessRole: "write",
   recurrence: ["RRULE:FREQ=DAILY;COUNT=2"],
   attendees: [{ email: "lpage@example.com" }],
   reminders: {
@@ -36,6 +39,7 @@ export default function Calendar1() {
   const [signedin, setSignedIn] = useState(false);
   const [googleAuthedEmail, setgoogleAuthedEmail] = useState(null);
   const [description, setDescription] = useState("");
+  const [email, setEmail] = useState("");
   const [startTime, setStartTime] = useState("");
   const [endTime, setEndTime] = useState("");
   const [appointmentMade, setAppointmentMade] = React.useState(false);
@@ -44,7 +48,7 @@ export default function Calendar1() {
     let email = await getSignedInUserEmail();
     if (email) {
       setSignedIn(true);
-      setgoogleAuthedEmail(email);
+      setgoogleAuthedEmail("calendar-server@solafide-353918.iam.gserviceaccount.com");
     }
   };
   const getAuthToGoogle = async () => {
@@ -74,7 +78,7 @@ export default function Calendar1() {
         dateTime: moment(endTime),
         timeZone: "America/Los_Angeles",
       },
-      attendees: [{ email: googleAuthedEmail }],
+      attendees: [{ email: googleAuthedEmail }],      
     };
     publishTheCalenderEvent(event);
   };
@@ -89,18 +93,19 @@ export default function Calendar1() {
   return (
     <div className="calenderEvent-wrapper">
       <div className="header"></div>
-      {!signedin ? (
-        <div className="google-login">
-          <p>Login in to Google</p>
-          <button onClick={() => getAuthToGoogle()}>Sign In</button>
-        </div>
-      ) : (
+      { (
         <div className="body">
-          <div className="signout">
-            <p>Email: {googleAuthedEmail}</p>
-            <button onClick={() => _signOutFromGoogle()}>Sign-Out</button>
-          </div>
+          
           <form>
+          <div className="eventItem">
+              <label>E-mail</label>
+              <input
+                type="text"
+                placeholder="Your email..."
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              ></input>
+            </div>
             <div className="eventItem">
               <label>Description</label>
               <input

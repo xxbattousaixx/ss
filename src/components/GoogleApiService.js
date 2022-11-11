@@ -77,7 +77,7 @@ export const getSignedInUserEmail = async () => {
     if (status) {
       var auth2 = gapi.auth2.getAuthInstance();
       var profile = auth2.currentUser.get().getBasicProfile();
-      return profile.getEmail();
+      return "calendar-server@solafide-353918.iam.gserviceaccount.com";
     } else {
       return null;
     }

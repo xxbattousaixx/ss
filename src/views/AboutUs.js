@@ -1,55 +1,25 @@
 // javascript library that creates a parrallax effect
-import Rellax from "rellax";
 // reactstrap components
 import * as THREE from "three";
 import React, { useEffect, useRef, useMemo, useState } from "react";
 import niceColors from "nice-color-palettes";
-import { makeStyles } from "@material-ui/core/styles";
 import { Canvas, useFrame } from "react-three-fiber";
 import Effects from "views/Effects.js";
 import "react-awesome-slider/dist/styles.css";
-import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation";
-import Anime, { anime } from "react-anime";
 import { useSprings, a } from "react-spring/three";
-import {
-  CubeTextureLoader,
-  CubeCamera,
-  WebGLCubeRenderTarget,
-  RGBFormat,
-  LinearMipmapLinearFilter,
-} from "three";
 import RubberBand from "react-reveal/RubberBand";
 
-import Carousel8 from "./index-sections/Carousel8.js";
-import animationData from "views/lotties/robot.json"; // reactstrap components
 import Lottie from "react-lottie";
 import animationData3 from "views/lotties/cube.json"; // reactstrap components
-import animationData4 from "views/lotties/dots.json"; // reactstrap components
 import TypeWriterEffect from "react-typewriter-effect";
-import {
-  Badge,
-  Card,
-  CardBody,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-} from "reactstrap"; // core components
+import { Container, Row, Col } from "reactstrap"; // core components
 
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
-import Accordion from "@material-ui/core/Accordion";
-import AccordionDetails from "@material-ui/core/AccordionDetails";
-import AccordionSummary from "@material-ui/core/AccordionSummary";
-import Typography from "@material-ui/core/Typography";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import FooterBlack from "components/Footers/FooterBlack.js";
-import animationData2 from "views/lotties/laser.json"; // reactstrap components
+import FooterBlackSocial from "components/Footers/FooterBlackSocial";
 import { Physics, usePlane, useBox } from "use-cannon";
 
 function Content() {
-  const tempObject = new THREE.Object3D();
-  const tempColor = new THREE.Color();
   const colors = new Array(1000)
     .fill()
     .map(() => niceColors[17][Math.floor(Math.random() * 5)]);
@@ -173,22 +143,7 @@ function Cubes({ number }) {
   );
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: "100%",
-    background: "gray",
-  },
-  heading: {
-    fontSize: theme.typography.pxToRem(16),
-    flexBasis: "33.33%",
-    flexShrink: 0,
-    background: "lightblue",
-  },
-  secondaryHeading: {
-    fontSize: theme.typography.pxToRem(16),
-    color: theme.palette.text.secondary,
-  },
-}));
+
 // Makes these prototypes available as "native" jsx-string elements
 const tempObject = new THREE.Object3D();
 const tempColor = new THREE.Color();
@@ -267,39 +222,12 @@ function AboutUs() {
     document.body.scrollTop = 0;
 
     // initialise Rellax for this page
-    if (window.innerWidth >= 991) {
-      setTimeout(function () {
-        new Rellax(".rellax", {
-          center: true,
-        });
-      }, 5000);
-      new Rellax(".rellax-header");
-      new Rellax(".rellax-text");
-    }
+    
   });
 
-  const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  const defaultOptions2 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData2,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
+
   const defaultOptions3 = {
     loop: true,
     autoplay: true,
@@ -308,14 +236,7 @@ function AboutUs() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  const defaultOptions4 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData4,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+
 
   return (
     <>
@@ -1061,18 +982,43 @@ function AboutUs() {
                 </h2>{" "}
                 <br />
                 <br />
-                <h3>
-                  My name is Edgar Mena -- Born in Costa Rica, natural American
-                  citizen; I have a AA in Paralegal Studies, a BA in legal
-                  studies and experience as a Paralegal. I have prepared a range
-                  documents, to include a variety of Immigration Applications,
-                  Citizenship Applications, and Notary Services. I launched my
+                <h4>
+                  My name is Edgar Mena -- born in Costa Rica, natural American
+                  citizen; I have a AA in Paralegal Studies, a BA in Legal
+                  Studies and experience as a paralegal. I have prepared a range of
+                  documents in the past, including a variety of Immigration Applications,
+                  Citizenship Applications, and have provided Notary Services.<br/> I launched my
                   own business with Solafide Services. I enjoy fishing and
                   boating in sunny Florida. I offer non-lawyer services; paper
                   preparation of immigration, citizenship, simple divorce, child
                   support documents; Notary services; Signing Agent in Florida;
-                  and officiate marriages in Florida
-                </h3>
+                  and officiate marriages in Florida.
+                </h4>
+              </Col>
+            </Row>
+            <Lottie options={defaultOptions3} />
+
+            <Row>
+              <Col className="ml-auto mr-auto text-center" md="8">
+                <br />
+                <br />
+                <h2 className="title">
+                  Nosotros tenemos ventaja ante la competencia.
+                </h2>{" "}
+                <br />
+                <br />
+                <h4>
+                  Mi nombre es Edgar Mena -- nacido en Costa Rica, ciudadano Americano
+                  nacionalizado; tengo un AA en Estudios Paralegales, un BA en Estudio  Legales
+                  y experience como paralegal. He preparado una variedad de documentos,
+                  incluyendo varias Aplicaciones de Inmigracion, Aplicaciones para Ciudadania,
+                  y he prestado diferentes servicios como Notario Publico.<br/>
+                  Emprendi en mi propio negocio con Solafide Services. Disfruto de la pesca
+                  y paseos en bote a traves de la Florida. Ofrezco servicios sin abogado; 
+                  preparacion de documentos para inmigracion, ciudadania, divorcios,
+                  pensiones de alimenticia y manutencion de menores; servicios notariales; Agente de firma en la Florida;
+                  tambien puedo oficiar matriminios en Florida. 
+                </h4>
               </Col>
             </Row>
           </Container>
@@ -1084,7 +1030,6 @@ function AboutUs() {
           </Container>
 
           <Container>
-            <Lottie options={defaultOptions3} />
             <br />
             <br />
             <br />
@@ -1219,7 +1164,7 @@ function AboutUs() {
             </Row>
           </Container>
         </div>
-        <FooterBlack />
+        <FooterBlackSocial />
       </div>
     </>
   );

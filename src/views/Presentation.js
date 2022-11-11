@@ -1,13 +1,13 @@
 import React from "react";
 // javascript library that creates a parrallax effect
-import Rellax from "rellax";
 // reactstrap components
 import { Container, Button, Link } from "react-floating-action-button";
 
 // core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
-import FooterBlack from "components/Footers/FooterBlack.js";
+import FooterBlackSocial from "components/Footers/FooterBlackSocial";
+
 import Content from "views/presentation-sections/Content.js";
 import PlainCards from "./index-sections/PlainCards.js";
 
@@ -19,17 +19,7 @@ function Presentation() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
 
-    // initialise Rellax for this page
-    if (window.innerWidth >= 991) {
-      setTimeout(function () {
-        new Rellax(".rellax", {
-          center: true,
-        });
-      }, 5000);
-      new Rellax(".rellax-header");
-      new Rellax(".rellax-text");
-    }
-
+   
     // we need to add a script for the github buttons
     let script = document.createElement("script");
     script.src = "https://buttons.github.io/buttons.js";
@@ -71,7 +61,7 @@ function Presentation() {
             onClick={() => alert("Call us at 941-518-1657")}
           />
         </Container>
-        <FooterBlack />
+        <FooterBlackSocial />
       </div>
     </>
   );

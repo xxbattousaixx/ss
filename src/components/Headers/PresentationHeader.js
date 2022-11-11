@@ -1,21 +1,6 @@
-/*eslint-disable*/
-import React from "react";
-import { motion } from "framer-motion";
-import animationData from "views/lotties/loader.json"; // reactstrap components
-import animationData2 from "views/lotties/loader1.json"; // reactstrap components
 import MediaQuery from "react-responsive";
+import React from "react";
 
-import Lottie from "react-lottie";
-// reactstrap components
-import {
-  Badge,
-  Card,
-  CardBody,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-} from "reactstrap"; // core components
 // core components
 
 function preloadImage() {
@@ -25,22 +10,7 @@ function preloadImage() {
   img2.src = "assets/img/pricing3.jpg";
 }
 function PresentationHeader() {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  const defaultOptions2 = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData2,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  preloadImage();
   return (
     <>
       <MediaQuery maxWidth={1224}>

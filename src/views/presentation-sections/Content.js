@@ -1,6 +1,6 @@
-import React from "react";
-import { motion } from "framer-motion";
 // reactstrap components
+import React from "react";
+
 import { Button, Container, Row, Col } from "reactstrap";
 import Slide from "react-reveal/Slide";
 // core components
