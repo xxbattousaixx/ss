@@ -85,7 +85,7 @@ function WhiteNavbar() {
                   <p>ABOUT US&nbsp;</p>
                 </a>
               </UncontrolledDropdown>
-              {/* <UncontrolledDropdown nav>
+              <UncontrolledDropdown nav>
                 <DropdownToggle
                   caret
                   color="default"
@@ -107,10 +107,10 @@ function WhiteNavbar() {
                     <i className="now-ui-icons ui-2_settings-90"></i>
                     Pavers
                   </DropdownItem>
-                  <DropdownItem tag={Link} to="/paint">
+                  {/* <DropdownItem tag={Link} to="/paint">
                     <i className="now-ui-icons design-2_ruler-pencil"></i>
                     Painting
-                  </DropdownItem>
+                  </DropdownItem> */}
 
                   <DropdownItem tag={Link} to="/pressureWashing">
                     <i className="now-ui-icons education_atom"></i>
@@ -118,7 +118,7 @@ function WhiteNavbar() {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
-              <UncontrolledDropdown nav>
+              {/* <UncontrolledDropdown nav>
                 <a href="/gallery">
                   <i
                     aria-hidden={true}

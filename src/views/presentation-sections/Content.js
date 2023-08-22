@@ -1,12 +1,10 @@
-// reactstrap components
 import React from "react";
 
+// reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
-import Slide from "react-reveal/Slide";
+
 // core components
-import LightSpeed from "react-reveal/LightSpeed";
-import RubberBand from "react-reveal/RubberBand";
-import Wobble from "react-reveal/Wobble";
+
 function Content() {
   return (
     <>
@@ -14,32 +12,7 @@ function Content() {
         <Container>
           <Row>
             <Col md="5">
-              <LightSpeed left>
-                {" "}
-                <h1 className="title">Solafide Services</h1>
-              </LightSpeed>
-              We are Document Preparers for individuals who need help filling
-              out their tax, court, immigration or various paperwork! <br />
-              <br />
-              <br />
-              Somos Preparadores de Documentos para aquellos que necesitan ayuda
-              para llenar sus formas de impuestos, la corte, inmigracion y
-              muchos mas! <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <Slide right>
-                <div style={{ border: "solid white 2px", textAlign: "center" }}>
-                  <br />
-                  <br /> RENEW YOUR COMPANY NOW! <br />
-                  <br />
-                  RENUEVA TU COMPAÑÍA!
-                  <br />
-                  <br />
-                </div>
-              </Slide>
+              <h1 className="title">Solafide Services</h1>
               {/*    
           <div className="image-container">
                 <img
@@ -54,30 +27,18 @@ function Content() {
             <Col className="ml-auto mr-auto" md="4">
               <div className="section-description">
                 <h5 className="description">
-                  <RubberBand>
-                    <br />
-                    SolaFide provides interpreter services for different
-                    purposes -- We are experts in USCIS interviews, mediations,
-                    civil court audiences, family law, medical appointments, and
-                    driving exams.
-                    <br />
-                    <hr />
-                    <br />
-                    SolaFide presta servicios de Intérprete -- Somos expertos en
-                    la interpretación para entrevistas con el Servicio de
-                    Inmigración de Estados Unidos (USCIS), mediaciones,
-                    audiencias en corte civil, Ley de familia, citas médicas y
-                    examenes de licencia de conducción. <br />
-                    <hr />
-                    <br />
-                  </RubberBand>
+                  Out with the tired concrete and asphalt look. Renovate your
+                  home's presentation - brick pavers are a lasting, beautiful
+                  solution for driveways, pool decks, walls, patios, and more.
+                  Find out why we’re the Tampa Bay Area's most trusted hardscape
+                  design and installation company. Let us create a hardscape
+                  solution that you and your family will enjoy for years to
+                  come.
                 </h5>
                 <center>
-                  <Wobble>
-                    <Button color="info" href="/contact-us">
-                      Book Online
-                    </Button>
-                  </Wobble>
+                  <Button color="info" href="/contact-us">
+                    FREE ESTIMATE
+                  </Button>
                 </center>{" "}
               </div>
             </Col>

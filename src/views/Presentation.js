@@ -1,14 +1,20 @@
 import React from "react";
 // javascript library that creates a parrallax effect
+import Rellax from "rellax";
 // reactstrap components
 import { Container, Button, Link } from "react-floating-action-button";
 
 // core components
 import WhiteNavbar from "components/Navbars/WhiteNavbar";
 import PresentationHeader from "components/Headers/PresentationHeader.js";
-import FooterBlackSocial from "components/Footers/FooterBlackSocial";
-
+import FooterBlack from "components/Footers/FooterBlack.js";
 import Content from "views/presentation-sections/Content.js";
+import Pricing from "views/presentation-sections/Pricing.js";
+import Image from "views/presentation-sections/Image.js";
+
+import Carousel11 from "./index-sections/Carousel11.js";
+// sections for this page
+
 import PlainCards from "./index-sections/PlainCards.js";
 
 function Presentation() {
@@ -19,7 +25,17 @@ function Presentation() {
     window.scrollTo(0, 0);
     document.body.scrollTop = 0;
 
-   
+    // initialise Rellax for this page
+    if (window.innerWidth >= 991) {
+      setTimeout(function () {
+        new Rellax(".rellax", {
+          center: true,
+        });
+      }, 5000);
+      new Rellax(".rellax-header");
+      new Rellax(".rellax-text");
+    }
+
     // we need to add a script for the github buttons
     let script = document.createElement("script");
     script.src = "https://buttons.github.io/buttons.js";
@@ -50,7 +66,7 @@ function Presentation() {
         <Container>
           <Link
             href="/contact-us"
-            tooltip="Book online"
+            tooltip="Get a Free Estimate"
             icon="far fa-sticky-note"
           />
           <Link href="/contact-us" tooltip="Call us" icon="fas fa-user-plus" />
@@ -61,7 +77,7 @@ function Presentation() {
             onClick={() => alert("Call us at 941-518-1657")}
           />
         </Container>
-        <FooterBlackSocial />
+        <FooterBlack />
       </div>
     </>
   );

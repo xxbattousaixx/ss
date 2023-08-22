@@ -1,149 +1,58 @@
 // javascript library that creates a parrallax effect
+import Rellax from "rellax";
 // reactstrap components
 import * as THREE from "three";
 import React, { useEffect, useRef, useMemo, useState } from "react";
 import niceColors from "nice-color-palettes";
+import { makeStyles } from "@material-ui/core/styles";
 import { Canvas, useFrame } from "react-three-fiber";
 import Effects from "views/Effects.js";
-import "react-awesome-slider/dist/styles.css";
-import { useSprings, a } from "react-spring/three";
-import RubberBand from "react-reveal/RubberBand";
-
+import Carousel8 from "./index-sections/Carousel8.js";
+import animationData from "views/lotties/robot.json"; // reactstrap components
 import Lottie from "react-lottie";
 import animationData3 from "views/lotties/cube.json"; // reactstrap components
-import TypeWriterEffect from "react-typewriter-effect";
-import { Container, Row, Col } from "reactstrap"; // core components
+import animationData4 from "views/lotties/dots.json"; // reactstrap components
+import {
+  Badge,
+  Card,
+  CardBody,
+  CardTitle,
+  Container,
+  Row,
+  Col,
+} from "reactstrap"; // core components
+
 
 import ScrollTransparentNavbar from "components/Navbars/ScrollTransparentNavbar.js";
 import BlogPostsHeader from "components/Headers/BlogPostsHeader.js";
-import FooterBlackSocial from "components/Footers/FooterBlackSocial";
-import { Physics, usePlane, useBox } from "use-cannon";
+import Accordion from "@material-ui/core/Accordion";
+import AccordionDetails from "@material-ui/core/AccordionDetails";
+import AccordionSummary from "@material-ui/core/AccordionSummary";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import FooterBlack from "components/Footers/FooterBlack.js";
+import animationData2 from "views/lotties/laser.json"; // reactstrap components
+import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation";
 
-function Content() {
-  const colors = new Array(1000)
-    .fill()
-    .map(() => niceColors[17][Math.floor(Math.random() * 5)]);
-
-  const number = 35;
-  const random = (i) => {
-    const r = Math.random();
-    return {
-      position: [100 - Math.random() * 200, 100 - Math.random() * 200, i * 1.5],
-      color: colors[Math.round(Math.random() * (colors.length - 1))],
-      scale: [1 + r * 14, 1 + r * 14, 1],
-      rotation: [0, 0, THREE.Math.degToRad(Math.round(Math.random()) * 45)],
-    };
-  };
-
-  const data = new Array(number).fill().map(() => {
-    return {
-      color: colors[Math.round(Math.random() * (colors.length - 1))],
-      args: [0.1 + Math.random() * 9, 0.1 + Math.random() * 9, 10],
-    };
-  });
-
-  const [springs, set] = useSprings(number, (i) => ({
-    from: random(i),
-    ...random(i),
-    config: { mass: 20, tension: 150, friction: 50 },
-  }));
-  useEffect(
-    () =>
-      void setInterval(
-        () => set((i) => ({ ...random(i), delay: i * 40 })),
-        3000
-      ),
-    []
-  );
-  return data.map((d, index) => (
-    <a.mesh key={index} {...springs[index]} castShadow receiveShadow>
-      <boxBufferGeometry attach="geometry" args={d.args} />
-      <a.meshStandardMaterial
-        attach="material"
-        color={springs[index].color}
-        roughness={0.75}
-        metalness={0.5}
-      />
-    </a.mesh>
-  ));
-}
-
-function Lights() {
-  return (
-    <group>
-      <pointLight intensity={0.3} />
-      <ambientLight intensity={2} />
-      <spotLight
-        castShadow
-        intensity={0.2}
-        angle={Math.PI / 7}
-        position={[150, 150, 250]}
-        penumbra={1}
-        shadow-mapSize-width={2048}
-        shadow-mapSize-height={2048}
-      />
-    </group>
-  );
-}
-
-// core components
-
-function Plane(props) {
-  const [ref] = usePlane(() => ({ mass: 0, ...props }));
-  return (
-    <mesh ref={ref} receiveShadow>
-      <planeBufferGeometry attach="geometry" args={[5, 5]} />
-      <shadowMaterial attach="material" color="#171717" opacity={0.5} />
-    </mesh>
-  );
-}
-
-function Cubes({ number }) {
-  const [ref, api] = useBox(() => ({
-    mass: 1,
-    args: [0.1, 0.1, 0.1],
-    position: [Math.random() - 0.5, Math.random() * 2, Math.random() - 0.5],
-  }));
-
-  const colors = useMemo(() => {
-    const array = new Float32Array(number * 3);
-    const color = new THREE.Color();
-    for (let i = 0; i < number; i++)
-      color
-        .set(niceColors[17][Math.floor(Math.random() * 5)])
-        .convertSRGBToLinear()
-        .toArray(array, i * 3);
-    return array;
-  }, [number]);
-
-  useFrame(() =>
-    api
-      .at(Math.floor(Math.random() * number))
-      .position.set(0, Math.random() * 2, 0)
-  );
-
-  return (
-    <instancedMesh
-      receiveShadow
-      castShadow
-      ref={ref}
-      args={[null, null, number]}
-    >
-      <boxBufferGeometry attach="geometry" args={[0.1, 0.1, 0.1]}>
-        <instancedBufferAttribute
-          attachObject={["attributes", "color"]}
-          args={[colors, 3]}
-        />
-      </boxBufferGeometry>
-      <meshLambertMaterial
-        attach="material"
-        vertexColors={THREE.VertexColors}
-      />
-    </instancedMesh>
-  );
-}
+import AwesomeSlider from "react-awesome-slider";
 
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    width: "100%",
+    background: "gray",
+  },
+  heading: {
+    fontSize: theme.typography.pxToRem(16),
+    flexBasis: "33.33%",
+    flexShrink: 0,
+    background: "lightblue",
+  },
+  secondaryHeading: {
+    fontSize: theme.typography.pxToRem(16),
+    color: theme.palette.text.secondary,
+  },
+}));
 // Makes these prototypes available as "native" jsx-string elements
 const tempObject = new THREE.Object3D();
 const tempColor = new THREE.Color();
@@ -222,12 +131,38 @@ function AboutUs() {
     document.body.scrollTop = 0;
 
     // initialise Rellax for this page
-    
+    if (window.innerWidth >= 991) {
+      setTimeout(function () {
+        new Rellax(".rellax", {
+          center: true,
+        });
+      }, 5000);
+      new Rellax(".rellax-header");
+      new Rellax(".rellax-text");
+    }
   });
+  const classes = useStyles();
+  const [expanded, setExpanded] = React.useState(false);
 
-
-
-
+  const handleChange = (panel) => (event, isExpanded) => {
+    setExpanded(isExpanded ? panel : false);
+  };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const defaultOptions2 = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData2,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const defaultOptions3 = {
     loop: true,
     autoplay: true,
@@ -236,7 +171,14 @@ function AboutUs() {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-
+  const defaultOptions4 = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData4,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   return (
     <>
@@ -261,7 +203,7 @@ function AboutUs() {
         <div className="info text-center"></div>
 
         <div className="about-description text-center">
-          {/* <Container>
+          <Container>
             <div className="title">
               <h3>Professional Services For Home or Business</h3>
             </div>
@@ -469,45 +411,53 @@ function AboutUs() {
                               sure to find a style that best fits your paving
                               project.
                             </p>
+                            <img src={require("assets/img/patterns.jpg")}/>
+                              {/* <Col md="2">                    <img data-src={require("assets/img/p1.jpeg")}/></Col>
+                              <Col md="2">            <img data-src={require("assets/img/p2.jpeg")}> </img></Col>
+                              <Col md="2">         <img data-src={require("assets/img/p3.jpeg")}/></Col>
+                              <Col md="2">          <img data-src={require("assets/img/p4.jpg")}/></Col>
+                              <Col md="2">          <img data-src={require("assets/img/p5.jpg")}/></Col>
+                                  <Col md="2">    <img data-src={require("assets/img/p6.jpg")}/></Col>
+<Col md="2">       <img data-src={require("assets/img/p7.jpg")}/></Col>
+<Col md="2">            <img data-src={require("assets/img/p8.jpg")}/></Col>
+<Col md="2">                  <img data-src={require("assets/img/p9.jpg")}/></Col>
+<Col md="2">                       <img data-src={require("assets/img/p10.jpg")}/></Col>
+<Col md="2">                            <img data-src={require("assets/img/p11.jpg")}/></Col>
+<Col md="2">                              <img data-src={require("assets/img/p12.jpg")}/></Col>
 
-                            <AwesomeSlider cssModule={AwesomeSliderStyles}>
-                              <div data-src="../p1.jpg">
-                                <p>90 degree Herringbone</p>
+                                */}
+                            {/* <AutoplaySlider
+    play={true}
+    cancelOnInteraction={false}
+    interval={6000}
+    cssModule={AwesomeSliderStyles}
+  >
+
+                              <div data-src={require("assets/img/p1.jpg")}>
                               </div>
-                              <div data-src="../p2.jpg">
-                                <p>Double Basketweave</p>
+                              <div data-src={require("assets/img/p2.jpg")}>
                               </div>
-                              <div data-src="../p3.jpg">
-                                <p>45 degree Herringbone</p>
+                              <div data-src={require("assets/img/p3.jpg")}>
                               </div>
-                              <div data-src="../p4.jpg">
-                                <p>Spanish Bond</p>
+                              <div data-src={require("assets/img/p4.jpg")}>
                               </div>
-                              <div data-src="../p5.jpg">
-                                <p>Boxed Basketweave#1</p>
+                              <div data-src={require("assets/img/p5.jpg")}>
                               </div>
-                              <div data-src="../p6.jpg">
-                                <p>Combination Running Bond</p>
+                              <div data-src={require("assets/img/p6.jpg")}>
                               </div>
-                              <div data-src="../p7.jpg">
-                                <p>Boxed Basketweave#2</p>
+                              <div data-src={require("assets/img/p7.jpg")}>
                               </div>
-                              <div data-src="../p8.jpg">
-                                <p>Running Bond</p>
+                              <div data-src={require("assets/img/p8.jpg")}>
                               </div>
-                              <div data-src="../p9.jpg">
-                                <p>45 degree Running Bond</p>
+                              <div data-src={require("assets/img/p9.jpg")}>
                               </div>
-                              <div data-src="../p10.jpg">
-                                <p>I want to see what you got.</p>
+                              <div data-src={require("assets/img/p10.jpg")}>
                               </div>
-                              <div data-src="../p11.jpg">
-                                <p>Stacked Bond</p>
+                              <div data-src={require("assets/img/p11.jpg")}>
                               </div>
-                              <div data-src="../p12.jpg">
-                                <p>Combination Stack / Running Bond</p>
+                              <div data-src={require("assets/img/p12.jpg")}>
                               </div>
-                            </AwesomeSlider>
+                            </AutoplaySlider> */}
                             <br />
                             <br />
                             <br />
@@ -569,7 +519,7 @@ function AboutUs() {
                                 <img
                                   alt="..."
                                   src={require("assets/img/s10.jpg")}
-                                ></img>
+                                />
                               </Col>
                             </Row>
                           </CardBody>
@@ -628,15 +578,15 @@ function AboutUs() {
                               <Col>
                                 {" "}
                                 <AwesomeSlider cssModule={AwesomeSliderStyles}>
-                                  <div data-src="../c1.jpg"></div>
-                                  <div data-src="../c2.jpg">] </div>
-                                  <div data-src="../c3.jpg"></div>
-                                  <div data-src="../c4.jpg"></div>
-                                  <div data-src="../c5.jpg"></div>
-                                  <div data-src="../c6.jpg"></div>
-                                  <div data-src="../c7.jpg"></div>
-                                  <div data-src="../c8.jpg"></div>
-                                  <div data-src="../c9.jpg"></div>
+                                  <div data-src={require("assets/img/c1.jpg")}></div>
+                                  <div data-src={require("assets/img/c2.jpg")}> </div>
+                                  <div data-src={require("assets/img/c3.jpg")}></div>
+                                  <div data-src={require("assets/img/c4.jpg")}></div>
+                                  <div data-src={require("assets/img/c5.jpg")}></div>
+                                  <div data-src={require("assets/img/c6.jpg")}></div>
+                                  <div data-src={require("assets/img/c7.jpg")}></div>
+                                  <div data-src={require("assets/img/c8.jpg")}></div>
+                                  <div data-src={require("assets/img/c9.jpg")}></div>
                                 </AwesomeSlider>
                                 <br />
                                 <br />
@@ -652,242 +602,29 @@ function AboutUs() {
               </Col>
             </Row>
           </Container>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br /> */}
-          <div>
-            <RubberBand>
-              <h1>DOCUMENT PREPARATION SERVICES</h1>
-              <br />
-              <br />
-            </RubberBand>
-            <Row>
-              <Col md="2"></Col>
-              <Col md="4">
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Preparación de impuestos "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Impuestos de Compañía "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Apertura de negocio "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Matrimonio "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Divorcio "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="-  Preparación de formularios de Inmigración "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Traducciones certificadas "
-                  typeSpeed={100}
-                />
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Interpretaciones "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Clases de Ciudadanía "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Clases de Inglés "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Aplicación para estampillas "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Medicaid "
-                  typeSpeed={100}
-                />{" "}
-              </Col>
-              <Col md="4">
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Tax preparation "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Company taxes "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Opening a new business "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Marriage "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Divorce "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="-  Immigration formulary preparation "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Certified translation "
-                  typeSpeed={100}
-                />
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Interpreter services "
-                  typeSpeed={100}
-                />{" "}
-                <br />
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Citizenship courses "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- English courses "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Food stamps applications "
-                  typeSpeed={100}
-                />{" "}
-                <br />{" "}
-                <TypeWriterEffect
-                  textStyle={{ fontFamily: "Roboto", fontSize: "2.5em" }}
-                  startDelay={100}
-                  cursorColor="transparent"
-                  text="- Medicaid "
-                  typeSpeed={100}
-                />
-              </Col>
-              <Col md="2"></Col>
-            </Row>
 
             <br />
-            <br />
-
-            <Canvas
-              shadowMap
-              colorManagement
-              gl={{ alpha: false }}
-              camera={{ position: [-1, 1, 2.5], fov: 50 }}
-            >
-              <color attach="background" args={["lightblue"]} />
-              <hemisphereLight intensity={0.35} />
-              <spotLight
-                position={[5, 5, 5]}
-                angle={0.3}
-                penumbra={1}
-                intensity={2}
-                castShadow
-                shadow-mapSize-width={256}
-                shadow-mapSize-height={256}
-              />
-              <Physics>
-                <Plane rotation={[-Math.PI / 2, 0, 0]} />
-                <Cubes number={200} />
-              </Physics>
-            </Canvas>
-
+          <br />
+          <br />
+          <br />
+          <br />
+          <Canvas
+        gl={{ antialias: false, alpha: false }}
+        camera={{ position: [0, 0, 15], near: 5, far: 20 }}
+        onCreated={({ gl }) => gl.setClearColor("lightyellow")}
+      >
+        <ambientLight />
+        <pointLight position={[150, 150, 150]} intensity={0.55} />
+        <Boxes />
+        <Effects />
+      </Canvas>
+        
+          <div
+            style={{
+              backgroundImage:
+                "url(" + require("assets/img/xixi.jpg") + ")",
+            }}
+          >
             <Container>
               <Row>
                 <Col className="mr-auto ml-auto" md="8">
@@ -962,87 +699,30 @@ function AboutUs() {
             </Container>
           </div>
         </div>
-
-        <div>
-          <Canvas
-            shadowMap
-            camera={{ position: [0, 0, 100], fov: 100 }}
-            onCreated={({ gl }) => gl.setClearColor("lightpink")}
-          >
-            <Lights />
-            <Content />
-          </Canvas>
+        <Canvas
+        gl={{ antialias: false, alpha: false }}
+        camera={{ position: [0, 0, 15], near: 5, far: 20 }}
+        onCreated={({ gl }) => gl.setClearColor("gray")}
+      >
+        <ambientLight />
+        <pointLight position={[150, 150, 150]} intensity={0.55} />
+        <Boxes />
+        <Effects />
+      </Canvas>
+        <div
+          className="projects-5"
+          data-background="gray"
+          style={{
+            backgroundImage: "url(" + require("assets/img/xxixx.jpg") + ")",
+          }}
+        >
+       
+    
+      
           <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <br />
-                <br />
-                <h2 className="title">
-                  We have the edge over the competition.
-                </h2>{" "}
-                <br />
-                <br />
-                <h4>
-                  My name is Edgar Mena -- born in Costa Rica, natural American
-                  citizen; I have a AA in Paralegal Studies, a BA in Legal
-                  Studies and experience as a paralegal. I have prepared a range of
-                  documents in the past, including a variety of Immigration Applications,
-                  Citizenship Applications, and have provided Notary Services.<br/> I launched my
-                  own business with Solafide Services. I enjoy fishing and
-                  boating in sunny Florida. I offer non-lawyer services; paper
-                  preparation of immigration, citizenship, simple divorce, child
-                  support documents; Notary services; Signing Agent in Florida;
-                  and officiate marriages in Florida.
-                </h4>
-              </Col>
-            </Row>
-            <Lottie options={defaultOptions3} />
-
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8">
-                <br />
-                <br />
-                <h2 className="title">
-                  Nosotros tenemos ventaja ante la competencia.
-                </h2>{" "}
-                <br />
-                <br />
-                <h4>
-                  Mi nombre es Edgar Mena -- nacido en Costa Rica, ciudadano Americano
-                  nacionalizado; tengo un AA en Estudios Paralegales, un BA en Estudio  Legales
-                  y experience como paralegal. He preparado una variedad de documentos,
-                  incluyendo varias Aplicaciones de Inmigracion, Aplicaciones para Ciudadania,
-                  y he prestado diferentes servicios como Notario Publico.<br/>
-                  Emprendi en mi propio negocio con Solafide Services. Disfruto de la pesca
-                  y paseos en bote a traves de la Florida. Ofrezco servicios sin abogado; 
-                  preparacion de documentos para inmigracion, ciudadania, divorcios,
-                  pensiones de alimenticia y manutencion de menores; servicios notariales; Agente de firma en la Florida;
-                  tambien puedo oficiar matriminios en Florida. 
-                </h4>
-              </Col>
-            </Row>
-          </Container>
-          <div className="info"></div>
-          <Container>
-            <Row>
-              <Col className="ml-auto mr-auto text-center" md="8"></Col>
-            </Row>
-          </Container>
-
-          <Container>
-            <br />
-            <br />
-            <br />
-            <br />
-            <img
-              alt="..."
-              className="img rounded img-raised"
-              src={require("assets/img/edgar.jpg")}
-            ></img>
-
             <Row>
               <Col className="ml-auto" md="5">
-                {/* <Card
+                <Card
                   className="card-background card-background-product card-raised"
                   style={{
                     backgroundImage:
@@ -1085,25 +765,25 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="info info-horizontal">
+              {/*  <div className="info info-horizontal">
                   <div className="icon icon-danger">
                     <i className="now-ui-icons design_palette"></i>
                   </div>
-                  <div className="info-title">
                     <h4 className="info-title">Painting</h4>
                     <p className="info-title">
                       No project is too small for our team. Trust us with your
                       home projects.
                     </p>
-                  </div>
-                </div> */}
+                  </div> 
+                </div>*/}
               </Col>
             </Row>
+            <Lottie options={defaultOptions3} />
             <Row>
               <Col className="mr-auto" md="5">
                 <br />
                 <br />
-                {/* <Card
+                <Card
                   className="card-background card-background-product card-raised"
                   style={{
                     backgroundImage:
@@ -1147,7 +827,7 @@ function AboutUs() {
                     </p>
                   </div>
                 </div>
-                <div className="info info-horizontal">
+                {/* <div className="info info-horizontal">
                   <div className="icon icon-warning">
                     <i className="now-ui-icons design_palette"></i>
                   </div>
@@ -1164,7 +844,7 @@ function AboutUs() {
             </Row>
           </Container>
         </div>
-        <FooterBlackSocial />
+        <FooterBlack />
       </div>
     </>
   );

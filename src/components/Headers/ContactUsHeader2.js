@@ -70,29 +70,29 @@ function ContactUsHeader2() {
             <br />
             <br />
             <br />
-            <AwesomeSlider
+            {/* <AwesomeSlider
               animation="cubeAnimation"
               cssModule={AwesomeSliderStyles}
             >
-              <div data-src="/p1.jpeg" />
-              <div data-src="/p2.jpeg" />
-              <div data-src="/p3.jpeg" />
-              <div data-src="/p4.jpeg" />
-              <div data-src="/p5.jpeg" />
+              <div data-src={require("assets/img/p1.jpeg")}/>
+              <div data-src={require("assets/img/p2.jpeg")}/>
+              <div data-src={require("assets/img/p3.jpeg")}/>
+              <div data-src={require("assets/img/p4.jpeg")}/>
+              <div data-src={require("assets/img/p5.jpeg")}/>
 
-              <div data-src="/11.jpg" />
-              <div data-src="/12.jpg" />
-              <div data-src="/13.jpg" />
-              <div data-src="/15.jpg" />
-              <div data-src="/16.jpg" />
-              <div data-src="/17.jpg" />
-              <div data-src="/18.jpg" />
-              <div data-src="/19.jpg" />
-              <div data-src="/130.jpg" />
-              <div data-src="/129.jpg" />
-              <div data-src="/132.jpg" />
-              <div data-src="/133.jpg" />
-            </AwesomeSlider>
+              <div data-src={require("assets/img/11.jpg")}/>
+              <div data-src={require("assets/img/12.jpg")}/>
+              <div data-src={require("assets/img/13.jpg")}/>
+              <div data-src={require("assets/img/15.jpg")}/>
+              <div data-src={require("assets/img/16.jpg")}/>
+              <div data-src={require("assets/img/17.jpg")}/>
+              <div data-src={require("assets/img/18.jpg")}/>
+              <div data-src={require("assets/img/19.jpg")}/>
+              <div data-src={require("assets/img/130.jpg")}/>
+              <div data-src={require("assets/img/129.jpg")}/>
+              <div data-src={require("assets/img/132.jpg")}/>
+              <div data-src={require("assets/img/133.jpg")}/>
+            </AwesomeSlider> */}
             <br /> <br /> <br />
           </Col>
           {/*<Col span="8" md="2"><div className="info text-horizontal">
@@ -112,30 +112,30 @@ function ContactUsHeader2() {
             <br />
             <br />
             <br />
-            <AwesomeSlider
+            {/* <AwesomeSlider
               animation="cubeAnimation"
               cssModule={AwesomeSliderStyles}
             >
-              <div data-src="/p6.jpeg" />
-              <div data-src="/p7.jpeg" />
-              <div data-src="/p8.jpeg" />
-              <div data-src="/p9.jpeg" />
+              <div data-src={require("assets/img/p6.jpeg")}/>
+              <div data-src={require("assets/img/p7.jpeg")}/>
+              <div data-src={require("assets/img/p8.jpeg")}/>
+              <div data-src={require("assets/img/p9.jpeg")}/>
 
-              <div data-src="/134.jpg" />
-              <div data-src="/135.jpg" />
-              <div data-src="/114.jpg" />
-              <div data-src="/137.jpg" />
-              <div data-src="/138.jpg" />
-              <div data-src="/120.jpg" />
-              <div data-src="/121.jpg" />
-              <div data-src="/122.jpg" />
-              <div data-src="/123.jpg" />
-              <div data-src="/124.jpg" />
-              <div data-src="/125.jpg" />
-              <div data-src="/126.jpg" />
-              <div data-src="/127.jpg" />
-              <div data-src="/128.jpg" />
-            </AwesomeSlider>
+              <div data-src={require("assets/img/134.jpg")}/>
+              <div data-src={require("assets/img/135.jpg")}/>
+              <div data-src={require("assets/img/114.jpg")}/>
+              <div data-src={require("assets/img/137.jpg")}/>
+              <div data-src={require("assets/img/138.jpg")}/>
+              <div data-src={require("assets/img/120.jpg")}/>
+              <div data-src={require("assets/img/121.jpg")}/>
+              <div data-src={require("assets/img/122.jpg")}/>
+              <div data-src={require("assets/img/123.jpg")}/>
+              <div data-src={require("assets/img/124.jpg")}/>
+              <div data-src={require("assets/img/125.jpg")}/>
+              <div data-src={require("assets/img/126.jpg")}/>
+              <div data-src={require("assets/img/127.jpg")}/>
+              <div data-src={require("assets/img/128.jpg")}/>
+            </AwesomeSlider> */}
             <br /> <br /> <br />
           </Col>
         </Row>
@@ -144,38 +144,38 @@ function ContactUsHeader2() {
             <br />
             <br />
             <br />
-            <AwesomeSlider
+            {/* <AwesomeSlider
               animation="cubeAnimation"
               cssModule={AwesomeSliderStyles}
             >
-              <div data-src="/331.jpg" />
-              <div data-src="/332.jpg" />
-              <div data-src="/334.jpg" />
+              <div data-src={require("assets/img/331.jpg")}/>
+              <div data-src={require("assets/img/332.jpg")}/>
+              <div data-src={require("assets/img/334.jpg")}/>
 
-              <div data-src="/335.jpg" />
-              <div data-src="/336.jpg" />
-              <div data-src="/337.jpg" />
-              <div data-src="/338.jpg" />
-              <div data-src="/339.jpg" />
-              <div data-src="/340.jpg" />
-              <div data-src="/341.jpg" />
-              <div data-src="/342.jpg" />
-              <div data-src="/343.jpg" />
-              <div data-src="/344.jpg" />
-            </AwesomeSlider>
+              <div data-src={require("assets/img/335.jpg")}/>
+              <div data-src={require("assets/img/336.jpg")}/>
+              <div data-src={require("assets/img/337.jpg")}/>
+              <div data-src={require("assets/img/338.jpg")}/>
+              <div data-src={require("assets/img/339.jpg")}/>
+              <div data-src={require("assets/img/340.jpg")}/>
+              <div data-src={require("assets/img/341.jpg")}/>
+              <div data-src={require("assets/img/342.jpg")}/>
+              <div data-src={require("assets/img/343.jpg")}/>
+              <div data-src={require("assets/img/344.jpg")}/>
+            </AwesomeSlider> */}
             <br /> <br /> <br />
           </Col>
           <Col md="6">
             <br />
             <br />
             <br />
-            <AwesomeSlider
+            {/* <AwesomeSlider
               animation="cubeAnimation"
               cssModule={AwesomeSliderStyles}
             >
-              <div data-src="/350.mp4" />
-              <div data-src="/351.mp4" />
-            </AwesomeSlider>
+              <div data-src={require("assets/img/350.mp4")}/>
+              <div data-src={require("assets/img/351.mp4")}/>
+            </AwesomeSlider> */}
             <br /> <br /> <br />
           </Col>
         </Row>
